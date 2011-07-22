@@ -1256,7 +1256,7 @@
 						<onup>9005</onup>
 						<ondown>9005</ondown>
 					<control type="radiobutton" id="507">
-						<description>Show Recently added info</description>
+						<description>lower the menubar down with 190</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1265,6 +1265,32 @@
 						<label>Lower Menu</label>
 						<onclick>Skin.ToggleSetting(lowermenu)</onclick>
 						<selected>Skin.HasSetting(lowermenu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="508">
+						<description>Show Recently added info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>No floor</label>
+						<onclick>Skin.ToggleSetting(nofloor)</onclick>
+						<selected>Skin.HasSetting(nofloor)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="509">
+						<description>Show Recently added info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>no logo</label>
+						<onclick>Skin.ToggleSetting(nologo)</onclick>
+						<selected>Skin.HasSetting(nologo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
