@@ -1251,13 +1251,13 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>150</width>
+				<width>220</width>
 				<height>60</height>
 				<texture>HomeButtonsBack.png</texture>
 			</control>
 			<control type="button" id="20">
 				<description>Power push button</description>
-				<posx>55</posx>
+				<posx>100</posx>
 				<posy>15</posy>
 				<width>43</width>
 				<height>43</height>
@@ -1268,13 +1268,13 @@
 				<texturefocus>home-power-FO.png</texturefocus>
 				<texturenofocus>home-power.png</texturenofocus>
 				<onleft>21</onleft>
-				<onright>21</onright>
+				<onright>45</onright>
 				<onup>9002</onup>
 				<ondown>9003</ondown>
 			</control>
 			<control type="button" id="21">
 				<description>Favourites push button</description>
-				<posx>10</posx>
+				<posx>55</posx>
 				<posy>15</posy>
 				<width>43</width>
 				<height>43</height>
@@ -1284,8 +1284,25 @@
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<texturefocus>home-favourites-FO.png</texturefocus>
 				<texturenofocus>home-favourites.png</texturenofocus>
-				<onleft>20</onleft>
+				<onleft>45</onleft>
 				<onright>20</onright>
+				<onup>9003</onup>
+				<ondown>9003</ondown>
+			</control>
+			<control type="button" id="45">
+				<description>Search Script Button</description>
+				<posx>10</posx>
+				<posy>15</posy>
+				<width>43</width>
+				<height>43</height>
+				<label>Search</label>
+				<font>-</font>
+				<aligny>-</aligny>
+				<onclick>RunScript(script.globalsearch)</onclick>
+				<texturefocus>search-FO.png</texturefocus>
+				<texturenofocus>search.png</texturenofocus>
+				<onleft>21</onleft>
+				<onright>21</onright>
 				<onup>9002</onup>
 				<ondown>9003</ondown>
 			</control>
