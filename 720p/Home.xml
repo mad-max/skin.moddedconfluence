@@ -21,7 +21,8 @@
 			<colordiffuse>AAFFFFFF</colordiffuse>
 			<texture>HomeNowPlayingBack.png</texture>
 			<include>Window_OpenClose_Animation</include>
-		</control>
+			<visible>!Skin.HasSetting(nofloor)</visible>
+			</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>90r</posy>
@@ -54,11 +55,13 @@
 			<texture>HomeNowPlayingBack.png</texture>
 			<visible>[Player.HasAudio + !Skin.HasSetting(homepageMusicinfo)] | [Player.HasVideo + !Skin.HasSetting(homepageVideoinfo)] | [Container(9000).HasFocus(2) + Skin.HasSetting(homepageShowRecentlyAdded)] | [Container(9000).HasFocus(10) + Skin.HasSetting(homepageShowRecentlyAdded)] | [Container(9000).HasFocus(11) + Skin.HasSetting(homepageShowRecentlyAdded)]</visible>
 			<include>Window_OpenClose_Animation</include>
+			<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 		</control>
 		<!-- Music Info -->
 		<control type="group">
 			<posx>0</posx>
 			<posy>20</posy>
+			<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<visible>Player.HasAudio + !Skin.HasSetting(homepageMusicinfo) + ![Container(9000).HasFocus(2) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)] + Skin.HasSetting(homepageShowRecentlyAdded)]</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -261,6 +264,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>20</posy>
+			<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			<visible>Player.HasVideo + !Skin.HasSetting(homepageVideoinfo) + ![Container(9000).HasFocus(2) + ![Skin.HasSetting(HomeMenuNoMoviesButton) | Skin.HasSetting(HomeMenuNoTVShowsButton)] + Skin.HasSetting(homepageShowRecentlyAdded)]</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
@@ -504,6 +508,7 @@
 				<colordiffuse>CCFFFFFF</colordiffuse>
 				<texture flipy="true" border="0,5,0,0" flipx="true">HomeSubEnd.png</texture>
 				<animation effect="slide" start="0,0" end="30,0" time="0" condition="VideoPlayer.Content(LiveTV)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			</control>
 			<control type="group" id="600">
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -511,6 +516,7 @@
 				<onup>9003</onup>
 				<ondown>9000</ondown>
 				<defaultcontrol>603</defaultcontrol>
+				<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 				<control type="image">
 					<description>Background image</description>
 					<posx>0</posx>
@@ -615,6 +621,7 @@
 				<onup>9003</onup>
 				<ondown>9000</ondown>
 				<defaultcontrol>603</defaultcontrol>
+				<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 				<control type="image">
 					<description>Background image</description>
 					<posx>0</posx>
@@ -707,6 +714,7 @@
 				<onright>601</onright>
 				<onup>9003</onup>
 				<ondown>9000</ondown>
+				<animation effect="slide" start="0,0" end="0,190" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 			</control>
 		</control>
 		<control type="group">
