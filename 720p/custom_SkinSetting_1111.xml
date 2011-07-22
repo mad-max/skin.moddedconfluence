@@ -156,6 +156,11 @@
 						<label>24000</label>
 						<label2>31200</label2>
 						<onclick>-</onclick>
+					</item>	
+					<item id="5">
+						<label>MOD</label>
+						<label2>MOD</label2>
+						<onclick>-</onclick>
 					</item>
 				</content>
 			</control>
@@ -1235,6 +1240,34 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetAddon(HomeProgramButton6,xbmc.addon.executable)</onclick>
 						</control>
+					</control>
+				</control>
+				<control type="group">
+					<control type="grouplist" id="9005">
+						<visible>Container(9000).Hasfocus(5)</visible>
+						<posx>290</posx>
+						<posy>60</posy>
+						<width>750</width>
+						<height>530</height>
+						<itemgap>-1</itemgap>
+						<pagecontrol>61</pagecontrol>
+						<onleft>9000</onleft>
+						<onright>61</onright>
+						<onup>9005</onup>
+						<ondown>9005</ondown>
+					<control type="radiobutton" id="507">
+						<description>Show Recently added info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>Lower Menu</label>
+						<onclick>Skin.ToggleSetting(lowermenu)</onclick>
+						<selected>Skin.HasSetting(lowermenu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
