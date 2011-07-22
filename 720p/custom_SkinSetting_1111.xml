@@ -158,8 +158,8 @@
 						<onclick>-</onclick>
 					</item>	
 					<item id="5">
-						<label>MOD</label>
-						<label2>MOD</label2>
+						<label>40003</label>
+						<label2>40004</label2>
 						<onclick>-</onclick>
 					</item>
 				</content>
@@ -1262,7 +1262,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>Lower Menu</label>
+						<label>40000</label>
 						<onclick>Skin.ToggleSetting(lowermenu)</onclick>
 						<selected>Skin.HasSetting(lowermenu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>

@@ -166,4 +166,28 @@
   <string id="31509">Kanalgruppe</string>
   <string id="31510">Timer Set</string>
   <string id="31511">Kanal Optionen</string>
+  
+    <!-- MOD-STRINGS by mad-max !-->
+  <string id="40000">Niedriges Menü</string>
+  <string id="40001">Verstecke XBMC-Logo im Menü</string>
+  <string id="40002">Lower Panel verstecken</string>
+  <string id="40003">Erweitert</string>
+  <string id="40004">Mod-Settings</string>
+  <string id="40005">Nur verfügbar ohne "Niedriges Menü"</string>
+  <string id="40006">CDArt aktivieren in Visualisierung</string>
+  <string id="40007">DB-Editor</string>
+  <string id="40008">Grüne HD-Flags</string>
+  <string id="40009">Konzerte</string>
+  <string id="40010">Fanart im HomeScreen bei Musik-Wiedergabe</string>
+  <string id="40011">TV Tunes aktivieren</string>
+  <string id="40012">Neue Filme</string>
+  <string id="40013">Neue Episoden</string>
+  <string id="40014">Es läuft:</string>
+  <string id="40015">Auto-Slideout der Submenüs deaktivieren</string>
+  <string id="40016"> - PFAD ZUR PLAYLIST</string>
+  <string id="40017"> - BUTTON NAME</string>
+  <string id="40018">Musik-Root-Ordner wählen (für Artist-Logo)</string>
+  <string id="40019">Deutsche FSK-Logos für Altersfreigabe</string>
+  <string id="40020">Staffeln</string>
+  <string id="40021">PAUSE</string>
 </strings>
