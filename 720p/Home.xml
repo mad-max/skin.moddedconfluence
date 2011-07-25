@@ -1234,6 +1234,26 @@
 				<textcolor>blue</textcolor>
 				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
+				<visible>!Player.HasAudio</visible>
+			</control>
+			<control type="image">
+				<posx></posx>
+				<posy>-25</posy>
+				<width>2280</width>
+				<height>75</height>
+				<texture>HomeButtonsBack.png</texture>
+				<visible>Player.HasAudio</visible>
+			</control>
+			<control type="label">
+				<description>RSS feed</description>
+				<posx>100</posx>
+				<posy>0</posy>
+				<height>30</height>
+				<width>1145</width>
+				<font>font12</font>
+				<visible>Player.HasAudio</visible>
+				<scroll>true</scroll>
+				<label>$LOCALIZE[40022] | | 1: $INFO[MusicPlayer.offset(1).Artist]- $INFO[MusicPlayer.offset(1).Title] | 2: $INFO[MusicPlayer.offset(2).Artist]- $INFO[MusicPlayer.offset(2).Title] | 3: $INFO[MusicPlayer.offset(3).Artist]- $INFO[MusicPlayer.offset(3).Title] | 4: $INFO[MusicPlayer.offset(4).Artist]- $INFO[MusicPlayer.offset(4).Title] | 5: $INFO[MusicPlayer.offset(5).Artist]- $INFO[MusicPlayer.offset(5).Title] | 6: $INFO[MusicPlayer.offset(6).Artist]- $INFO[MusicPlayer.offset(6).Title] | 7: $INFO[MusicPlayer.offset(7).Artist]- $INFO[MusicPlayer.offset(7).Title] | 8: $INFO[MusicPlayer.offset(8).Artist]- $INFO[MusicPlayer.offset(8).Title] | 9: $INFO[MusicPlayer.offset(9).Artist]- $INFO[MusicPlayer.offset(9).Title] | 10: $INFO[MusicPlayer.offset(10).Artist]- $INFO[MusicPlayer.offset(10).Title]|</label>
 			</control>
 			<control type="image">
 				<description>RSS background</description>

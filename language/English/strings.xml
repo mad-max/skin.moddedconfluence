@@ -189,5 +189,30 @@
   <string id="31907">Video Forecast [COLOR=grey2](Fullscreen Playback)[/COLOR]</string>
   <string id="31908">Chance of Precipitation</string>
   <string id="31909">Fetching forecast info...</string>
+  
+     <!-- MOD-STRINGS by mad-max !-->
+  <string id="40000">Lower Menu</string>
+  <string id="40001">Hide XBMC-Logo in Home</string>
+  <string id="40002">Hide Floor</string>
+  <string id="40003">Advanced</string>
+  <string id="40004">Mod-Settings</string>
+  <string id="40005">Only avaible without "lower menu"</string>
+  <string id="40006">Enable CDArt</string>
+  <string id="40007">DB-Editor</string>
+  <string id="40008">Green HD-Flags</string>
+  <string id="40009">Concerts</string>
+  <string id="40010">Fanart in Home while playing music</string>
+  <string id="40011">Enable TV Tunes</string>
+  <string id="40012">Latest Movies</string>
+  <string id="40013">Latest Episodes</string>
+  <string id="40014">Now Playing:</string>
+  <string id="40015">Disable Auto-Slideout of Submenus</string>
+  <string id="40016"> - PATH TO PLAYLIST</string>
+  <string id="40017"> - BUTTON NAME</string>
+  <string id="40018">Choose Music-Root-Folder (for Artist-Logo)</string>
+  <string id="40019">German FSK-Flags for MPAA Rating</string>
+  <string id="40020">Seasons</string>
+  <string id="40021">PAUSED</string>
+  <string id="40022">Next 10 Tracks</string>
 
 </strings>
