@@ -20,6 +20,7 @@
 	<include file="ViewVideoLandscape.xml" />
 	<include file="WeatherWidget.xml" />
 	<include file="ViewsMusicFanart.xml" />
+	<include file="ViewsMusicLowList.xml" />
 	
 	
 	
