@@ -10,9 +10,28 @@
 			<width>1280</width>
 			<height>720</height>
 		</control>
+		<control type="image">
+			<description>visualisation background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+		   <!-- <colordiffuse>eeeeeeee</colordiffuse> -->
+				<visible>!Visualisation.Enabled</visible>
+				<texture fallback="Fanart_Fallback_Music_Small.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+		</control>
+		<control type="image">
+			<description>visualisation background</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<colordiffuse>99999999</colordiffuse>
+				<visible>Visualisation.Enabled</visible>
+				<texture fallback="Fanart_Fallback_Music_Small.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+		</control>
 		<!-- media infos -->
 		<control type="group">
-			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<control type="image">
 				<posx>0</posx>
@@ -70,9 +89,37 @@
 				<height>230</height>
 				<texture>HomeNowPlayingBack.png</texture>
 			</control>
+			<!-- ==================== CD ART ================== -->
+			<control type="group">
+				<visible>Skin.HasSetting(cdart)</visible>
+				<posx>130</posx>
+				<posy>485</posy>
+					<animation effect="fade" time="900" condition="Skin.HasSetting(zombie_osd)">VisibleChange</animation>
+					<animation effect="slide" time="300" start="-350,0" end="0,0" delay="0" condition="Skin.HasSetting(zombie_osd)">WindowOpen</animation>
+					<animation effect="slide" time="300" start="0,0" end="-360,0" delay="0" condition="Skin.HasSetting(zombie_osd)">WindowClose</animation>
+			<!-- CD Animation -->
+			<control type="image">
+				<description>Cd Disc</description>
+					<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+					<animation type="WindowClose">
+					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+					<effect type="fade" start="100" end="0" time="1300"/>
+					<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="!Player.Paused + !Skin.HasSetting(zombie_osd)">Conditional</animation>
+					<animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="!Player.Paused + Skin.HasSetting(zombie_osd)">Conditional</animation>
+					<width>200</width>
+					<height>200</height>
+					<posx>0</posx>
+					<posy>0</posy>
+					<texture fallback="cdart\default.png">$INFO[Player.FolderPath]cdart.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+					</control>
+					</control>
+<!-- =========== END CDART ============= -->
 			<control type="image">
 				<description>cover image</description>
-				<posx>20</posx>
+				<posx>-20</posx>
 				<posy>250r</posy>
 				<width>300</width>
 				<height>230</height>
@@ -259,5 +306,13 @@
 				<font>font12</font>
 			</control>
 		</control>
+	<!--   UNDER CONSTRUCTION	
+		<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[Player.Artist]/logo.png</texture>
+		</control> -->
 	</controls>
 </window>

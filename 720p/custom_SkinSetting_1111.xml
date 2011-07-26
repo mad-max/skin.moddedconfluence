@@ -1307,6 +1307,19 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="511">
+						<description>cdart</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40006</label>
+						<onclick>Skin.ToggleSetting(cdart)</onclick>
+						<selected>Skin.HasSetting(cdart)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
