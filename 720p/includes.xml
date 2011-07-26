@@ -21,6 +21,8 @@
 	<include file="WeatherWidget.xml" />
 	<include file="ViewsMusicFanart.xml" />
 	<include file="ViewsMusicLowList.xml" />
+	<include file="ViewsVideoBannerwall.xml" />
+	<include file="ViewsVideoBannerLow.xml" />
 	
 	
 	

@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,550,551,560,501,508,504,503,505,511,727,723</views>
+	<views>50,51,500,550,551,560,501,508,504,503,505,511,727,723,519,520</views>
 	<controls>
 		<control type="button" id="9999"> <!-- TVTunes mod -->
             <description>trigger</description>
@@ -29,6 +29,9 @@
 			<include>LiveTVView1</include> <!-- view id = 560 -->
 			<include>HalfWall2</include> <!-- view id = 727 (Showcase) -->
 			<include>Landscape</include> <!-- view id = 723 -->
+			<include>BannerWallView</include> <!-- view id = 519 -->
+			<include>BannerLow</include> <!-- view id = 520 -->
+									
 		</control>
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
