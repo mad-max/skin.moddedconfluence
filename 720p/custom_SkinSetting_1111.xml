@@ -1346,7 +1346,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="990">
+					<control type="button" id="514">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1358,7 +1358,7 @@
 						<focusedcolor>white</focusedcolor>
 						<onclick>Skin.SetString(Music_Folder_Path)</onclick>
 					</control>
-					<control type="radiobutton" id="992">
+					<control type="radiobutton" id="515">
 						<description>disable auto slideout of submenus</description>
 						<width>750</width>
 						<height>40</height>
@@ -1368,6 +1368,19 @@
 						<label>40015</label>
 						<onclick>Skin.ToggleSetting(noslide)</onclick>
 						<selected>Skin.HasSetting(noslide)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="516">
+						<description>green hd flag</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40008</label>
+						<onclick>Skin.ToggleSetting(greenhd)</onclick>
+						<selected>Skin.HasSetting(greenhd)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
