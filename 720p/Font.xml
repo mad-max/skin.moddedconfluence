@@ -95,6 +95,12 @@
 			<filename>DejaVuSans-Bold.ttf</filename>
 			<size>80</size>
 		</font>
+		
+		<font>
+			<name>Big_Text</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>250</size>
+		</font>
 	</fontset>
 
 	<fontset id="Default_NoCaps" idloc="31391" unicode="true">
