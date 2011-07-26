@@ -108,6 +108,46 @@
 			<texture>flagging/ratings/mpaa_nc17.png</texture>
 			<visible>substring(Listitem.mpaa,Rated NC)</visible>
 		</control>
+		<control type="image">
+			<description>Germany FSK 0</description>
+			<width>249</width>
+			<height>57</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/Germany0.png</texture>
+			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.)</visible>
+		</control>
+		<control type="image">
+			<description>Germany FSK 6</description>
+			<width>249</width>
+			<height>57</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/Germany6.png</texture>
+			<visible>substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6)</visible>
+		</control>
+		<control type="image">
+			<description>Germany FSK 12</description>
+			<width>249</width>
+			<height>57</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/Germany12.png</texture>
+			<visible>substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12)</visible>
+		</control>
+		<control type="image">
+			<description>Germany FSK 16</description>
+			<width>249</width>
+			<height>57</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/Germany16.png</texture>
+			<visible>substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16)</visible>
+		</control>
+		<control type="image">
+			<description>Germany FSK 18</description>
+			<width>249</width>
+			<height>57</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/Germany18.png</texture>
+			<visible>substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18)</visible>
+		</control>
 	</include>
 	<include name="AudioCodecFlaggingConditions">
 		<control type="image">
