@@ -979,6 +979,20 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Pictures_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 					</item>
+					<item id="3">
+						<label>2</label>
+						<onclick>ActivateWindow(Music)</onclick>
+						<icon>special://skin/backgrounds/music.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
+					</item>
+					<item id="17">
+						<label>40009</label>
+						<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
+						<icon>special://skin/backgrounds/musicvideos.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoMusicVideosButton)</visible>
+					</item>
 					<item id="12">
 						<label>31502</label>
 						<onclick>ActivateWindow(PVR)</onclick>
@@ -1014,13 +1028,6 @@
 						<icon>special://skin/backgrounds/videos.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible>
-					</item>
-					<item id="3">
-						<label>2</label>
-						<onclick>ActivateWindow(Music)</onclick>
-						<icon>special://skin/backgrounds/music.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible>
 					</item>
 					<item id="1">
 						<label>0</label>

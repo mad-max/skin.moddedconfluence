@@ -535,6 +535,19 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="229">
+						<description>Hide MusicVideos Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[40009]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoMusicVideosButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoMusicVideosButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					<control type="radiobutton" id="225">
 						<description>Hide Pictures Button</description>
 						<width>750</width>
@@ -757,6 +770,13 @@
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/music.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Music_Folder)]</thumb>
+							</item>
+							<item id="9">
+								<label>40009</label>
+								<label2>Home_Custom_Back_MusicVideos_Folder</label2>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/musicvideos.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 							</item>
 							<item id="3">
 								<label>1</label>
