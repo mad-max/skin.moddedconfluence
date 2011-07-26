@@ -1320,6 +1320,19 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="512">
+						<description>fanart in homescreen</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40010</label>
+						<onclick>Skin.ToggleSetting(fanartinhome)</onclick>
+						<selected>Skin.HasSetting(fanartinhome)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">

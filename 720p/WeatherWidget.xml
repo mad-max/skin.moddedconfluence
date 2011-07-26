@@ -1,7 +1,7 @@
 <includes>
 	<include name="WeatherWidget">
 						<control type="group">
-				<visible>Container(9000).HasFocus(7)</visible>
+				<visible>Container(9000).HasFocus(7) + Skin.HasSetting(LowerMenu)</visible>
 				<posx>400</posx>
 				<posy>60</posy>
 				<control type="image">
