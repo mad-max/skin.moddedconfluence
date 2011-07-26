@@ -1128,6 +1128,20 @@
 						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
 						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
 					</control>
+					<control type="button" id="105">
+						<description>Edit library</description>
+						<visible>container.content(movies)</visible>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<onclick>XBMC.RunScript(script.library.editor)</onclick>
+						<label>40007</label>
+					</control>
+					<control type="button" id="104">
+						<description>Edit Library</description>
+						<visible>container.content(episodes) | container.content(TVShows) | container.content(seasons)</visible>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<onclick>XBMC.RunScript(script.library.editor)</onclick>
+						<label>40007</label>
+					</control>
 				</control>
 			</control>
 		</control>
