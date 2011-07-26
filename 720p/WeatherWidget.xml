@@ -43,7 +43,7 @@
 						<width>460</width>
 						<height>35</height>
 						<font>font13_title</font>
-						<info>Window(Weather).Property(Day1.Title)</info>
+						<info>Window(Weather).Property(Day0.Title)</info>
 						<align>center</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
@@ -55,7 +55,7 @@
 						<posy>40</posy>
 						<height>80</height>
 						<width>80</width>
-						<info>Window(Weather).Property(Day1.OutlookIcon)</info>
+						<info>Window(Weather).Property(Day0.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
 					</control>
 					<control type="label">
@@ -76,7 +76,7 @@
 						<posx>110</posx>
 						<posy>50</posy>
 						<height>20</height>
-						<label>$INFO[Window(Weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
+						<label>$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
 						<font>font13</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -101,7 +101,7 @@
 						<posx>290</posx>
 						<posy>50</posy>
 						<height>20</height>
-						<label>$INFO[Window(Weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
+						<label>$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
 						<font>font13</font>
 						<align>left</align>
 						<aligny>center</aligny>
