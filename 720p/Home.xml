@@ -46,6 +46,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<visible>!Skin.HasSetting(nologo)</visible>
 		</control>
+		<control type="group" id="99">
+					<include condition="Skin.HasSetting(WeatherWidget)">WeatherWidget</include>
+				</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>125</posy>

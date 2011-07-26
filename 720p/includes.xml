@@ -18,6 +18,8 @@
 	<include file="weather+\MapsVideo.xml" />
 	<include file="ViewVideoShowcase.xml" />
 	<include file="ViewVideoLandscape.xml" />
+	<include file="WeatherWidget.xml" />
+	
 	
 	
 
