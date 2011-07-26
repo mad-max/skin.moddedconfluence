@@ -32,6 +32,19 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
+				<control type="label">
+					<description>header label</description>
+					<posx>20</posx>
+					<posy>40</posy>
+					<width>460</width>
+					<height>30</height>
+					<font>font13_title</font>
+					<label>$INFO[Window(Weather).Property(Location)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
 				<control type="group">
 					<description>day 0</description>
 					<posx>20</posx>
