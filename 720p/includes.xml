@@ -19,6 +19,8 @@
 	<include file="ViewVideoShowcase.xml" />
 	<include file="ViewVideoLandscape.xml" />
 	<include file="WeatherWidget.xml" />
+	<include file="ViewsMusicFanart.xml" />
+	
 	
 	
 	
