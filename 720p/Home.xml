@@ -1000,6 +1000,22 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</item>
+					<item id="15">
+						<description>Custom Playlist 1</description>
+						<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Menu_Custom1_Folder)]</thumb>
+						<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom1_Path)],return)</onclick>
+						<visible>Skin.HasSetting(Menu_Custom1)</visible>
+					</item>
+					<item id="16">
+						<description>Custom Playlist 2</description>
+						<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Menu_Custom2_Folder)]</thumb>
+						<onclick>XBMC.ActivateWindow(10025,$INFO[Skin.String(Menu_Custom2_Path)],return)</onclick>
+						<visible>Skin.HasSetting(Menu_Custom2)</visible>
+					</item>
 					<item id="2">
 						<label>3</label>
 						<onclick>ActivateWindow(Videos)</onclick>
