@@ -23,6 +23,7 @@
 	<include file="ViewsMusicLowList.xml" />
 	<include file="ViewsVideoBannerwall.xml" />
 	<include file="ViewsVideoBannerLow.xml" />
+	<include file="ViewsVideoRightList.xml" />
 	
 	
 	
