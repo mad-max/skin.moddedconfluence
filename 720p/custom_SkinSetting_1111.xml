@@ -1269,39 +1269,39 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="508">
-						<description>Show Recently added info</description>
+						<description>(de)activate floor.png in home</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>No floor</label>
+						<label>40002</label>
 						<onclick>Skin.ToggleSetting(nofloor)</onclick>
 						<selected>Skin.HasSetting(nofloor)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="509">
-						<description>Show Recently added info</description>
+						<description>(de)activate xbmc-logo in home</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>no logo</label>
+						<label>40001</label>
 						<onclick>Skin.ToggleSetting(nologo)</onclick>
 						<selected>Skin.HasSetting(nologo)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="510">
-						<description>Show Recently added info</description>
+						<description>Show weather info in home</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>no logo</label>
+						<label>40023</label>
 						<onclick>Skin.ToggleSetting(WeatherWidget)</onclick>
 						<selected>Skin.HasSetting(WeatherWidget)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1330,6 +1330,44 @@
 						<label>40010</label>
 						<onclick>Skin.ToggleSetting(fanartinhome)</onclick>
 						<selected>Skin.HasSetting(fanartinhome)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="513">
+						<description>show german mpaa rating</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40019</label>
+						<onclick>Skin.ToggleSetting(germanmpaa)</onclick>
+						<selected>Skin.HasSetting(germanmpaa)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="button" id="990">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>40018</label>
+						<label2>$INFO[Skin.String(Music_Folder_Path)]</label2>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<onclick>Skin.SetString(Music_Folder_Path)</onclick>
+					</control>
+					<control type="radiobutton" id="992">
+						<description>disable auto slideout of submenus</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40015</label>
+						<onclick>Skin.ToggleSetting(noslide)</onclick>
+						<selected>Skin.HasSetting(noslide)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>

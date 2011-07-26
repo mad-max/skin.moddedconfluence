@@ -806,6 +806,9 @@
 					<onright>9010</onright>
 					<visible>Container(9000).HasFocus(2)</visible>
 					<include>HomeSubMenuVideos</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9016">
 					<include>HomeSubMenuCommonValues</include>
@@ -813,6 +816,9 @@
 					<onright>9016</onright>
 					<visible>Container(9000).HasFocus(10)</visible>
 					<include>HomeSubMenuMovies</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9017">
 					<include>HomeSubMenuCommonValues</include>
@@ -820,6 +826,9 @@
 					<onright>9017</onright>
 					<visible>Container(9000).HasFocus(11)</visible>
 					<include>HomeSubMenuTVShows</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9011">
 					<include>HomeSubMenuCommonValues</include>
@@ -827,6 +836,9 @@
 					<onright>9011</onright>
 					<visible>Container(9000).HasFocus(3)</visible>
 					<include>HomeSubMenuMusic</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9012">
 					<include>HomeSubMenuCommonValues</include>
@@ -834,6 +846,9 @@
 					<onright>9012</onright>
 					<visible>Container(9000).HasFocus(5)</visible>
 					<include>HomeSubMenuSystem</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9013">
 					<include>HomeSubMenuCommonValues</include>
@@ -841,6 +856,9 @@
 					<onright>9013</onright>
 					<visible>Container(9000).HasFocus(6)</visible>
 					<include>HomeSubMenuPlayDisc</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9014">
 					<include>HomeSubMenuCommonValues</include>
@@ -848,6 +866,9 @@
 					<onright>9014</onright>
 					<visible>Container(9000).HasFocus(12)</visible>
 					<include>HomeSubMenuLiveTV</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 				<control type="grouplist" id="9015">
 					<include>HomeSubMenuCommonValues</include>
@@ -855,6 +876,9 @@
 					<onright>9013</onright>
 					<visible>Container(9000).HasFocus(4)</visible>
 					<include>HomeSubMenuPictures</include> <!-- Buttons for the grouplist -->
+					<animation effect="fade" start="100" end="0" time="0" condition="!ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="0" end="100" delay="300" time="200" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">conditional</animation>
+					<animation effect="fade" start="100" end="0" time="0" condition="ControlGroup(9001).HasFocus + Skin.HasSetting(noslide)">WindowClose</animation>
 				</control>
 			</control>
 			<control type="image">
