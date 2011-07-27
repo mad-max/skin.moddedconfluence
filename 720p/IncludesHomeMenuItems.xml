@@ -61,6 +61,11 @@
 			<label>369</label>
 			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
 		</control>
+		<control type="button" id="90105">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>744</label>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+		</control>
 		<control type="button" id="90164">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>135</label>

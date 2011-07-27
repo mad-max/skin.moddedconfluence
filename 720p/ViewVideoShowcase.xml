@@ -26,7 +26,7 @@
 				<info>ListItem.Label</info>
 			</control>
 			<control type="wraplist" id="727">
-				<visible>Container.Content(Movies)</visible>
+				<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 				<posx>-20</posx>
 				<posy>40</posy>
 				<width>1320</width>
@@ -152,6 +152,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<texture>$INFO[listitem.Studio,flagging/studios/,.png]</texture>
+					<visible>!Container.Content(MusicVideos)</visible>
 			</control>
 			<control type="grouplist">
 				<description>MPAA Rating Flagging Images</description>
