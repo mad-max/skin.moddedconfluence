@@ -1566,6 +1566,19 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="517">
+						<description>fade out of controls in viz</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40024</label>
+						<onclick>Skin.ToggleSetting(cleanviz)</onclick>
+						<selected>Skin.HasSetting(cleanviz)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">

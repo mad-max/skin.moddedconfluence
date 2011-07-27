@@ -32,6 +32,7 @@
 		</control>
 		<!-- media infos -->
 		<control type="group">
+		<animation condition="!Skin.HasSetting(cleanviz)">VisibleChange</animation>
 			<visible>[Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 			<control type="image">
 				<posx>0</posx>
@@ -40,6 +41,13 @@
 				<height>256</height>
 				<texture flipy="true">HomeNowPlayingBack.png</texture>
 			</control>
+			<control type="image">
+				<posx>990</posx>
+				<posy>520</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[MusicPlayer.Artist]/logo.png</texture>
+		</control>  
 			<control type="label">
 				<description>Partymode Header label</description>
 				<posx>30</posx>
@@ -257,7 +265,6 @@
 			<posx>0</posx>
 			<posy>50</posy>
 			<visible>Player.ShowCodec + ![Window.IsVisible(script-XBMC_Lyrics-main.xml) | Window.IsVisible(VisualisationSettings) | Window.IsVisible(VisualisationPresetList)]</visible>
-			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="image">
 				<description>media info background image</description>
 				<posx>0</posx>
@@ -306,13 +313,5 @@
 				<font>font12</font>
 			</control>
 		</control>
-	<!--   UNDER CONSTRUCTION	
-		<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>276</width>
-				<height>107</height>
-				<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[Player.Artist]/logo.png</texture>
-		</control> -->
 	</controls>
 </window>
