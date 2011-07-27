@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.moddedconfluence.pvr" version="0.6" name="Confluence-MOD PVR" provider-name="mad-max" >
+<addon id="skin.moddedconfluence" version="0.8" name="Confluence-MOD" provider-name="mad-max" >
   <requires>
     <import addon="xbmc.gui" version="3.00"/>
-	<import addon="script.library.editor" version="1.0.0"/>
-	<import addon="script.tvtunes" version="1.0.1"/>
-	<import addon="script.globalsearch" version="0.0.3"/>
   </requires>
   <extension
     point="xbmc.gui.skin"
@@ -12,10 +9,12 @@
     defaultresolutionwide="720p"
     defaultthemename="textures.xbt"
     effectslowdown="0.75"
-    debugging="true"/>
+    debugging="false"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Confluence-MOD by mad-max (Credits to Jezz_X)</summary>
     <summary lang="de">Confluence-MOD von mad-max (Credits to Jezz_X)</summary>
+	<description lang="en">My Confluence-MOD came up as alternative for Skins, that were too heavy for ATV2 or ION-systems.[CR]Confluence as base is a fast skin, which became quite handsome because of severeal MODs like CDArt, Clearlogo and many others</description>
+	<description lang="de">Der Confluence-MOD entsand als Alternative zu den Skins, welche auf einem ATV2 oder ION-System zu schwerfällig waren.[CR]Confluence als Basis gibt einen schnellen Skin, welcher durch diverse MODs, z.B. CDArt, Clearlogo-Support [CR]und weitere zu einer schönen Augenweide geworden ist</description>
     <platform>all</platform>
   </extension>
 </addon>

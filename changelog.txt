@@ -1,3 +1,11 @@
+[B]0.8[/B]
+
+- Fixed a bug in "VideoFullScreen.xml"
+- Added support for "Clean Visualization" (Fade-Out Effect of controls)
+- Added Support for Genre-Artwork for Movies
+- again, Code-Cleanup
+
 [B]0.7[/B]
 
 - Added PVR-Support to the Horizontal Confluence-MOD
+- Added WeatherWidget on Home-Screen
