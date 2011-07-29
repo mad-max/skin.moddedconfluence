@@ -2,8 +2,8 @@
 	<include name="VideoCodecFlaggingConditions">
 		<control type="image">
 			<description>Video rez Image</description>
-			<width>55</width>
-			<height>35</height>
+			<width>77</width>
+			<height>29</height>
 			<aspectratio align="right">keep</aspectratio>
 			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
 		</control>
