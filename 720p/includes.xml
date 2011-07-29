@@ -24,7 +24,9 @@
 	<include file="ViewsVideoBannerwall.xml" />
 	<include file="ViewsVideoBannerLow.xml" />
 	<include file="ViewsVideoRightList.xml" />
+	<include file="Views3dCoverView.xml" />
 	
+		
 	
 	
 	

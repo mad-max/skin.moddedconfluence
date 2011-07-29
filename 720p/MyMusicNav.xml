@@ -1,7 +1,7 @@
 <window id="502">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,550,551,509,506,511,512,513,547,733</views>
+	<views>50,51,500,550,551,509,506,511,512,513,547,733,555</views>
 	<controls>
 		<include>CommonMusicBackground</include>
 		<include>CommonMediaPlayingBackground</include>
@@ -20,6 +20,7 @@
 			<include>AddonInfoThumbView1</include> <!-- view id = 551 -->
 			<include>MusicFanart</include> <!-- view id = 547 -->
 			<include>MusicLowList</include> <!-- view id = 733 -->
+			<include>3d_CoverView_Music</include> <!-- view id = 555 -->
 		</control>
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
