@@ -214,5 +214,7 @@
   <string id="40020">Seasons</string>
   <string id="40021">PAUSED</string>
   <string id="40022">Next 10 Tracks</string>
+  <string id="40023">Show WeatherWidget in Home Screen</string>
+  <string id="40024">Hide Controls in MusikVisualization (Fade-Effect)</string>
 
 </strings>
