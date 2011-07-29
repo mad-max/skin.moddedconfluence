@@ -575,6 +575,28 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
+				<control type="label">
+					<description>type</description>
+					<posx>995</posx>
+					<posy>370</posy>
+					<width>422</width>
+					<height>25</height>
+					<label>[COLOR blue]Codec: [/COLOR]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="image">
+					<description>Audio Codec Image</description>
+					<posx>1050</posx>
+					<posy>363</posy>
+					<width>80</width>
+					<height>35</height>
+					<aspectratio align="right">keep</aspectratio>
+					<texture>$INFO[ListItem.FileExtension,flagging/audio/,.png]</texture>
+				</control>
 				<control type="image">
 					<posx>895</posx>
 					<posy>445</posy>
