@@ -402,7 +402,7 @@
 					<description>Album</description>
 					<posx>805</posx>
 					<posy>290</posy>
-					<width>422</width>
+					<width>722</width>
 					<height>25</height>
 					<label>[COLOR blue]Album: [/COLOR]$INFO[ListItem.Album]</label>
 					<align>left</align>
@@ -540,7 +540,7 @@
 					<description>Album</description>
 					<posx>805</posx>
 					<posy>290</posy>
-					<width>250</width>
+					<width>350</width>
 					<height>25</height>
 					<label>[COLOR blue]Album: [/COLOR]$INFO[ListItem.Album]</label>
 					<align>left</align>
