@@ -197,7 +197,7 @@
 					<width>720</width>
 					<height>16</height>
 					<info>Player.Progress</info>
-					<visible>Player.Forwarding | Player.Rewinding | Player.Seeking | Player.DisplayAfterSeek</visible>
+					<visible>Player.Forwarding | Player.Rewinding | Player.Seeking | Player.DisplayAfterSeek | Player.Paused</visible>
 				</control>
 				<control type="label" id="1">
 					<posx>920</posx>
@@ -223,10 +223,10 @@
 			    </control>
 				<control type="image" id="1">
 						<description>Video Resolution Image</description>
-						<posx>545</posx>
-						<posy>10</posy>
-						<width>77</width>
-						<height>29</height>
+						<posx>550</posx>
+						<posy>5</posy>
+						<width>50</width>
+						<height>35</height>
 						<aspectratio align="center">keep</aspectratio>
 						<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 					</control>
@@ -319,7 +319,7 @@
 					<aligny>center</aligny>
 					<font>Big_Text</font>
 					<label>40021</label>
-					<textcolor>33FFFFFF</textcolor>
+					<textcolor>grey3</textcolor>
 					<visible>Player.Paused</visible>
 				<!-- stoli - animation added -->
 					<animation type="Visible">
