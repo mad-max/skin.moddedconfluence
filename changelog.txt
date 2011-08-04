@@ -4,6 +4,7 @@
 - Added support for "Clean Visualization" (Fade-Out Effect of controls)
 - Added Support for Genre-Artwork for Movies
 - again, Code-Cleanup
+- some other stuff
 
 [B]0.7[/B]
 
