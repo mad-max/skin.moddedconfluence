@@ -1,0 +1,309 @@
+<includes>
+<include name="Fanart Case Wrap">
+	<!-- <control type="image">
+		<animation effect="fade" time="200">WindowClose</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation> 
+			<posx>0</posx> 	
+			<posy>690</posy> 	
+			<height>30</height> 	
+			<width>1380</width>
+			<texture>contentpanel.png</texture>
+	</control> 	 -->
+	<control type="group">
+		<visible>!Container(543).OnNext + !Container(543).OnPrevious</visible> 
+		<animation effect="fade" time="200">WindowClose</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation>
+	<control type="image">
+			<posx>0</posx> 	
+			<posy>-30</posy> 	
+			<height>760</height> 	
+			<width>1380</width>
+			<texture>contentpanel.png</texture>
+			<visible>Control.IsVisible(543)</visible>
+	</control>
+	</control>
+	<control type="wraplist" id="543"> 	
+		<camera x="640" y="360" /> 	
+		<viewtype label="Fanart Case Wrap">bigwrap</viewtype> 	
+		<visible>Container.Content(movies)</visible> 	
+		<animation effect="fade" time="200">WindowClose</animation> 	
+		<posx>-256</posx> 	
+		<posy>375</posy> 	
+		<width>1536</width> 	
+		<height>345</height> 	
+		<scrolltime>200</scrolltime> 	
+		<focusposition>3</focusposition> 	
+		<orientation>horizontal</orientation> 	
+		<onleft>543</onleft> 	
+		<onright>543</onright> 	
+		<onup>2</onup> 	
+		<ondown>73</ondown> 	
+		<preloaditems>5</preloaditems> 	
+		<pagecontrol>73</pagecontrol> 	
+		<itemlayout height="375" width="256"> 	
+			<control type="image"> 	
+				<posx>36.44</posx> 	
+				<posy>25</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
+				<texture background="true">defaultdvdposter.png</texture> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx> 	
+				<posy>25</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
+				<info>ListItem.Thumb</info> 	
+				<texture background="true"/> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>0</posy> 	
+				<width>183</width> 	
+				<height>272</height> 	
+				<texture background="true">flagging/cases/560.png</texture> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>0</posy> 	
+				<width>183</width> 	
+				<height>272</height> 	
+				<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>281.87</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">defaultdvdposter.png</texture> 	
+				<colordiffuse>90ffffff</colordiffuse> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>281.87</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
+				<info>ListItem.Thumb</info> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png"/> 	
+				<colordiffuse>90ffffff</colordiffuse> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>272</posy> 	
+				<width>183</width> 	
+				<height>269</height> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">flagging/cases/560.png</texture> 	
+				<colordiffuse>white</colordiffuse> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>272</posy> 	
+				<width>183</width> 	
+				<height>269</height> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+				<colordiffuse>white</colordiffuse> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>173.33</posx> 	
+				<posy>239</posy> 	
+				<width>64</width> 	
+				<height>45</height> 	
+				<info>ListItem.Overlay</info> 	
+				<visible>!Skin.HasSetting(menu-overlay)</visible> 	
+			</control> 	
+		</itemlayout> 	
+		<focusedlayout height="375" width="256"> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>25</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
+				<info>ListItem.Thumb</info> 	
+				<texture background="true">defaultdvdposter.png</texture> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+				<animation type="Focus"> 	
+					<effect type="zoom" tween="cubic" end="-1.77,-20,250.50,340.17" time="400"/> 
+				</animation> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>0</posy> 	
+				<width>183</width> 	
+				<height>272</height> 	
+				<texture background="true">flagging/cases/560.png</texture> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+				<animation type="Focus"> 	
+					<effect type="zoom" tween="cubic" end="-1.77,-53.75,259.55,383.42" time="400"/> 	
+				</animation> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>0</posy> 	
+				<width>183</width> 	
+				<height>272</height> 	
+				<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+				<aspectratio aligny="bottom">stretch</aspectratio> 	
+				<animation type="Focus"> 	
+					<effect type="zoom" tween="cubic" end="-1.77,-53.75,259.55,383.42" time="400"/> 	
+				</animation> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>281.87</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
+				<info>ListItem.Thumb</info> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">defaultdvdposter.png</texture> 	
+				<colordiffuse>99ffffff</colordiffuse> 	
+				<animation type="Focus"> 	
+					<effect type="zoom" tween="cubic" end="-1.77,339.37,250.50,340.17" time="400"/> 	
+				</animation> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>269</posy> 	
+				<width>183</width> 	
+				<height>269</height> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">flagging/cases/560.png</texture> 	
+				<colordiffuse>99ffffff</colordiffuse> 	
+				<animation type="Focus"> 	
+					<effect type="zoom" tween="cubic" end="-1.77,327.80,259.55,382.17" time="400"/> 	
+				</animation> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>36.44</posx>	
+				<posy>269</posy> 	
+				<width>183</width> 	
+				<height>269</height> 	
+				<aspectratio aligny="top">stretch</aspectratio> 	
+				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+				<colordiffuse>99ffffff</colordiffuse> 	
+				<animation type="Focus"> 	
+					<effect type="zoom" tween="cubic" end="-1.77,327.80,259.55,382.17" time="400"/> 	
+				</animation> 	
+			</control> 	
+			<control type="image"> 	
+				<posx>173.33</posx> 	
+				<posy>239</posy> 	
+				<width>64</width> 	
+				<height>45</height> 	
+				<info>ListItem.Overlay</info> 	
+				<visible>!Skin.HasSetting(menu-overlay)</visible> 	
+				<animation effect="zoom" tween="cubic" end="197.33,278.12,88.88,62.50" time="400">Focus</animation> 	
+			</control> 	
+		</focusedlayout> 	
+	</control>
+		<control type="group"> 
+		<posx>0</posx> 	
+		<posy>0</posy>
+		<visible>!Container(543).OnNext + !Container(543).OnPrevious</visible> 
+		<animation effect="fade" time="200">WindowClose</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation>
+		<control type="label">
+			<posx>0</posx> 	
+			<posy>80</posy> 	
+			<height>25</height> 	
+			<width>1280</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>true</scroll> 	
+			<font>font30_title</font>
+			<label>$INFO[ListItem.label]</label>			
+			<align>center</align> 	
+			<aligny>center</aligny> 	
+			<scroll>true</scroll> 	
+		</control> 
+		<control type="label">
+			<posx>150</posx> 	
+			<posy>130</posy> 	
+			<height>25</height> 	
+			<width>1280</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>true</scroll> 	
+			<font>font13</font>
+			<label>[COLOR=blue] $LOCALIZE[20339]: [/COLOR] $INFO[ListItem.Director]</label>			
+			<align>left</align> 	
+			<aligny>left</aligny> 	
+			<scroll>true</scroll> 	
+		</control>
+		<control type="label">
+			<posx>150</posx> 	
+			<posy>170</posy> 	
+			<height>25</height> 	
+			<width>1280</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>true</scroll> 	
+			<font>font13</font>
+			<label>[COLOR=blue] $LOCALIZE[2050]: [/COLOR] $INFO[ListItem.duration] $LOCALIZE[12391]</label>			
+			<align>left</align> 	
+			<aligny>left</aligny> 	
+			<scroll>true</scroll> 	
+		</control>
+		<control type="label">
+			<posx>150</posx> 	
+			<posy>210</posy> 	
+			<height>25</height> 	
+			<width>1280</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>true</scroll> 	
+			<font>font13</font>
+			<label>[COLOR=blue] $LOCALIZE[13408]: [/COLOR] $INFO[ListItem.rating]</label>			
+			<align>left</align> 	
+			<aligny>left</aligny> 	
+			<scroll>true</scroll> 	
+		</control>
+		<control type="label">
+			<posx>150</posx> 	
+			<posy>250</posy> 	
+			<height>25</height> 	
+			<width>1280</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>true</scroll> 	
+			<font>font13</font>
+			<label>[COLOR=blue] $LOCALIZE[40025]: [/COLOR] $INFO[ListItem.mpaa]</label>			
+			<align>left</align> 	
+			<aligny>left</aligny> 	
+			<scroll>true</scroll> 	
+		</control>
+		<control type="label">
+			<posx>150</posx> 	
+			<posy>290</posy> 	
+			<height>25</height> 	
+			<width>480</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>false</scroll> 	
+			<font>font13</font>
+			<label>[COLOR=blue] $LOCALIZE[40026]: [/COLOR] $INFO[ListItem.genre]</label>			
+			<align>left</align> 	
+			<aligny>left</aligny> 	
+			<scroll>true</scroll> 	
+		</control>
+		<control type="textbox">
+			<posx>750</posx> 	
+			<posy>125</posy> 	
+			<height>190</height> 	
+			<width>480</width> 	
+			<textcolor>white</textcolor> 	
+			<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll> 	
+			<font>font13</font>
+			<label>[COLOR=blue] $LOCALIZE[40027]: [/COLOR] $INFO[ListItem.plot]</label>			
+			<align>left</align> 	
+			<aligny>left</aligny> 	
+			<scroll>true</scroll> 	
+		</control>
+		
+</control>
+	</include> 	 
+</includes>

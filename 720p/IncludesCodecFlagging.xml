@@ -56,7 +56,7 @@
 			<height>35</height>
 			<aspectratio align="left">keep</aspectratio>
 			<texture>flagging/video/TV.png</texture>
-			<visible>[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,hdtv) | substring(ListItem.FilenameAndPath,dsr)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+			<visible>[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,sdtv) | substring(ListItem.FilenameAndPath,dsr)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
 		<control type="image">
 			<description>VHS Image</description>

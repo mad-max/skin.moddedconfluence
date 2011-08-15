@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,550,551,560,501,508,504,503,505,511,727,723,519,520,725</views>
+	<views>50,51,500,550,551,560,501,508,504,503,505,511,727,723,519,520,725,543</views>
 	<controls>
 		<control type="button" id="9999"> <!-- TVTunes mod -->
             <description>trigger</description>
@@ -32,6 +32,7 @@
 			<include>BannerWallView</include> <!-- view id = 519 -->
 			<include>BannerLow</include> <!-- view id = 520 -->
 			<include>RightList</include> <!-- view id = 725 -->
+			<include>Fanart Case Wrap</include> <!-- view id = 725 -->
 									
 		</control>
 		<include>CommonPageCount</include>
