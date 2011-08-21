@@ -27,7 +27,7 @@
 	<control type="wraplist" id="543"> 	
 		<camera x="640" y="360" /> 	
 		<viewtype label="Fanart Case Wrap">bigwrap</viewtype> 	
-		<visible>Container.Content(movies)</visible> 	
+		<visible>Container.Content(movies) | Container.Content(Musicvideos)</visible> 	
 		<animation effect="fade" time="200">WindowClose</animation> 	
 		<posx>-256</posx> 	
 		<posy>375</posy> 	
