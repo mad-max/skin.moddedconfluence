@@ -98,8 +98,8 @@
 						<bordersize>4</bordersize>
 						<fadetime>200</fadetime>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
-						<animation reversible="false" effect="zoom" start="-2,16,128,168" end="-60,-110,242,297" time="200">focus</animation>
-						<animation reversible="false" effect="zoom" end="-2,16,128,168" start="-60,-110,242,297" time="200">unfocus</animation>
+						<animation reversible="false" effect="zoom" start="-2,16,128,168" end="-58,-125,242,317" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" end="-2,16,128,168" start="-58,-125,242,317" time="200">unfocus</animation>
 					</control>
 					<control type="image">
 						<posx>-2</posx>
