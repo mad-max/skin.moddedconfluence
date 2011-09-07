@@ -22,8 +22,6 @@
 			<include>MusicLowList</include> <!-- view id = 733 -->
 			<include>3d_CoverView_Music</include> <!-- view id = 555 -->
 		</control>
-		<include>CommonPageCount</include>
-		<include>CommonNowPlaying</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">
