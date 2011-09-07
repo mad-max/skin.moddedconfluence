@@ -21,7 +21,7 @@
 				<texture>ContentPanel.png</texture>
 			</control>
 			<control type="wraplist" id="723">
-				<visible>>!Window.IsVisible(VideoFiles) + Container.Content(Episodes)</visible>
+				<visible>Container.Content(Episodes)</visible>
 				<posx>0</posx>
 				<posy>360</posy>
 				<width>1526</width>
