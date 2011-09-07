@@ -1,16 +1,14 @@
 <includes>
 <include name="Fanart Case Wrap">
-	<!-- <control type="image">
-		<animation effect="fade" time="200">WindowClose</animation> 	
-		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
-		<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation> 
+	<control type="image">
 			<posx>0</posx> 	
-			<posy>690</posy> 	
-			<height>30</height> 	
+			<posy>-30</posy> 	
+			<height>760</height> 	
 			<width>1380</width>
-			<texture>contentpanel.png</texture>
-	</control> 	 -->
-	<control type="group">
+			<texture>special://skin/backgrounds/musicvideos.jpg</texture>
+			<visible>Control.IsVisible(543) + Container.Content(musicvideos)</visible>
+	</control>
+		<control type="group">
 		<visible>!Container(543).OnNext + !Container(543).OnPrevious</visible> 
 		<animation effect="fade" time="200">WindowClose</animation> 	
 		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
