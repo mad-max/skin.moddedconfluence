@@ -32,11 +32,9 @@
 			<include>BannerWallView</include> <!-- view id = 519 -->
 			<include>BannerLow</include> <!-- view id = 520 -->
 			<include>RightList</include> <!-- view id = 725 -->
-			<include>Fanart Case Wrap</include> <!-- view id = 725 -->
+			<include>Fanart Case Wrap</include> <!-- view id = 543 -->
 									
 		</control>
-		<include>CommonPageCount</include>
-		<include>CommonNowPlaying</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="group">
