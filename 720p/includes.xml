@@ -28,13 +28,7 @@
 	<include file="ViewsVideoCaseWrap.xml" />
 	<include file="ViewVideoLandscape.xml" />
 	<include file="ViewMusicWallstream.xml" />
-
-	
-	
-		
-	
-	
-	
+	<include file="Viewtype_Lowlist.xml" />
 
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
