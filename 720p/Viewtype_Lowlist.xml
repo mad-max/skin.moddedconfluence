@@ -168,7 +168,7 @@
 				<control type="image">
 					<posx>805</posx>
 					<posy>455</posy>
-					<width>422</width>
+					<width>160</width>
 					<height>4</height>
 					<texture>separator.png</texture>
 				</control>
@@ -223,6 +223,14 @@
 					<label>[COLOR blue]Plot Outline: [/COLOR]$INFO[Container.ShowPlot]</label>
 					<autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
+		<!--		<control type="image">
+					<posx>950</posx>
+					<posy>370</posy>
+					<width>276</width>
+					<height>107</height>
+					<texture background="true" fallback="logo/fallback.png">$INFO[ListItem.path]logo.png</texture>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+				</control> -->
 			</control>
 			<control type="group">
 				<posx>20</posx>
