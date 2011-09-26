@@ -27,6 +27,7 @@
 	<include file="Views3dCoverView.xml" />
 	<include file="ViewsVideoCaseWrap.xml" />
 	<include file="ViewVideoLandscape.xml" />
+	<include file="ViewMusicWallstream.xml" />
 
 	
 	
