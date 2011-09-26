@@ -100,21 +100,9 @@
 						<texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture>
 						<aspectratio scalediffuse="false">scale</aspectratio>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
+						<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
 						</animation>
 						<visible>!IsEmpty(ListItem.Title)</visible>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>278</width>
-						<height>164</height>
-						<texture>episodeframe.png</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" />
-							<effect type="fade" start="0" end="100" time="200" />
-						</animation>
-						<visible>!IsEmpty(ListItem.Title) + [Skin.HasSetting(HideTVWatchedOverlays) | !stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 					<control type="image">
 						<posx>166</posx>
@@ -154,7 +142,7 @@
 				<posx>621</posx>
 				<posy>112</posy>
 				<width>628</width>
-				<height>80</height>
+				<height>78</height>
 				<align>left</align>
 				<info>Container(728).ListItem.Plot</info>
 				<textcolor>white</textcolor>
