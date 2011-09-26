@@ -1047,10 +1047,10 @@
 					</item>
 					<item id="22">
 					<description>TV GUIDE</description>
-					<label>TV GUIDE</label>
+					<label>40028</label>
 					<icon>special://skin/backgrounds/tvguide.jpg</icon>
 					<onclick>ActivateWindow(1116)</onclick>
-					<visible>!Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
+					<visible>Skin.HasSetting(HomeMenuNoTVGuideButton)</visible>
 					</item>
 					<item id="1">
 						<label>0</label>
