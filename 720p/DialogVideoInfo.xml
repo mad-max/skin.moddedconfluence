@@ -1142,6 +1142,14 @@
 						<onclick>XBMC.RunScript(script.library.editor)</onclick>
 						<label>40007</label>
 					</control>
+					<control type="button" id="13">
+						<description>Home Cinema Experience</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>40029</label>
+						<onclick>Dialog.Close(MovieInformation)</onclick>
+						<onclick>Playlist.Clear</onclick>
+						<onclick>RunScript(special://home/addons/script.cinema.experience/addon.py)</onclick>
+				</control>
 				</control>
 			</control>
 		</control>
