@@ -1592,6 +1592,18 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="518">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>40030</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(kiosk)</onclick>
+						<selected>Skin.HasSetting(kiosk)</selected>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
