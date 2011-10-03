@@ -1,21 +1,12 @@
 <includes>
 	<include name="MusicFanart">
-			<control type="image"> <!-- bottom bar background -->
-			<posx>0</posx>
-			<posy>210r</posy>
-			<width>1280</width>
-			<height>700</height>
-			<aspectratio>stretch</aspectratio>
-			<texture>rightlistbackground.png</texture>
-			<visible>Control.IsVisible(547)</visible>
-		</control>
 		<control type="image"> <!-- bottom bar background -->
-			<posx>0</posx>
+			<posx>-20</posx>
 			<posy>170r</posy>
-			<width>1280</width>
+			<width>1380</width>
 			<height>700</height>
 			<aspectratio>stretch</aspectratio>
-			<texture>rightlistbackground.png</texture>
+			<texture>ContentPanel60.png</texture>
 			<visible>Control.IsVisible(547)</visible>
 		</control>
 		<control type="group">
