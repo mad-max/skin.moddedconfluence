@@ -1175,16 +1175,6 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="label" id="499">
-							<width>750</width>
-							<height>45</height>
-							<font>font13_title</font>
-							<label>40005</label>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<visible>Skin.HasSetting(LowerMenu)</visible>
-						</control>
 						<control type="button" id="421">
 							<width>750</width>
 							<height>40</height>
@@ -1261,16 +1251,6 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="label" id="499">
-							<width>750</width>
-							<height>45</height>
-							<font>font13_title</font>
-							<label>40005</label>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<visible>Skin.HasSetting(LowerMenu)</visible>
-						</control>
 						<control type="button" id="431">
 							<width>750</width>
 							<height>40</height>
@@ -1346,16 +1326,6 @@
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-						</control>
-						<control type="label" id="499">
-							<width>750</width>
-							<height>45</height>
-							<font>font13_title</font>
-							<label>40005</label>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-							<visible>Skin.HasSetting(LowerMenu)</visible>
 						</control>
 						<control type="button" id="441">
 							<width>750</width>
