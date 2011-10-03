@@ -1,9 +1,23 @@
 <includes>
 <include name="Fanart Case Wrap">
+	<control type="group">
+		<visible>!Container(543).OnNext + !Container(543).OnPrevious</visible> 
+		<animation effect="fade" time="200">WindowClose</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
+		<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation>
+	<control type="image">
+			<posx>0</posx> 	
+			<posy>-30</posy> 	
+			<height>760</height> 	
+			<width>1380</width>
+			<texture>contentpanel60.png</texture>
+			<visible>Control.IsVisible(543) + !Container.Content(MusicVideos)</visible>
+	</control>
+	</control>
 	<control type="wraplist" id="543"> 	
 		<camera x="640" y="360" /> 	
 		<viewtype label="Fanart Case Wrap">bigwrap</viewtype> 	
-		<visible>Container.Content(movies) | Container.Content(musicvideos)</visible> 	
+		<visible>Container.Content(movies) | Container.Content(Musicvideos)</visible> 	
 		<animation effect="fade" time="200">WindowClose</animation> 	
 		<posx>-256</posx> 	
 		<posy>375</posy> 	
@@ -28,44 +42,44 @@
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
 			</control> 	
 			<control type="image"> 	
-				<posx>72</posx> 	
-				<posy>15</posy> 	
-				<width>210</width> 	
-				<height>310</height> 	
+				<posx>36.44</posx> 	
+				<posy>25</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
 				<info>ListItem.Thumb</info> 	
 				<texture background="true"/> 	
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
-			</control>  	
+			</control> 	
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>0</posy> 	
-				<width>258.75</width> 	
-				<height>340</height>  	
+				<width>183</width> 	
+				<height>272</height> 	
 				<texture background="true">flagging/cases/560.png</texture> 	
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
 			</control> 	
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>0</posy> 	
-				<width>258.75</width> 	
-				<height>340</height> 	
+				<width>183</width> 	
+				<height>272</height> 	
 				<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
 			</control> 	
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>281.87</posy> 	
-				<width>210</width> 	
-				<height>310</height> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
 				<aspectratio aligny="top">stretch</aspectratio> 	
 				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">defaultdvdposter.png</texture> 	
 				<colordiffuse>90ffffff</colordiffuse> 	
 			</control> 	
 			<control type="image"> 	
-				<posx>72</posx> 	
-				<posy>15</posy> 	
-				<width>210</width> 	
-				<height>310</height>	
+				<posx>36.44</posx>	
+				<posy>281.87</posy> 	
+				<width>176.72</width> 	
+				<height>240</height> 	
 				<info>ListItem.Thumb</info> 	
 				<aspectratio aligny="top">stretch</aspectratio> 	
 				<texture background="true" flipy="true" diffuse="Thumb_Mask.png"/> 	
@@ -74,8 +88,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>272</posy> 	
-				<width>258.75</width> 	
-				<height>340</height> 	
+				<width>183</width> 	
+				<height>269</height> 	
 				<aspectratio aligny="top">stretch</aspectratio> 	
 				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">flagging/cases/560.png</texture> 	
 				<colordiffuse>white</colordiffuse> 	
@@ -83,8 +97,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>272</posy> 	
-				<width>258.75</width> 	
-				<height>340</height>  	
+				<width>183</width> 	
+				<height>269</height> 	
 				<aspectratio aligny="top">stretch</aspectratio> 	
 				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
 				<colordiffuse>white</colordiffuse> 	
@@ -102,8 +116,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>25</posy> 	
-				<width>210</width> 	
-				<height>310</height>	
+				<width>176.72</width> 	
+				<height>240</height> 	
 				<info>ListItem.Thumb</info> 	
 				<texture background="true">defaultdvdposter.png</texture> 	
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
@@ -114,8 +128,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>0</posy> 	
-				<width>258.75</width> 	
-				<height>340</height>  	
+				<width>183</width> 	
+				<height>272</height> 	
 				<texture background="true">flagging/cases/560.png</texture> 	
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
 				<animation type="Focus"> 	
@@ -125,8 +139,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>0</posy> 	
-				<width>258.75</width> 	
-				<height>340</height> 	
+				<width>183</width> 	
+				<height>272</height> 	
 				<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
 				<aspectratio aligny="bottom">stretch</aspectratio> 	
 				<animation type="Focus"> 	
@@ -149,8 +163,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>269</posy> 	
-				<width>258.75</width> 	
-				<height>340</height>  	
+				<width>183</width> 	
+				<height>269</height> 	
 				<aspectratio aligny="top">stretch</aspectratio> 	
 				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">flagging/cases/560.png</texture> 	
 				<colordiffuse>99ffffff</colordiffuse> 	
@@ -161,8 +175,8 @@
 			<control type="image"> 	
 				<posx>36.44</posx>	
 				<posy>269</posy> 	
-				<width>258.75</width> 	
-				<height>340</height> 	
+				<width>183</width> 	
+				<height>269</height> 	
 				<aspectratio aligny="top">stretch</aspectratio> 	
 				<texture background="true" flipy="true" diffuse="Thumb_Mask.png">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
 				<colordiffuse>99ffffff</colordiffuse> 	
@@ -178,24 +192,13 @@
 				<info>ListItem.Overlay</info> 	
 				<visible>!Skin.HasSetting(menu-overlay)</visible> 	
 				<animation effect="zoom" tween="cubic" end="197.33,278.12,88.88,62.50" time="400">Focus</animation> 	
-			</control> 
-<control type="image"> 	
-				<posx>-39</posx>	
-				<posy>-25</posy> 	
-				<width>305</width> 	
-				<height>360</height> 	
-				<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
-				<aspectratio aligny="bottom">stretch</aspectratio> 	
-			<!--	<animation type="Focus"> 	
-					<effect type="zoom" tween="cubic" end="-1.77,-53.75,259.55,383.42" time="400"/> 
-				</animation> --> 	
-			</control> 				
+			</control> 	
 		</focusedlayout> 	
 	</control>
 		<control type="group"> 
 		<posx>0</posx> 	
 		<posy>0</posy>
-		<visible>!Container(543).OnNext + !Container(543).OnPrevious + Control.IsVisible(543) + Container.Content(movies)</visible> 
+		<visible>!Container(543).OnNext + !Container(543).OnPrevious + Control.IsVisible(543) + !Container.Content(MusicVideos)</visible> 
 		<animation effect="fade" time="200">WindowClose</animation> 	
 		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
 		<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation>
@@ -290,7 +293,6 @@
 			<aligny>left</aligny> 	
 			<scroll>true</scroll> 	
 		</control>
-		
-</control>
+		</control>
 	</include> 	 
 </includes>
