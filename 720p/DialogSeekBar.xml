@@ -319,7 +319,7 @@
 					<aligny>center</aligny>
 					<font>Big_Text</font>
 					<label>40021</label>
-					<textcolor>grey3</textcolor>
+					<textcolor>33FFFFFF</textcolor>
 					<visible>Player.Paused</visible>
 				<!-- stoli - animation added -->
 					<animation type="Visible">
