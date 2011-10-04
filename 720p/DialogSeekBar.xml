@@ -223,10 +223,10 @@
 			    </control>
 				<control type="image" id="1">
 						<description>Video Resolution Image</description>
-						<posx>550</posx>
+						<posx>545</posx>
 						<posy>5</posy>
-						<width>50</width>
-						<height>35</height>
+						<width>77</width>
+						<height>29</height>
 						<aspectratio align="center">keep</aspectratio>
 						<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
 					</control>
