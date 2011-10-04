@@ -988,7 +988,7 @@
 					</item>
 					<item id="17">
 						<label>40009</label>
-						<onclick>ActivateWindow(Videos,MusicVideos,return)</onclick>
+						<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 						<icon>special://skin/backgrounds/musicvideos.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_MusicVideos_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoMusicVideosButton)</visible>
