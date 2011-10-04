@@ -83,7 +83,7 @@
 				<posy>-20</posy>
 				<width>1280</width>
 				<height>720</height>
-				<colordiffuse>99999999</colordiffuse>
+			   <colordiffuse>aaeaeaea</colordiffuse>
 				<visible>Visualisation.Enabled + Skin.HasSetting(fanartinhome)</visible>
 		<texture fallback="DefaultFanart.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 		</control>
