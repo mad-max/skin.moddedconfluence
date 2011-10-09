@@ -343,7 +343,7 @@
 			<height>35</height>
 			<aspectratio align="left">keep</aspectratio>
 			<texture>flagging/video/TV.png</texture>
-			<visible>[substring(Player.FilenameAndPath,pdtv) | substring(Player.FilenameAndPath,hdtv) | substring(Player.FilenameAndPath,dsr)] | substring(Player.FilenameAndPath,serien) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+			<visible>[substring(Player.FilenameAndPath,pdtv) | substring(Player.FilenameAndPath,hdtv) | substring(Player.FilenameAndPath,dsr)] | substring(Player.FilenameAndPath,serien) + !Skin.HasSetting(HideFilenameFlagging) | VideoPlayer.Content(LiveTV) + Player.Playing</visible>
 		</control>
 		<control type="image" id="1">
 			<description>VHS Image</description>
