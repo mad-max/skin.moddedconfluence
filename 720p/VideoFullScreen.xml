@@ -84,6 +84,18 @@
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 				<visible>VideoPlayer.Content(Movies)</visible>
+			</control> 
+			<control type="image" id="1">
+				<description>cover image</description>
+				<posx>20</posx>
+				<posy>260r</posy>
+				<width>300</width>
+				<height>230</height>
+				<texture>$INFO[VideoPlayer.ChannelName,flagging/tvchannels/,.png]</texture>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="8">ThumbShadow.png</bordertexture>
+				<bordersize>8</bordersize>
+				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</control>
 			<control type="group" id="1">
 				<posx>330</posx>
@@ -304,8 +316,19 @@
 					<aligny>center</aligny>
 					<texture>$INFO[VideoPlayer.Studio,flagging/studios/,.png]</texture>
 					<visible>!Player.HasAudio</visible>
-			</control>
-			<control type="image" id="1">
+					</control>
+				<control type="image" id="1">
+					<posx>400</posx>
+					<posy>-10</posy>
+					<width>100</width>
+					<height>64</height>
+					<aspectratio>keep</aspectratio>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texture>$INFO[VideoPlayer.ChannelName,flagging/studios/,.png]</texture>
+					<visible>!Player.HasAudio + VideoPlayer.Content(LiveTV)</visible>
+					</control>
+				<control type="image" id="1">
 			<description>Bluray Image</description>
 			<posx>650</posx>
 			<posy>5</posy>
