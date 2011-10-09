@@ -305,7 +305,7 @@
 					<texture>$INFO[VideoPlayer.Studio,flagging/studios/,.png]</texture>
 					<visible>!Player.HasAudio</visible>
 			</control>
-			<control type="image">
+			<control type="image" id="1">
 			<description>Bluray Image</description>
 			<posx>650</posx>
 			<posy>5</posy>
@@ -315,7 +315,7 @@
 			<texture>flagging/video/bluray.png</texture>
 			<visible>[substring(Player.FilenameAndPath,bluray) | substring(Player.FilenameAndPath,bdrip)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="1">
 			<description>HDDVD Image</description>
 			<posx>650</posx>
 			<posy>5</posy>
@@ -325,7 +325,7 @@
 			<texture>flagging/video/hddvd.png</texture>
 			<visible>substring(Player.FilenameAndPath,hddvd) + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="1">
 			<description>DVD Image</description>
 			<posx>650</posx>
 			<posy>5</posy>
@@ -335,7 +335,7 @@
 			<texture>flagging/video/dvd.png</texture>
 			<visible>[substring(Player.FilenameAndPath,dvd) + ![substring(Player.FilenameAndPath,hddvd) | substring(Player.FilenameAndPath,bluray) | substring(Player.FilenameAndPath,bdrip)]] + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="1">
 			<description>TV Types Image</description>
 			<posx>650</posx>
 			<posy>5</posy>
@@ -345,7 +345,7 @@
 			<texture>flagging/video/TV.png</texture>
 			<visible>[substring(Player.FilenameAndPath,pdtv) | substring(Player.FilenameAndPath,hdtv) | substring(Player.FilenameAndPath,dsr)] | substring(Player.FilenameAndPath,serien) + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
-		<control type="image">
+		<control type="image" id="1">
 			<description>VHS Image</description>
 			<posx>650</posx>
 			<posy>5</posy>
