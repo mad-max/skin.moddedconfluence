@@ -208,7 +208,7 @@
 					<texture>$INFO[listitem.Studio,flagging/studios/,.png]</texture>
 				</control>
 				<control type="image">
-					<posx>645</posx>
+					<posx>550</posx>
 					<posy>-605</posy>
 					<width>276</width>
 					<height>107</height>
