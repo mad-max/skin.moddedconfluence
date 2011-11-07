@@ -216,5 +216,12 @@
   <string id="40022">Next 10 Tracks</string>
   <string id="40023">Show WeatherWidget in Home Screen</string>
   <string id="40024">Hide Controls in MusikVisualization (Fade-Effect)</string>
-
+  <string id="40025">MPAA-Rating</string>
+  <string id="40026">Genre</string>
+  <string id="40027">Plot</string>
+  <string id="40028">TV GUIDE</string>
+  <string id="40029">Cinema</string>
+  <string id="40030">Enable Kiosk-Mode</string>
+  <string id="40031">Latest Albums</string>
+  <string id="40032">Latest Concerts</string>
 </strings>
