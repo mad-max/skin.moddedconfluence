@@ -1,3 +1,16 @@
+[B]1.0.1[/B]
+
+- fixed codec flag for video resolution
+- fixed pause label in DialogSeekBar.xml 
+- fixed concert button to go directly into titles
+- fixed bug in Home.xml with turned on vis and colordiffuse 
+- fixed bug that prevented showing the source flag in VideoFullScreen.xml while pressing "i" or "m"
+- fixed some issues in VideoFullScreen.xml for LiveTV
+- rearranged infos and added logo.png-support for Rightlist (TVShows)
+- added "recently added albums" to home screen 
+- added "latest-concerts" widget in home-screen 
+- updated English/strings.xml 
+
 [B]1.0[/B]
 
 - added new viewtype "Episodes" for tv-show-episodes
