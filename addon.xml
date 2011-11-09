@@ -8,7 +8,7 @@
     defaultresolution="720p"
     defaultresolutionwide="720p"
     effectslowdown="0.75"
-    debugging="false"/>
+    debugging="true"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Confluence-MOD by mad-max (Credits to Jezz_X)</summary>
     <summary lang="de">Confluence-MOD von mad-max (Credits to Jezz_X)</summary>

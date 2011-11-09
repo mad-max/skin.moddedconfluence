@@ -1586,6 +1586,18 @@
 						<onclick>Skin.ToggleSetting(extrafanart)</onclick>
 						<selected>Skin.HasSetting(extrafanart)</selected>
 					</control>
+					<control type="radiobutton" id="520">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>40034</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(showtrailer)</onclick>
+						<selected>Skin.HasSetting(showtrailer)</selected>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">

@@ -44,7 +44,7 @@
 				<onleft>727</onleft>
 				<onright>727</onright>
 				<onup>2</onup>
-				<ondown>60</ondown>
+				<ondown>666</ondown>
 				<viewtype label="Showcase">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
@@ -212,6 +212,26 @@
 				<include>VideoMPAAFlaggingConditions</include>
 				<visible>!Skin.HasSetting(germanmpaa) + Container.Content(Movies)</visible>
 			</control>
+		</control>
+		<control type="label">
+				<posx>15</posx>
+				<posy>465</posy>
+				<width>400</width>
+				<height>25</height>
+				<textcolor>white</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<label>40035</label>
+				<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(showtrailer) + Control.HasFocus(727) | Control.HasFocus(666)</visible>
+		</control>
+		<control type="button" id="666">
+		<width>1</width>
+		<height>1</height>
+		<posx>-10</posx>
+		<posy>465</posy>
+		<onfocus>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</onfocus>
+		<visible>Skin.HasSetting(showtrailer)</visible>
 		</control>
 	</include>
 </includes>	
