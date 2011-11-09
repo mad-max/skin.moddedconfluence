@@ -25,7 +25,7 @@
 			<control type="label">
 				<posx>330</posx>
 				<posy>230</posy>
-				<width>620</width>
+				<width>600</width>
 				<height>25</height>
 				<font>font30_title</font>
 				<textcolor>white</textcolor>
