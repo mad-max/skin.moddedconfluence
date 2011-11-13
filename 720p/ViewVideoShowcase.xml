@@ -33,6 +33,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<info>ListItem.Label</info>
+				<scroll>true</scroll>
 			</control>
 
 			<control type="wraplist" id="727">
