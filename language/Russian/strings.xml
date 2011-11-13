@@ -157,4 +157,39 @@
 <string id="31408">[B]НАСТРОЙКА ДОПОЛНЕНИЙ[/B][CR][CR]Управление установленными дополнениями · Установка дополнений с xbmc.org[CR]Изменение настроек дополнений</string>
 
   <string id="31421">Выберите ваш профиль пользователя XBMC[CR]чтобы войти в систему и продолжить.</string>
+  
+    <!-- MOD-STRINGS by mad-max translated by Roman_V_M !-->
+  <string id="40000">Нижнее меню</string>
+  <string id="40001">Скрыть логотип XBMC на главном экране</string>
+  <string id="40002">Скрыть нижнюю панель</string>
+  <string id="40003">Дополнительно</string>
+  <string id="40004">Настройки мода</string>
+  <string id="40005">Доступно только без нижнего меню</string>
+  <string id="40006">Включить CDArt</string>
+  <string id="40007">Редактор DB</string>
+  <string id="40008">Зеленые флажки HD</string>
+  <string id="40009">Концерты</string>
+  <string id="40010">Фанарт на главном экране при проигрывании музыки</string>
+  <string id="40011">Включить TV Tunes</string>
+  <string id="40012">Последние фильмы</string>
+  <string id="40013">Последние серии</string>
+  <string id="40014">Играет:</string>
+  <string id="40015">Отключить автовыдвижение подменю</string>
+  <string id="40016"> - ПУТЬ К ПЛЕЙЛИСТУ</string>
+  <string id="40017"> - ИМЯ КНОПКИ</string>
+  <string id="40018">Выбрать корневую папку с музыкой (для логотипа исполнителя)</string>
+  <string id="40019">Германские флаги FSK для рейтинга MPAA</string>
+  <string id="40020">Сезоны</string>
+  <string id="40021">ПАУЗА</string>
+  <string id="40022">Следующие 10 треков</string>
+  <string id="40023">Показывать виджет погоды на главном экране</string>
+  <string id="40024">Скрыть управление визуализацией музыки (эффект спада)</string>
+  <string id="40025">Рейтинг MPAA</string>
+  <string id="40026">Жанр</string>
+  <string id="40027">Сюжет</string>
+  <string id="40028">ТВ-ГИД</string>
+  <string id="40029">Кино</string>
+  <string id="40030">Режим киоска</string>
+  <string id="40031">Последние альбомы</string>
+  <string id="40032">Последние концерты</string>
 </strings>
