@@ -231,7 +231,7 @@
 					<description>Genre Value</description>
 					<posx>685</posx>
 					<posy>30</posy>
-					<width>260</width>
+					<width>185</width>
 					<height>25</height>
 					<label fallback="416">$INFO[listitem.Genre]</label>
 					<align>left</align>
