@@ -1072,6 +1072,7 @@
 						<onclick>ActivateWindow(Settings)</onclick>
 						<icon>special://skin/backgrounds/settings.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Settings_Folder)]</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoSystemButton)</visible>
 					</item>
 				</content>
 			</control>
