@@ -242,14 +242,41 @@ repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 <texture>$INFO[ListItem.Property(fanart_image)]</texture>
 </control>
 <control type="image">
-						<visible>Container.Content(episodes)</visible>
-						<posx>120</posx>
-						<posy>30</posy>
-						<width>276</width>
-						<height>107</height>
-						<texture background="true" fallback="logo/fallback.png">$INFO[ListItem.path]logo.png</texture>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
-						</control>
+<visible>Container.Content(episodes)</visible>
+<posx>120</posx>
+<posy>30</posy>
+<width>276</width>
+<height>107</height>
+<texture background="false" fallback="logo/fallback.png">$INFO[ListItem.path]/logo.png</texture>
+<aspectratio scalediffuse="false">stretch</aspectratio>
+</control>
+<control type="image">
+<visible>Container.Content(episodes)</visible>
+<posx>120</posx>
+<posy>30</posy>
+<width>276</width>
+<height>107</height>
+<texture background="false" fallback="logo/fallback.png">$INFO[ListItem.path]../logo.png</texture>
+<aspectratio scalediffuse="false">stretch</aspectratio>
+</control>
+<control type="image">
+<visible>Container.Content(episodes)</visible>
+<posx>120</posx>
+<posy>30</posy>
+<width>276</width>
+<height>107</height>
+<texture background="false" fallback="logo/fallback.png">$INFO[ListItem.path]../../logo.png</texture>
+<aspectratio scalediffuse="false">stretch</aspectratio>
+</control>
+<control type="image">
+<visible>Container.Content(episodes)</visible>
+<posx>120</posx>
+<posy>30</posy>
+<width>276</width>
+<height>107</height>
+<texture background="false" fallback="logo/fallback.png">$INFO[ListItem.path]../../../logo.png</texture>
+<aspectratio scalediffuse="false">stretch</aspectratio>
+</control>
 <control type="grouplist">
 <description>Media Codec Flagging Images</description>
 <posx>500</posx>
