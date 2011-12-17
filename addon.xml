@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.moddedconfluence" version="1.0.1" name="Confluence-MOD" provider-name="mad-max" >
+<addon id="skin.moddedconfluence" version="1.0.2" name="Confluence-MOD" provider-name="mad-max" >
   <requires>
     <import addon="xbmc.gui" version="3.00"/>
   </requires>
@@ -8,7 +8,7 @@
     defaultresolution="720p"
     defaultresolutionwide="720p"
     effectslowdown="0.75"
-    debugging="true"/>
+    debugging="false"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Confluence-MOD by mad-max (Credits to Jezz_X)</summary>
     <summary lang="de">Confluence-MOD von mad-max (Credits to Jezz_X)</summary>

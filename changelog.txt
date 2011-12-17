@@ -1,3 +1,20 @@
+[B]1.0.2/B]
+
+- added support for WeatherFanart in Home based on condtion .Day0
+- added Swedish strings for the Mod (thx Thizizmyname)
+- added Russin strings for the Mod (thx Roman_V_M)
+- added watchlist support for tv-shows (needs watchlist-starter service addon from nerds-repo)
+- added support for extrafanart movie/episode view
+- added trailer-button in ViewsVideoShowcase
+- added source flag for iTunes (thx dt2510 for the image)
+- added option to hide system in home
+- fixed bug with overlaping flag and listitem.label in ViewsVideoShowcase.xml 
+- fixed bug with overlapping genre and title in RightlistView (TV-shows)
+- fixed bug with missing plot for tv shows (view mode 'info 2') when using posters instead of banners (thanks maetrik/Ben)
+- fixed bug that prevented displaying logo.png in ViewVideoLandscape.xml (thx M.t.B.)
+- fixed missing $[Localize] in Viewtype_Lowlist.xml (thx M.t.B.)
+- enabled scrolling of listitem.title in ViewsVideoShowcase.xml and shortened it a bit
+
 [B]1.0.1[/B]
 
 - fixed codec flag for video resolution
