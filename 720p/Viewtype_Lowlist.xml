@@ -220,7 +220,7 @@
 					<font>font12</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
-					<label>[COLOR blue]Plot Outline: [/COLOR]$INFO[Container.ShowPlot]</label>
+					<label>[COLOR blue]$LOCALIZE[40027]: [/COLOR]$INFO[Container.ShowPlot]</label>
 					<autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 		<!--		<control type="image">
