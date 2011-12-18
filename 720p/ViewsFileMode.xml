@@ -593,8 +593,8 @@
 						<posy>8</posy>
 						<width>40</width>
 						<height>26</height>
-						<texture>$INFO[ListItem.VideoResolution,flagging/lists/,new.png]</texture>
-						<visible>Window.IsVisible(Videos) + Skin.HasSetting(greenhd)[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+						<texture>$INFO[ListItem.VideoResolution,flagging/lists/,_new.png]</texture>
+						<visible>Window.IsVisible(Videos) + Skin.HasSetting(greenhd) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 					</control>
 					<control type="image">
 						<posx>1010</posx>
@@ -602,7 +602,7 @@
 						<width>40</width>
 						<height>26</height>
 						<texture>$INFO[ListItem.VideoResolution,flagging/lists/,.png]</texture>
-						<visible>Window.IsVisible(Videos) + !Skin.HasSetting(greenhd) [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+						<visible>Window.IsVisible(Videos) + !Skin.HasSetting(greenhd) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 					</control>
 					<control type="image">
 						<posx>1050</posx>
