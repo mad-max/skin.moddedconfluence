@@ -1623,6 +1623,18 @@
 						<onclick>Skin.ToggleSetting(watchlist)</onclick>
 						<selected>Skin.HasSetting(watchlist)</selected>
 					</control>
+					<control type="radiobutton" id="522">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>MovieDisc</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(moviedisc)</onclick>
+						<selected>Skin.HasSetting(moviedisc)</selected>
+					</control>
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
