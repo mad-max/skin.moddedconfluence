@@ -72,7 +72,7 @@
 			<height>38</height>
 			<aspectratio align="left">keep</aspectratio>
 			<texture>flagging/video/itunes.png</texture>
-			<visible>substring(ListItem.FilenameAndPath,itunes) | substring(ListItem.FilenameAndPath,webdl) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+			<visible>substring(ListItem.FilenameAndPath,itunes) | substring(ListItem.FilenameAndPath,web) + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
 	</include>
 	<include name="VideoMPAAFlaggingConditions">
