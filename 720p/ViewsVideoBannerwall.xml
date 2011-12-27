@@ -11,9 +11,9 @@
 				<posy>240</posy>
 				<width>1150</width>
 				<height>460</height>
-				<onleft>519</onleft>
+				<onleft>2</onleft>
 				<onright>519</onright>
-				<onup>2</onup>
+				<onup>519</onup>
 				<ondown>519</ondown>
 				<viewtype label="BannerRightList">wraplist</viewtype>
 				<orientation>vertical</orientation>
