@@ -1687,7 +1687,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>MovieDisc</label>
+						<label>40038</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1695,6 +1695,20 @@
 						<onclick>Skin.ToggleSetting(moviedisc)</onclick>
 						<selected>Skin.HasSetting(moviedisc)</selected>
 					</control>
+					<control type="radiobutton" id="523">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>40039</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(artistslide)</onclick>
+						<selected>Skin.HasSetting(artistslide)</selected>
+					</control>
+					
+					
 					</control>
 				</control>
 				<control type="scrollbar" id="61">
