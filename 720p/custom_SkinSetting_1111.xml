@@ -565,6 +565,49 @@
 							<onclick>Skin.SetFile(Menu_Custom2_Path,.xsp,special://videoplaylists)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom2)</visible>
 						</control>
+						<control type="radiobutton" id="507">
+							<description>custom home 8</description>
+							<font>cirrus_20</font>
+							<width>750</width>
+							<height>35</height>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<label>Custom Favorite</label>
+							<onclick>Skin.ToggleSetting(Menu_Custom8)</onclick>
+							<selected>Skin.HasSetting(Menu_Custom8)</selected>
+							<enable>!Skin.HasSetting(Menu_Movies_Sub8)</enable>
+						</control>
+						<control type="button" id="8215">
+							<description>Menu Movies Sub Custom8 Label</description>
+							<label>Label</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom8_Label)][/COLOR]</label2>
+							<width>750</width>
+							<height>35</height>
+							<font>cirrus_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Custom8_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom8)</visible>
+						</control>
+						<control type="button" id="8216">
+							<description>Menu Movies Sub Custom8 Path</description>
+							<label>Pfad</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom8_Path)][/COLOR]</label2>
+							<width>750</width>
+							<height>35</height>
+							<font>cirrus_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom8_Path)</onclick>
+							<onclick>ActivateWindow(1114)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom8)</visible>
+					</control>
 					<control type="label" id="220">
 						<width>750</width>
 						<height>45</height>
@@ -902,8 +945,17 @@
 								<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
 								<label2>$INFO[Skin.String(Menu_Custom1_Folder)]</label2>
 								<onclick>-</onclick>
-								<icon>special://skin/backgrounds/musicvideos.jpg</icon>
+								<icon>special://skin/backgrounds/videos.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+								<visible>Skin.HasSetting(Menu_Custom1)</visible>
+							</item>
+							<item id="199">
+								<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
+								<label2>$INFO[Skin.String(Menu_Custom2_Folder)]</label2>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/videos.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+								<visible>Skin.HasSetting(Menu_Custom2)</visible>
 							</item>
 							<item id="3">
 								<label>1</label>
@@ -940,6 +992,14 @@
 								<icon>special://skin/backgrounds/Addons.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 							</item>
+							<item id="23">
+							<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
+							<label2>Home_Custom_Back_Fav_Folder</label2>
+							<onclick>-</onclick>
+							<icon>special://skin/backgrounds/videos.jpg</icon>
+							<thumb>$INFO[Skin.String(Menu_Custom8_Folder)]</thumb>
+							<visible>Skin.HasSetting(Menu_Custom8)</visible>
+						</item>
 						</content>
 					</control>
 					<control type="image">
