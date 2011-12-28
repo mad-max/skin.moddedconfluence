@@ -18,7 +18,7 @@
 				<width>1280</width>
 				<height>720</height>
 		   <!-- <colordiffuse>eeeeeeee</colordiffuse> -->
-				<visible>!Visualisation.Enabled</visible>
+				<visible>!Visualisation.Enabled + Skin.HasSetting(fanartinhome)</visible>
 				<texture fallback="Fanart_Fallback_Music_Small.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 		</control>
 		<control type="image">
@@ -28,7 +28,7 @@
 				<width>1280</width>
 				<height>720</height>
 				<colordiffuse>99999999</colordiffuse>
-				<visible>Visualisation.Enabled + !Skin.HasSetting(artistslide)</visible>
+				<visible>Visualisation.Enabled + !Skin.HasSetting(artistslide) + Skin.HasSetting(fanartinhome)</visible>
 				<texture fallback="Fanart_Fallback_Music_Small.jpg">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
 		</control>
 	<!-- artist slideshow -->
