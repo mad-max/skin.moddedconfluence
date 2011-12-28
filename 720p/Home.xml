@@ -1353,6 +1353,14 @@
 			<posy>33r</posy>
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			<include>Window_OpenClose_Animation</include>
+			<control type="image">
+				<posx></posx>
+				<posy>-55</posy>
+				<width>2280</width>
+				<height>95</height>
+				<texture>HomeButtonsBack.png</texture>
+				<visible>!Player.HasAudio | system.getbool(lookandfeel.enablerssfeeds)</visible>
+			</control>
 			<control type="rss">
 				<description>RSS feed</description>
 				<posx>100</posx>
