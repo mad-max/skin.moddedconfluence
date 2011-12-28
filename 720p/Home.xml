@@ -139,6 +139,13 @@
 				<bordersize>5</bordersize>
 				<animation effect="slide" start="0,0" end="0,-190" time="0" condition="!Skin.HasSetting(LowerMenu)">Conditional</animation>
 			</control>
+			<control type="image">
+				<posx>10</posx>
+				<posy>180</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[MusicPlayer.Artist]/logo.png</texture>
+			</control>  
 			<control type="label">
 				<description>Album Label</description>
 				<posx>320</posx>
