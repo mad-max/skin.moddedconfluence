@@ -1,0 +1,119 @@
+<includes>
+	<include name="MusicFanart">
+		<control type="image"> <!-- bottom bar background -->
+			<posx>-20</posx>
+			<posy>170r</posy>
+			<width>1380</width>
+			<height>700</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>ContentPanel60.png</texture>
+			<visible>Control.IsVisible(547)</visible>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(547)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>530</posy>
+			<control type="fixedlist" id="547">
+				<visible>Window.IsVisible(MusicFiles) | Window.IsVisible(MusicPlaylist) |  Container.Content(Songs) | Container.Content(Artists) | Container.Content(Genres)</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>250</height>
+				<onleft>508</onleft>
+				<onright>508</onright>
+				<onup>2</onup>
+				<ondown>60</ondown>
+				<viewtype label="MusicFanart">wrap</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<focusposition>3</focusposition>
+				<movement>1</movement>
+				<orientation>horizontal</orientation>
+				<preloaditems>4</preloaditems>
+				<itemlayout height="200" width="180">
+					<control type="image">
+						<posx>2</posx>
+						<posy>25</posy>
+						<width>160</width>
+						<height>160</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>200</fadetime>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="8">ThumbBorder.png</bordertexture>
+						<bordersize>8</bordersize>
+						<visible>!Container.Content(Genres)</visible>
+					</control>
+					<!-- Butchabay MOD Music Genre -->
+				<control type="image">
+						<posx>2</posx>
+						<posy>25</posy>
+						<width>160</width>
+						<height>160</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>black-back3.png</texture>
+					</control>
+				</itemlayout>
+				<focusedlayout condition="-" height="200" width="180">
+					<control type="image">
+						<posx>-2</posx>
+						<posy>20</posy>
+						<width>170</width>
+						<height>170</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>200</fadetime>
+						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<bordertexture border="8">ThumbBorder.png</bordertexture>
+						<bordersize>8</bordersize>
+						 <visible>!Container.Content(Genres)</visible>
+					</control>
+		 		</focusedlayout>
+			</control>
+		</control>
+
+		<!-- Labels -->
+		<control type="label">
+			<visible>Control.IsVisible(547) + !Container.Content(Artists)</visible>
+			<posx>20</posx>
+			<posy>520</posy>
+			<width>600</width>
+			<height>25</height>
+			<label>$INFO[ListItem.Label]</label>
+			<scroll>true</scroll>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="label">
+			<visible>Control.IsVisible(547) + IsEmpty(Skin.String(Music_Folder_Path))</visible>
+			<posx>1260</posx>
+			<posy>520</posy>
+			<width>600</width>
+			<height>25</height>
+			<label>$INFO[ListItem.Artist]</label>
+			<scroll>true</scroll>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>font12</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+		</control>
+		<control type="image">
+			<posx>1050</posx>
+			<posy>450</posy>
+			<width>230</width>
+			<height>89</height>
+			<texture background="true">$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
+			<visible>Control.IsVisible(547)</visible>
+		</control>
+	<!-- FOR DEBUG PURPOSES 
+		<control type="label">
+			<posx>750</posx>
+			<posy>520</posy>
+			<label>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</label>
+			<visible>Control.IsVisible(547)</visible>
+		</control>  -->
+	</include>
+</includes>

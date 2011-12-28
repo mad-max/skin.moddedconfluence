@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.moddedconfluence" version="1.0.2" name="Confluence-MOD" provider-name="mad-max" >
+  <requires>
+    <import addon="xbmc.gui" version="3.00"/>
+  </requires>
+  <extension
+    point="xbmc.gui.skin"
+    defaultresolution="720p"
+    defaultresolutionwide="720p"
+    effectslowdown="0.75"
+    debugging="false"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Confluence-MOD by mad-max (Credits to Jezz_X)</summary>
+    <summary lang="de">Confluence-MOD von mad-max (Credits to Jezz_X)</summary>
+	<description lang="en">My Confluence-MOD came up as alternative for Skins, that were too heavy for ATV2 or ION-systems.[CR]Confluence as base is a fast skin, which became quite handsome because of severeal MODs like CDArt, Clearlogo and many others</description>
+	<description lang="de">Der Confluence-MOD entsand als Alternative zu den Skins, welche auf einem ATV2 oder ION-System zu schwerfällig waren.[CR]Confluence als Basis gibt einen schnellen Skin, welcher durch diverse MODs, z.B. CDArt, Clearlogo-Support [CR]und weitere zu einer schönen Augenweide geworden ist</description>
+    <platform>all</platform>
+  </extension>
+</addon>

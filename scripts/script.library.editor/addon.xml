@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.library.editor"
+       name="XBMC Library Editor"
+       version="1.0.0"
+       provider-name="Frost, GMib">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.library"
+             library="default.py" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Edit Movie, TVShow or MusicVideo Library</summary>
+    <description>Edit Movie, TVShow or MusicVideo Library</description>
+    <nochangelog>true</nochangelog>
+    <nofanart>true</nofanart>
+    <platform>all</platform>
+    <license>GPL</license>
+  </extension>
+</addon>

@@ -1,0 +1,368 @@
+<window id="115">
+	<defaultcontrol>1</defaultcontrol>
+	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
+	<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+	<controls>
+		<control type="group" id="1">
+			<visible>[Player.ShowInfo | Window.IsActive(VideoOSD)] | Player.Forwarding | Player.Rewinding | Player.Seeking | Player.DisplayAfterSeek + ![Window.IsVisible(123) | Window.IsVisible(124) | Window.IsVisible(125)] | Player.Paused</visible>
+			<animation effect="fade" time="200">VisibleChange</animation>
+			<control type="image" id="1">
+				<posx>0</posx>
+				<posy>-150</posy>
+				<width>1280</width>
+				<height>256</height>
+				<texture flipy="true">HomeNowPlayingBack.png</texture>
+			</control>			
+			<control type="image" id="1">
+				<posx>0</posx>
+				<posy>-50</posy>
+				<width>1280</width>
+				<height>256</height>
+				<texture flipy="true">HomeNowPlayingBack.png</texture>
+			</control>
+			<control type="label" id="1">
+				<description>Chapter Count Header label</description>
+				<posx>30</posx>
+				<posy>5</posy>
+				<width>1000</width>
+				<height>25</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=grey] - (,)[/COLOR]]</label>
+				<visible>Player.ChapterCount</visible>
+			</control>
+			<control type="label" id="1">
+				<description>Clock label</description>
+				<posx>1250</posx>
+				<posy>5</posy>
+				<width>800</width>
+				<height>25</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[System.Time]</label>
+				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(VideoOSD)">conditional</animation>
+			</control>
+			<control type="image" id="1">
+				<posx>0</posx>
+				<posy>230r</posy>
+				<width>1280</width>
+				<height>230</height>
+				<texture>HomeNowPlayingBack.png</texture>
+			</control>
+			<control type="image">
+				<posx>980</posx>
+				<posy>530</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture background="false">$INFO[Player.FolderPath]logo.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+			<control type="image" id="1">
+				<description>Cd Disc</description>
+					<animation effect="slide" start="-90" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+					<animation type="WindowClose">
+					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+					<effect type="fade" start="100" end="0" time="1300"/>
+					<condition type="!Player.Playing"/>
+					</animation>
+					<animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Paused + Skin.HasSetting(moviedisc)">Conditional</animation>
+					<width>200</width>
+					<height>200</height>
+					<posx>140</posx>
+					<posy>230r</posy>
+					<texture>$INFO[Player.FolderPath]cdart.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+			</control>
+			<control type="image" id="1">
+				<description>cover image</description>
+				<posx>20</posx>
+				<posy>260r</posy>
+				<width>300</width>
+				<height>230</height>
+				<info>VideoPlayer.Cover</info>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="8">Thumbborder.png</bordertexture>
+				<bordersize>8</bordersize>
+				<visible>!VideoPlayer.Content(Movies)</visible>
+			</control>
+			<control type="image" id="1">
+				<description>Movie cover image</description>
+				<posx>-10</posx>
+				<posy>350r</posy>
+				<width>300</width>
+				<height>330</height>
+				<info>VideoPlayer.Cover</info>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="8">ThumbBorder.png</bordertexture>
+				<bordersize>8</bordersize>
+				<visible>VideoPlayer.Content(Movies)</visible>
+			</control>
+			<control type="group" id="1">
+				<posx>330</posx>
+				<posy>175r</posy>
+				<control type="label" id="1">
+					<description>Heading label</description>
+					<posx>10</posx>
+					<posy>-3</posy>
+					<width>910</width>
+					<height>25</height>
+					<align>left</align>
+					<font>font13</font>
+					<label>$LOCALIZE[31040]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)">conditional</animation>
+				</control>
+				<control type="label" id="1">
+					<description>Studio label</description>
+					<posx>20</posx>
+					<posy>30</posy>
+					<width>910</width>
+					<height>25</height>
+					<align>left</align>
+					<font>font12</font>
+					<label>$INFO[VideoPlayer.Studio]</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.Content(Movies)</visible>
+				</control>
+				<control type="label" id="1">
+					<description>TV Show label</description>
+					<posx>20</posx>
+					<posy>30</posy>
+					<width>910</width>
+					<height>25</height>
+					<align>left</align>
+					<font>font12</font>
+					<label>$INFO[VideoPlayer.TVShowTitle] ($INFO[VideoPlayer.Season]x$INFO[VideoPlayer.Episode])</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.Content(Episodes)</visible>
+				</control>
+				<control type="label" id="1">
+					<description>Music Info label</description>
+					<posx>20</posx>
+					<posy>30</posy>
+					<width>910</width>
+					<height>25</height>
+					<align>left</align>
+					<font>font12</font>
+					<label>$INFO[VideoPlayer.Artist] $INFO[VideoPlayer.Album, - ]</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>VideoPlayer.Content(MusicVideos)</visible>
+				</control>
+				<control type="grouplist" id="1">
+					<posx>20</posx>
+					<posy>60</posy>
+					<width>910</width>
+					<height>35</height>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="label" id="1">
+						<width min="10" max="710">auto</width>
+						<height>30</height>
+						<font>font30</font>
+						<align>left</align>
+						<aligny>center</aligny>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<textcolor>orange</textcolor>
+						<scroll>true</scroll>
+					</control>
+				</control>
+				<control type="label" id="1">
+					<posx>0</posx>
+					<posy>120</posy>
+					<width>910</width>
+					<height>25</height>
+					<label>$LOCALIZE[31049] $INFO[Player.FinishTime]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12</font>
+					<textcolor>grey</textcolor>
+					<scroll>true</scroll>
+					<visible>!Window.IsVisible(VideoOSD)</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+				</control>
+			</control>
+			<control type="group" id="1">
+				<posx>330</posx>
+				<posy>85r</posy>
+				<control type="label" id="1">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>40</height>
+					<font>font13</font>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[Player.Time(hh:mm:ss)]</label>
+				</control>
+				<control type="progress" id="1">
+					<description>ProgressbarCache</description>
+					<posx>100</posx>
+					<posy>15</posy>
+					<width>720</width>
+					<height>16</height>
+					<info>Player.ProgressCache</info>
+					<midtexture border="6,0,6,0">OSDProgressMidLight.png</midtexture>
+				</control>
+				<control type="progress" id="1">
+					<description>Progressbar</description>
+					<posx>100</posx>
+					<posy>15</posy>
+					<width>720</width>
+					<height>16</height>
+					<info>Player.Progress</info>
+					<visible>Player.Forwarding | Player.Rewinding | Player.Seeking | Player.DisplayAfterSeek | Player.Paused</visible>
+				</control>
+				<control type="label" id="1">
+					<posx>920</posx>
+					<posy>0</posy>
+					<width>100</width>
+					<height>40</height>
+					<font>font13</font>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[Player.Duration(hh:mm:ss)]</label>
+				</control>
+			</control>
+		</control>
+				<control type="largeimage">
+				    <description>TV Show Image</description>
+				    <posx>35</posx>
+				    <posy>380</posy> 
+				    <width>275</width>
+				    <height>145</height>
+				    <texture>$INFO[Player.FolderPath]../logo.png</texture>
+				    <aspectratio>keep</aspectratio>
+				    <visible>VideoPlayer.Content(episodes)</visible>
+			    </control>
+				<control type="image" id="1">
+						<description>Video Resolution Image</description>
+						<posx>545</posx>
+						<posy>5</posy>
+						<width>77</width>
+						<height>29</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[VideoPlayer.VideoResolution,flagging/video/,.png]</texture>
+					</control>
+					<control type="image" id="1">
+						<description>Audio Codec Image</description>
+						<posx>750</posx>
+						<posy>5</posy>
+						<width>85</width>
+						<height>35</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[VideoPlayer.AudioCodec,flagging/audio/,.png]</texture>
+						<visible>!Player.HasAudio</visible>
+					</control>
+					<control type="image" id="1">
+						<description>Audio Channels Image</description>
+						<posx>850</posx>
+						<posy>5</posy>
+						<width>50</width>
+						<height>35</height>
+						<aspectratio align="center">keep</aspectratio>
+						<texture>$INFO[VideoPlayer.AudioChannels,flagging/audio/,.png]</texture>
+						<visible>!Player.HasAudio</visible>
+					</control>
+				<control type="image" id="1">
+					<posx>400</posx>
+					<posy>-10</posy>
+					<width>100</width>
+					<height>64</height>
+					<aspectratio>keep</aspectratio>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texture>$INFO[VideoPlayer.Studio,flagging/studios/,.png]</texture>
+					<visible>!Player.HasAudio</visible>
+			</control>
+			<control type="image">
+			<description>Bluray Image</description>
+			<posx>650</posx>
+			<posy>5</posy>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>flagging/video/bluray.png</texture>
+			<visible>[substring(Player.FilenameAndPath,bluray) | substring(Player.FilenameAndPath,bdrip)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image">
+			<description>HDDVD Image</description>
+			<posx>650</posx>
+			<posy>5</posy>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>flagging/video/hddvd.png</texture>
+			<visible>substring(Player.FilenameAndPath,hddvd) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image">
+			<description>DVD Image</description>
+			<posx>650</posx>
+			<posy>5</posy>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>flagging/video/dvd.png</texture>
+			<visible>[substring(Player.FilenameAndPath,dvd) + ![substring(Player.FilenameAndPath,hddvd) | substring(Player.FilenameAndPath,bluray) | substring(Player.FilenameAndPath,bdrip)]] + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image">
+			<description>TV Types Image</description>
+			<posx>650</posx>
+			<posy>5</posy>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>flagging/video/TV.png</texture>
+			<visible>[substring(Player.FilenameAndPath,pdtv) | substring(Player.FilenameAndPath,hdtv) | substring(Player.FilenameAndPath,dsr)] | substring(Player.FilenameAndPath,serien) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+		<control type="image">
+			<description>VHS Image</description>
+			<posx>650</posx>
+			<posy>5</posy>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>flagging/video/vhs.png</texture>
+			<visible>substring(Player.FilenameAndPath,vhs) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>
+				<control type="label">
+					<posx>-320</posx>
+					<posy>320</posy>
+					<width>1920</width>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Big_Text</font>
+					<label>40021</label>
+					<textcolor>33FFFFFF</textcolor>
+					<visible>Player.Paused</visible>
+				<!-- stoli - animation added -->
+					<animation type="Visible">
+						<effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+					<animation type="WindowOpen">
+						<effect type="slide" start="0,-600" end="0,0" time="600" tween="cubic" easing="out" />
+						<effect type="fade" start="0" end="100" time="600" />
+					</animation>
+					<animation type="WindowClose">
+						<effect type="slide" start="0,0" end="-600,0" time="600" tween="cubic" easing="out" />
+						<effect type="fade" start="100" end="0" time="600" />
+					</animation>
+					<animation type="Hidden">
+						<effect type="slide" start="0,0" end="-600,0" time="600" tween="cubic" easing="out" />
+						<effect type="fade" start="100" end="0" time="600" />
+					</animation>
+					<!-- stoli - animation end -->
+				</control>
+	</controls>
+</window>

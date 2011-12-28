@@ -1,0 +1,110 @@
+<includes>
+<!-- Wall Stream View Code -->
+	<constant name="WallStreamCoverWidth">157</constant>
+	<constant name="WallStreamCoverHeight">157</constant>
+	
+	<include name="WallStream">
+	    <control type="group">
+		
+	        <visible>Control.IsVisible(53)</visible>
+		    <include>VisibleFadeEffect</include>
+			 <control type="panel" id="53">
+				<viewtype label="Wall Stream">panel</viewtype>
+				<posx>12</posx>
+				<posy>0</posy>
+				<width>1256</width>
+				<height>720</height>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<onleft>53</onleft>
+				<onright>53</onright>
+				<orientation>horizontal</orientation>
+				<pagecontrol>60</pagecontrol>
+				<preloaditems>5</preloaditems>
+				<visible>Container.Content(Artists)</visible>
+				
+				<itemlayout width="WallStreamCoverWidth" height="WallStreamCoverHeight">
+					<control type="largeimage">
+						<description>Album Cover</description>
+						<width>WallStreamCoverWidth</width>
+						<height>WallStreamCoverHeight</height>
+						<aspectratio>stretch</aspectratio>
+						<info>ListItem.Thumb</info>
+					</control>
+					<control type="largeimage">
+						<width>WallStreamCoverWidth</width>
+						<height>WallStreamCoverHeight</height>
+						<aspectratio>stretch</aspectratio>
+						<texture>black-back.png</texture>
+						<colordiffuse>AAFFFFFF</colordiffuse>
+					</control>
+					<control type="image">				
+						<posy>157</posy>
+						<width>WallStreamCoverWidth</width>
+						<height>WallStreamCoverHeight</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>200</fadetime>
+						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+					</control>					
+				</itemlayout>
+
+				<focusedlayout width="WallStreamCoverWidth" height="WallStreamCoverHeight">
+				  <control type="group">
+					<animation effect="slide" end="30,0" time="0" delay="100" reversible="false" condition="Container.Column(3)">Conditional</animation>
+					<animation effect="slide" end="-30,0" time="0" delay="100" reversible="false" condition="Container.Column(7)">Conditional</animation>
+					<animation effect="slide" end="0,30" time="0" delay="100" reversible="false" condition="Container.Row(3)">Conditional</animation>
+					
+					<control type="largeimage">
+					  <description>Album Cover</description>
+					  <posx>-8</posx>
+					  <posy>-8</posy>
+					  <width>173</width>
+					  <height>173</height>
+					  <width>WallStreamCoverWidth</width>
+					  <height>WallStreamCoverHeight</height>
+					  <aspectratio>stretch</aspectratio>
+					  <info>ListItem.Thumb</info>
+					  <bordertexture border="14">ThumbShadow2.png</bordertexture>
+					  <bordersize>8</bordersize>
+					  <animation effect="zoom" tween="quadratic" end="-41,-41,240,240" time="300" delay="100" reversible="false">Focus</animation>
+					</control>
+					<control type="largeimage">
+					  <description>Glass Overlay</description>
+					  <width>120</width>
+					  <height>120</height>	              
+					  <texture>GlassOverlay2.png</texture>
+					  <colordiffuse>66ffffff</colordiffuse>
+					  <animation effect="zoom" tween="quadratic" end="-30,-30,164,164" time="300" delay="100" reversible="false">Focus</animation>
+					  <visible>!IsEmpty(ListItem.Thumb)</visible>
+					</control>
+				  </control>
+				</focusedlayout>
+			</control>
+
+			<control type="label">
+				<posx>320</posx>
+				<posy>655</posy>
+				<width>640</width>
+				<height>30</height>
+				<font>font24caps_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>IsEmpty(Skin.String(Music_Folder_Path)</visible>
+			</control> 
+			
+			<control type="image">
+				<posx>500</posx>
+				<posy>570</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture>$INFO[Skin.String(Music_Folder_Path)]$INFO[ListItem.Artist]/logo.png</texture>
+				<visible>!IsEmpty(Skin.String(Music_Folder_Path)</visible>
+		</control>
+						
+		</control>
+	</include>
+</includes>

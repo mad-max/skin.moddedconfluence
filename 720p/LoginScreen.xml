@@ -1,0 +1,111 @@
+<window type="dialog" id="29">
+	<defaultcontrol always="true">52</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<animation effect="fade" time="600">WindowOpen</animation>
+			<animation effect="fade" time="600">WindowClose</animation>
+			<texture>appearance.jpg</texture>
+		</control>
+		
+		<control type="image">
+		<posx>-15</posx>
+		<posy>650</posy>
+		<width>1380</width>
+		<height>250</height>
+		<texture>ContentPanel.png</texture>
+		</control>
+
+
+		<control type="list" id="52">
+			<posx>200</posx>
+			<posy>300</posy>
+			<width>792</width>
+			<height>363</height>
+			<focusposition>1</focusposition>
+			<orientation>horizontal</orientation>
+			<onleft>90</onleft>
+			<onright>90</onright>
+			<onup>52</onup>
+			<ondown>98</ondown>
+			<animation effect="slide" start="132,0" end="132,0" time="0" condition="stringcompare(container(52).numitems,2)">Conditional</animation>
+			<include>Animation_OpenCloseZoom</include>
+			<itemlayout height="264" width="364">
+				<control type="image">
+					<width>250</width>
+					<height>250</height>
+												<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+					<info>ListItem.Icon</info>
+				</control>
+
+			</itemlayout>
+			<focusedlayout height="264" width="364">
+				<control type="image">
+					<width>250</width>
+					<height>250</height>
+					<info>ListItem.Icon</info>
+												<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+					<animation center="132,132" effect="zoom" start="100" end="110" time="600" tween="cubic" easing="out">Focus</animation>
+				</control>
+
+				</focusedlayout>
+		</control>
+
+		<control type="label">
+			<posx>0</posx>
+			<posy>655</posy>
+			<width>1280</width>
+			<height>16</height>
+			<font>Font_Welcome</font>
+			<align>center</align>
+			<textcolor>FFffffff</textcolor>
+			<scroll>true</scroll>
+			<info>ListItem.Label</info>
+			<include>selectedcolor</include>
+			<include>Animation_CommonFadeOpenClose</include>
+			<visible>Control.IsVisible(52)</visible>
+		</control>
+
+		<control type="label">
+			<posx>0</posx>
+			<posy>680</posy>
+			<width>1280</width>
+			<height>16</height>
+			<font>Font_Welcome</font>
+			<align>center</align>
+			<textcolor>90cbcbcb</textcolor>
+			<info>ListItem.Label2</info>
+			<include>selectedcolor</include>
+			<include>Animation_CommonFadeOpenClose</include>
+			<visible>Control.IsVisible(52)</visible>
+		</control>
+
+		<control type="button" id="98">
+			<description>ShutDown Button</description>
+			<posx>1225</posx>
+			<posy>665</posy>
+			<width>43</width>
+			<height>43</height>
+			<align>right</align>
+			<textcolor>60ffffff</textcolor>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
+			<texturefocus>home-power-FO.png</texturefocus>
+			<texturenofocus>home-power.png</texturenofocus>
+			<onleft>52</onleft>
+			<onright>52</onright>
+			<onup>52</onup>
+			<ondown>52</ondown>
+			<include>Animation_CommonFadeOpenClose</include>
+			<visible>!Window.IsActive(ProfileSettings) + !Window.IsActive(LockSettings)</visible>
+		</control>
+
+		<include>Lines</include>
+	</controls>
+</window>
