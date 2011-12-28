@@ -645,6 +645,20 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(Movies)</enable>
 					</control>
+					<control type="radiobutton" id="231">
+						<description>Hide HDMovies Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - $LOCALIZE[40040] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoHDMoviesButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoHDMoviesButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>Library.HasContent(Movies)</enable>
+					</control>
 					<control type="radiobutton" id="223">
 						<description>Hide TV Shows Button</description>
 						<width>750</width>
@@ -927,6 +941,13 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_TV_Folder)]</thumb>
 								<visible>System.GetBool(pvrmanager.enabled)</visible>
 							</item>
+							<item id="35">
+								<label>40040</label>
+								<label2>Home_Custom_Back_HD_Folder</label2>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/hdmovies.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</thumb>
+						</item>
 							<item id="2">
 								<label>2</label>
 								<label2>Home_Custom_Back_Music_Folder</label2>
