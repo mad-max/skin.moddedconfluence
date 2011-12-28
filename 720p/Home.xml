@@ -971,7 +971,14 @@
 						<icon>special://skin/backgrounds/weather.jpg</icon>
 						<thumb>$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Day0.FanartCode)]</thumb>
 					<!--<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb> -->
-						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible>
+						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + Skin.HasSetting(fancode)</visible>
+					</item>
+					<item id="7">
+						<label>8</label>
+						<onclick>ActivateWindow(Weather)</onclick>
+						<icon>special://skin/backgrounds/weather.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !Skin.HasSetting(fancode)</visible>
 					</item>
 					<item id="444">
 						<description>Custom FAV Five</description>
