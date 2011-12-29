@@ -946,7 +946,7 @@
 								<label2>Home_Custom_Back_HD_Folder</label2>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/hdmovies.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_HDMovies_Folder)]</thumb>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_HD_Folder)]</thumb>
 						</item>
 							<item id="2">
 								<label>2</label>
