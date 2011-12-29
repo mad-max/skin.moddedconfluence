@@ -964,18 +964,18 @@
 							</item>
 							<item id="99">
 								<label>$INFO[Skin.String(Menu_Custom1_Label)]</label>
-								<label2>$INFO[Skin.String(Menu_Custom1_Folder)]</label2>
+								<label2>Menu_Custom1_Folder</label2>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/videos.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+								<thumb>$INFO[Skin.String(Menu_Custom1_Folder)]</thumb>
 								<visible>Skin.HasSetting(Menu_Custom1)</visible>
 							</item>
 							<item id="199">
 								<label>$INFO[Skin.String(Menu_Custom2_Label)]</label>
-								<label2>$INFO[Skin.String(Menu_Custom2_Folder)]</label2>
+								<label2>Menu_Custom2_Folder</label2>
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/videos.jpg</icon>
-								<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
+								<thumb>$INFO[Skin.String(Menu_Custom2_Folder)]</thumb>
 								<visible>Skin.HasSetting(Menu_Custom2)</visible>
 							</item>
 							<item id="3">
