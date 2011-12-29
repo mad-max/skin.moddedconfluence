@@ -75,7 +75,7 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<!-- Tv show info down thebottom -->	
+			<!-- Tv show info down thebottom  -->	
 			<control type="image">
 				<posx>-5</posx>
 				<posy>570</posy>
