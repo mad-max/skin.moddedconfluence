@@ -1,7 +1,5 @@
 <includes>
 	<include file="defaults.xml" />
-	<include file="ViewsVideoLibrary.xml" />
-	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
 	<include file="ViewsPictures.xml" />
 	<include file="ViewsAddonBrowser.xml" />
@@ -21,20 +19,13 @@
 	<include file="WeatherWidget.xml" />
 	<include file="ViewsMusicFanart.xml" />
 	<include file="ViewsMusicLowList.xml" />
-	<include file="ViewsVideoBannerwall.xml" />
 	<include file="ViewsVideoBannerLow.xml" />
 	<include file="ViewsVideoRightList.xml" />
 	<include file="Views3dCoverView.xml" />
 	<include file="ViewsVideoCaseWrap.xml" />
 	<include file="ViewVideoLandscape.xml" />
-	<include file="ViewMusicWallstream.xml" />
 	<include file="Viewtype_Lowlist.xml" />
-	<include file="Viewtype_Episode.xml" />
-	<include file="ViewsVideoBannerRound.xml" />
 	
-	
-	
-
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 
