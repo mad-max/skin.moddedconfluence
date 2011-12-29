@@ -941,7 +941,7 @@
 				<posx>980</posx>
 				<posy>-23</posy>
 				<width>300</width>
-				<label>$LOCALIZE[40045]: $INFO[Window(Home).Property(MusicVideo.Count)]</label>
+				<label>$LOCALIZE[40045]: $INFO[Window(Home).Property(MusicVideos.Count)]</label>
 				<align>center</align>
 				<visible>Container(9000).HasFocus(17)</visible>
 			</control>
