@@ -1,3 +1,21 @@
+[B]1.0.3/B]
+
+- added support for logo and CDArt in movies sction
+- added option to set a favourite as home item
+- added support for ArtistSlideshow in MusicVisualization
+- added dark underground for RSS-Feed on Home (!Player.HasAudio)
+- added new backdrops for home and settings pages
+- added home item for HD movies by default
+- added artist logo in home
+- changed cover in RightList (Movies) to have diffuse="mask"
+- fixed navigation bug that locked up viewtype "Bannerwall"
+- fixed weather-fanart on home (now also visible without weather fanartpack)
+- fixed issue with CodecFlagging for iTunes image (thanks maetrik)
+- fixed green hd flags in view "info" and "info2"
+- fixed strings.xml
+- fixed bug that prevented the changing of backdrops for custom-playlist 1&2
+
+
 [B]1.0.2/B]
 
 - added support for WeatherFanart in Home based on condtion .Day0
