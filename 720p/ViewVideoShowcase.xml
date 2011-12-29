@@ -20,7 +20,7 @@
 				<width>1310</width>
 				<height>400</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>contentpanel.png</texture>
+				<texture>ContentPanel.png</texture>
 			</control>
 			<control type="label">
 				<posx>330</posx>
