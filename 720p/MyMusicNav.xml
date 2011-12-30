@@ -81,6 +81,14 @@
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 				</control>
+				<control type="radiobutton" id="66">
+					<description>ShowFanart</description>
+					<label>40048</label>
+					<include>ButtonCommonValues</include>
+					<onclick>Skin.ToggleSetting(showfanart512)</onclick>
+					<selected>Skin.HasSetting(showfanart512)</selected>
+					<visible>Control.IsVisible(512)</visible>
+				</control>
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>
