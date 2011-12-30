@@ -116,7 +116,7 @@
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>Full Info</label>
+					<label>40047</label>
 					<onclick>Skin.ToggleSetting(fullinfo)</onclick>
 					<selected>Skin.HasSetting(fullinfo)</selected>
 					<visible>Control.IsVisible(543)</visible>
