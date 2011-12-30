@@ -902,6 +902,51 @@
 				<height>6</height>
 				<texture>HomeOverlay1.png</texture>
 			</control>
+<!--------- Database Statistic ------------------->			
+			<control type="group">
+				<visible>[Container(9000).HasFocus(3) | Container(9000).HasFocus(17) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + Skin.HasSetting(stats) + !Player.Playing</visible>
+				<animation effect="slide" start ="320,0" end="0,0" time="300" delay="1200" condition="Container(9000).HasFocus(3) | Container(9000).HasFocus(17) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)">Conditional</animation>
+			<control type="image">
+				<posx>970</posx>
+				<posy>-25</posy>
+				<width>330</width>
+				<height>30</height>
+				<texture flipx="true" flipy="true">Header.png</texture>
+			</control>
+			<control type="label">
+				<posx>980</posx>
+				<posy>-23</posy>
+				<width>300</width>
+				<label>$LOCALIZE[40042]: $INFO[Window(Home).Property(Movies.Count)]</label>
+				<align>center</align>
+				<visible>Container(9000).HasFocus(10)</visible>
+			</control>
+			<control type="label">
+				<posx>980</posx>
+				<posy>-23</posy>
+				<width>300</width>
+				<label>$LOCALIZE[40043]: $INFO[Window(Home).Property(Episodes.Count)]</label>
+				<align>center</align>
+				<visible>Container(9000).HasFocus(11)</visible>
+			</control>
+			<control type="label">
+				<posx>980</posx>
+				<posy>-23</posy>
+				<width>300</width>
+				<label>$LOCALIZE[40044]: $INFO[Window(Home).Property(Music.AlbumsCount)]</label>
+				<align>center</align>
+				<visible>Container(9000).HasFocus(3)</visible>
+			</control>
+			<control type="label">
+				<posx>980</posx>
+				<posy>-23</posy>
+				<width>300</width>
+				<label>$LOCALIZE[40045]: $INFO[Window(Home).Property(MusicVideos.Count)]</label>
+				<align>center</align>
+				<visible>Container(9000).HasFocus(17)</visible>
+			</control>
+			</control>
+<!-------- Database Statistic End ----------------->			
 			<control type="wraplist" id="9000">
 				<posx>-110</posx>
 				<posy>5</posy>

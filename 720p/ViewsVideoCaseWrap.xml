@@ -10,7 +10,7 @@
 			<posy>-30</posy> 	
 			<height>760</height> 	
 			<width>1380</width>
-			<texture>contentpanel60.png</texture>
+			<texture>ContentPanel60.png</texture>
 			<visible>Control.IsVisible(543) + !Container.Content(MusicVideos)</visible>
 	</control>
 	</control>

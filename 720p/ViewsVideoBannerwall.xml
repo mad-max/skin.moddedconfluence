@@ -75,13 +75,13 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<!-- Tv show info down thebottom -->	
+			<!-- Tv show info down thebottom  -->	
 			<control type="image">
 				<posx>-5</posx>
 				<posy>570</posy>
 				<width>1303</width>
 				<height>160</height>
-				<texture>contentpanel.png</texture>
+				<texture>ContentPanel.png</texture>
 			</control>
 			<control type="group">
 				<posx>30</posx>

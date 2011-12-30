@@ -11,7 +11,7 @@
 				<width>1380</width>
 				<height>790</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true">contentpanel.png</texture>
+				<texture background="true">ContentPanel.png</texture>
 				<colordiffuse>DAFFFFFF</colordiffuse>
 			</control>
 			<control type="fixedlist" id="728">

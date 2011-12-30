@@ -1740,6 +1740,18 @@
 						<onclick>Skin.ToggleSetting(fancode)</onclick>
 						<selected>Skin.HasSetting(fancode)</selected>
 					</control>
+					<control type="radiobutton" id="533">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[40046]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(stats)</onclick>
+						<selected>Skin.HasSetting(stats)</selected>
+					</control>					
 					
 					
 					</control>
