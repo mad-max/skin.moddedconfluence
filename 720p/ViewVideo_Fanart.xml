@@ -62,7 +62,7 @@
 				<onright>746</onright>
 				<onup>2</onup>
 				<ondown>2</ondown>
-				<viewtype label="Showcase">wrap</viewtype>
+				<viewtype label="FanartInfo">wrap</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
