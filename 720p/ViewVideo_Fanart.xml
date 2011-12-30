@@ -1,0 +1,171 @@
+<includes>
+	<include name="FanartInfo">
+		<control type="group">
+			<visible>Control.IsVisible(746)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>0</posy>
+			
+<!---------------------------- lower panel that darkens -------------------------------->			
+			<control type="image">
+				<posx>-10</posx>
+				<posy>610</posy>
+				<width>1310</width>
+				<height>120</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>contentpanel.png</texture>
+			</control> 
+<!------------------------- end of lower panel that darkens ----------------------------->
+
+			<control type="image" id="1">
+				<description>Cd Disc</description>
+					<animation effect="slide" start="-90" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+					<animation effect="rotate" end="55" center="auto" loop="false" reversible="false" condition="true">Conditional</animation>
+					<width>200</width>
+					<height>200</height>
+					<posx>120</posx>
+					<posy>220r</posy>
+	<!--			<texture fallback="cdart/default.png">$INFO[ListItem.Path]cdart.png</texture>   -->
+					<texture>$INFO[ListItem.Path]cdart.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+					<visible>Skin.HasSetting(CDArt746)</visible>
+			</control>
+			
+<!---------------------------- Title -------------------------------->							
+			
+			<control type="label">
+				<posx>320</posx>
+				<posy>610</posy>
+				<width>600</width>
+				<height>25</height>
+				<font>font30_title</font>
+				<textcolor>white</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>left</align>
+				<aligny>left</aligny>
+				<info>ListItem.Label</info>
+				<scroll>true</scroll>
+				<animation effect="slide" start ="0,0" end="-50,0" time="300" delay="300" condition="!Skin.HasSetting(CDArt746)">Conditional</animation>
+			</control>
+
+<!------------------------  end of Title  ----------------------------->					
+			
+<!---------------------------- Cover on the right / the listitself -------------------------------->			
+			
+			<control type="wraplist" id="746">
+				<visible>Container.Content(Movies) | Container.Content(MusicVideos) | Container.Content(Genres)</visible>
+				<posx>20</posx>
+				<posy>380</posy>
+				<width>1200</width>
+				<height>950</height>
+				<onleft>746</onleft>
+				<onright>746</onright>
+				<onup>2</onup>
+				<ondown>2</ondown>
+				<viewtype label="Showcase">wrap</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<focusposition>4</focusposition>
+				<orientation>horizontal</orientation>
+				<preloaditems>0</preloaditems>
+				<itemlayout height="900" width="220">
+				</itemlayout>
+				<focusedlayout height="953" width="220">
+					<control type="image">
+						<posx>-885</posx>
+						<posy>0</posy>
+						<width>214</width>
+						<height>330</height>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>50</fadetime>
+						<texture diffuse="movie_mask.png" background="true">$INFO[ListItem.Icon]</texture>
+					</control>
+				</focusedlayout>
+			</control>
+			
+<!------------------------- end of Cover on the right / the listitself ----------------------------->		
+			
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+				<visible>Container.Content(Movies) + Control.IsVisible(746)</visible>
+				<animation effect="slide" start ="0,0" end="-50,0" time="300" delay="300" condition="!Skin.HasSetting(CDArt746)">Conditional</animation>
+				<control type="grouplist">
+					<description>MPAA Flagging Conditions Images</description>
+					<posx>470</posx>
+					<posy>670</posy>
+					<width>800</width>
+					<align>left</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<include>VideoTypeHackFlaggingConditions</include>
+					<include>VideoCodecFlaggingConditions</include>
+					<include>AudioCodecFlaggingConditions</include>
+					<include>AudioChannelsFlaggingConditions</include>
+				</control>
+			    <control type="image">
+					<width>100</width>
+					<height>64</height>
+					<posx>370</posx>
+					<posy>655</posy>
+					<aspectratio>keep</aspectratio>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texture>$INFO[listitem.Studio,flagging/studios/,.png]</texture>
+					<visible>!Container.Content(MusicVideos)</visible>
+				</control>
+			</control>
+			<control type="grouplist">
+				<description>MPAA Rating Flagging Images</description>
+				<posx>220</posx>
+				<posy>655</posy>
+				<width>200</width>
+				<align>right</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>VideoMPAAFlaggingConditions</include>
+				<visible>Skin.HasSetting(germanmpaa) + Container.Content(Movies)</visible>
+				<animation effect="slide" start ="0,0" end="-50,0" time="300" delay="300" condition="!Skin.HasSetting(CDArt746)">Conditional</animation>
+			</control>
+			<control type="label">
+				<posx>970</posx> 	
+				<posy>680</posy> 	
+				<height>25</height> 	
+				<width>1280</width> 	
+				<textcolor>white</textcolor> 	
+				<scroll>true</scroll> 	
+				<font>font13</font>
+				<label>[COLOR=blue] IMDB-Bewertung: [/COLOR] $INFO[ListItem.rating]</label>			
+				<align>left</align> 	
+				<aligny>left</aligny> 	
+				<scroll>true</scroll> 	
+			</control>
+			<control type="label">
+				<posx>970</posx> 	
+				<posy>650</posy>
+				<height>25</height> 	
+				<width>480</width> 	
+				<textcolor>white</textcolor> 	
+				<scroll>false</scroll> 	
+				<font>font13</font>
+				<label>[COLOR=blue] $LOCALIZE[40026]: [/COLOR] $INFO[ListItem.genre]</label>			
+				<align>left</align> 	
+				<aligny>left</aligny> 	
+				<scroll>true</scroll> 	
+			</control>
+			<control type="label">
+				<posx>970</posx> 	
+				<posy>620</posy>
+				<height>25</height> 	
+				<width>1280</width> 	
+				<textcolor>white</textcolor> 	
+				<scroll>true</scroll> 	
+				<font>font13</font>
+				<label>[COLOR=blue] $LOCALIZE[20339]: [/COLOR] $INFO[ListItem.Director]</label>			
+				<align>left</align> 	
+				<aligny>left</aligny> 	
+				<scroll>true</scroll> 	
+			</control>
+		</control>
+	</include>
+</includes>	

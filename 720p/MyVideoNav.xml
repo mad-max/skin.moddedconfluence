@@ -1,7 +1,7 @@
 <window id="25">
 	<defaultcontrol always="true">9999</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,550,551,560,501,508,504,503,505,511,727,723,519,520,725,543,724,728</views>
+	<views>50,51,500,550,551,560,501,508,504,503,505,511,727,723,519,520,725,543,724,728,746</views>
 	<controls>
 		<control type="button" id="9999"> <!-- TVTunes mod -->
             <description>trigger</description>
@@ -57,6 +57,8 @@
 			<include>Fanart Case Wrap</include> <!-- view id = 543 -->
 			<include>Lowlist</include> <!-- view id = 724 -->
 			<include>Episode</include> <!-- view id = 782 -->
+			<include>FanartInfo</include> <!-- view id = 746 -->
+			
 									
 		</control>
 		<include>BehindDialogFadeOut</include>
@@ -118,6 +120,15 @@
 					<onclick>Skin.ToggleSetting(fullinfo)</onclick>
 					<selected>Skin.HasSetting(fullinfo)</selected>
 					<visible>Control.IsVisible(543)</visible>
+				</control>
+				<control type="radiobutton" id="99">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>CDArt</label>
+					<onclick>Skin.ToggleSetting(CDArt746)</onclick>
+					<selected>Skin.HasSetting(CDArt746)</selected>
+					<visible>Control.IsVisible(746)</visible>
 				</control>
 				<control type="radiobutton" id="99">
 					<description>Show Info Toggle</description>
