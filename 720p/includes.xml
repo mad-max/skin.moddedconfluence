@@ -30,11 +30,7 @@
 	<include file="ViewMusicWallstream.xml" />
 	<include file="Viewtype_Lowlist.xml" />
 	<include file="Viewtype_Episode.xml" />
-	<include file="ViewsVideoBannerRound.xml" />
 	
-	
-	
-
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 
