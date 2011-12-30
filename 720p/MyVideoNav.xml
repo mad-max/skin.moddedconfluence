@@ -116,6 +116,15 @@
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
+					<label>Full Info</label>
+					<onclick>Skin.ToggleSetting(fullinfo)</onclick>
+					<selected>Skin.HasSetting(fullinfo)</selected>
+					<visible>Control.IsVisible(543)</visible>
+				</control>
+				<control type="radiobutton" id="99">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
 					<label>31005</label>
 					<onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
 					<selected>Skin.HasSetting(View508HideInfo)</selected>

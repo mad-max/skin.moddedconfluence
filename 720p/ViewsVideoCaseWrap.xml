@@ -195,9 +195,28 @@
 			</control> 	
 		</focusedlayout> 	
 	</control>
+	<control type="group">
+			<visible>!Skin.HasSetting(fullinfo)</visible>
+			<visible>!Container(543).OnNext + !Container(543).OnPrevious + Control.IsVisible(543) + !Container.Content(MusicVideos)</visible>
+			<animation effect="fade" start="0" end="100" time="1000" delay="2500">Visible</animation>
+		<control type="label">
+			<posx>0</posx> 	
+			<posy>80</posy> 	
+			<height>25</height> 	
+			<width>1280</width> 	
+			<textcolor>white</textcolor> 	
+			<scroll>true</scroll> 	
+			<font>font30_title</font>
+			<label>$INFO[ListItem.label]</label>			
+			<align>center</align> 	
+			<aligny>center</aligny> 	
+			<scroll>true</scroll>
+		</control> 
+	</control>
 		<control type="group"> 
 		<posx>0</posx> 	
 		<posy>0</posy>
+		<visible>Skin.HasSetting(fullinfo)</visible>
 		<visible>!Container(543).OnNext + !Container(543).OnPrevious + Control.IsVisible(543) + !Container.Content(MusicVideos)</visible> 
 		<animation effect="fade" time="200">WindowClose</animation> 	
 		<animation effect="fade" start="0" end="100" time="1000" delay="2500">WindowOpen</animation> 	
