@@ -138,23 +138,23 @@
 				</focusedlayout>
 				<content>
 					<item id="1">
-						<label>Home</label>
-						<label2>Hauptmenü anpassen</label2>
+						<label>40051</label>
+						<label2>40052</label2>
 						<onclick>-</onclick>
 					</item>
 					<item id="2">
-						<label>Views</label>
-						<label2>Viewtype-Optionen</label2>
+						<label>40053</label>
+						<label2>40054</label2>
 						<onclick>-</onclick>
 					</item>
 					<item id="3">
-						<label>Musik</label>
-						<label2>Musik &amp; Vis</label2>
+						<label>2</label>
+						<label2>40055</label2>
 						<onclick>-</onclick>
 					</item>
 					<item id="4">
-						<label>Verschiedenes</label>
-						<label2>Basic Einstellungen</label2>
+						<label>40056</label>
+						<label2>40057</label2>
 						<onclick>-</onclick>
 					</item>	
 				</content>
@@ -204,7 +204,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>Hauptmenü anpassen</label>
+						<label>40058</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -266,7 +266,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>Hauptmenü-Widgets &amp; Features </label>
+						<label>40059</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -333,7 +333,144 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(watchlist)</onclick>
 						<selected>Skin.HasSetting(watchlist)</selected>
-					</control>					
+					</control>	
+					<control type="label" id="110">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>40060</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>	
+					<control type="radiobutton" id="555">
+							<description>custom home playlist</description>
+							<width>750</width>
+							<height>40</height>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<label>Custom Playlist 1</label>
+							<onfocus>Skin.SetString(MoviesCustom,1)</onfocus>
+							<onclick>Skin.ToggleSetting(Menu_Custom1)</onclick>
+							<selected>Skin.HasSetting(Menu_Custom1)</selected>
+							<enable>!Skin.HasSetting(Menu_Movies_Sub1)</enable>
+						</control>
+						<control type="button" id="8207">
+							<description>Menu Movies Sub Custom4 Label</description>
+							<label>40017</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom1_Label)][/COLOR]</label2>
+							<width>750</width>
+							<height>40</height>
+							<font>font12</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Custom1_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom1)</visible>
+						</control>
+						<control type="button" id="8208">
+							<description>Menu Movies Sub Custom4 Path</description>
+							<label>40016</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom1_Path)][/COLOR]</label2>
+							<width>750</width>
+							<height>40</height>
+							<font>font12</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetFile(Menu_Custom1_Path,.xsp,special://videoplaylists)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom1)</visible>
+						</control>					
+						<control type="radiobutton" id="556">
+							<description>custom home playlist</description>
+							<width>750</width>
+							<height>40</height>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<label>Custom Playlist 2</label>
+							<onfocus>Skin.SetString(MoviesCustom,2)</onfocus>
+							<onclick>Skin.ToggleSetting(Menu_Custom2)</onclick>
+							<selected>Skin.HasSetting(Menu_Custom2)</selected>
+							<enable>!Skin.HasSetting(Menu_Movies_Sub2)</enable>
+						</control>
+						<control type="button" id="8209">
+							<description>custom home playlist 2</description>
+							<label>40017</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Label)][/COLOR]</label2>
+							<width>750</width>
+							<height>40</height>
+							<font>font12</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Custom2_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</control>
+						<control type="button" id="8210">
+							<description>Menu Movies Sub Custom4 Path</description>
+							<label>40016</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom2_Path)][/COLOR]</label2>
+							<width>750</width>
+							<height>40</height>
+							<font>font12</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetFile(Menu_Custom2_Path,.xsp,special://videoplaylists)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom2)</visible>
+						</control>
+						<control type="radiobutton" id="507">
+							<description>custom home 8</description>
+							<font>cirrus_20</font>
+							<width>750</width>
+							<height>35</height>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<label>Custom Favorite</label>
+							<onclick>Skin.ToggleSetting(Menu_Custom8)</onclick>
+							<selected>Skin.HasSetting(Menu_Custom8)</selected>
+							<enable>!Skin.HasSetting(Menu_Movies_Sub8)</enable>
+						</control>
+						<control type="button" id="8215">
+							<description>Menu Movies Sub Custom8 Label</description>
+							<label>Label</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom8_Label)][/COLOR]</label2>
+							<width>750</width>
+							<height>35</height>
+							<font>cirrus_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Custom8_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom8)</visible>
+						</control>
+						<control type="button" id="8216">
+							<description>Menu Movies Sub Custom8 Path</description>
+							<label>Pfad</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom8_Path)][/COLOR]</label2>
+							<width>750</width>
+							<height>35</height>
+							<font>cirrus_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom8_Path)</onclick>
+							<onclick>ActivateWindow(1114)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom8)</visible>
+						</control>					
 				<!-- FILL IN HERE -->				
 				</control>
 				<control type="scrollbar" id="60">
@@ -368,7 +505,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>Viewtype-Optionen</label>
+						<label>40061</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
@@ -448,6 +585,29 @@
 						<onclick>Skin.ToggleSetting(langflag)</onclick>
 						<selected>Skin.HasSetting(langflag)</selected>
 					</control> 
+					<control type="label" id="207">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>40062</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="66">
+						<description>ShowFanart</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<label>40048</label>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(showfanart512)</onclick>
+						<selected>Skin.HasSetting(showfanart512)</selected>
+					</control>
 				<!-- FILL IN HERE -->		
 				</control>
 				<control type="scrollbar" id="60">
@@ -483,7 +643,7 @@
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
-							<label>Allgemeine Einstellungen</label>
+							<label>40063</label>
 							<textcolor>blue</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>center</align>
@@ -505,7 +665,7 @@
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
-							<label>Visualisierung</label>
+							<label>40064</label>
 							<textcolor>blue</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>center</align>
@@ -569,7 +729,7 @@
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
-							<label>Globale Skin-Einstellungen</label>
+							<label>40065</label>
 							<textcolor>blue</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>center</align>

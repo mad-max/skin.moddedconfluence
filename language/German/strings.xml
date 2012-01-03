@@ -216,8 +216,24 @@
   <string id="40045">Konzerte insgesamt</string>
   <string id="40046">Zeige Datenbankstatistik im Hauptmenü</string>
   <string id="40047">Zeige alle Infos</string>
-  <string id="40048">Zeige Fanart anstatt Icon</string>
+  <string id="40048">Zeige Fanart anstatt Icon MediaInfoView</string>
   <string id="40049">Zeige Language-Flags</string>
+  <string id="40050">[CR]Drücke ENTER um die Einstellungen des Confluence-MOD aufzurufen[CR] [CR] Die Einstellungen sind in die entsprechenden Kategorien eingeteilt</string>
+  <string id="40051">Home</string>
+  <string id="40052">Hauptmenü anpassen</string>
+  <string id="40053">Views</string>
+  <string id="40054">Viewtype-Optionen</string>
+  <string id="40055">Musik &amp; Vis</string>
+  <string id="40056">Verschiedenes</string>
+  <string id="40057">Basic Einstellungen</string>
+  <string id="40058">Hauptmenü anpassen</string>
+  <string id="40059">Hauptmenü-Widgets &amp; Features</string>
+  <string id="40060">Eigene Hauptmenüpunkte</string>
+  <string id="40061">Video Viewtype-Optionen</string>
+  <string id="40062">Audio Viewtype-Optionen</string>
+  <string id="40063">Allgemeine Einstellungen</string>
+  <string id="40064">Visualisierung</string>
+  <string id="40065">Globale Skin-Einstellungen</string>
   
   
   
