@@ -121,6 +121,15 @@
 					<selected>Skin.HasSetting(fullinfo)</selected>
 					<visible>Control.IsVisible(543)</visible>
 				</control>
+				<control type="radiobutton" id="101">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>40066</label>
+					<onclick>Skin.ToggleSetting(hidecases724)</onclick>
+					<selected>Skin.HasSetting(hidecases724)</selected>
+					<visible>Control.IsVisible(724)</visible>
+				</control>
 				<control type="radiobutton" id="99">
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>

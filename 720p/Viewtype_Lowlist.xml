@@ -23,7 +23,7 @@
 				<viewtype label="Lowlist">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<visible>Container.Content(Seasons) | Container.Content(Movies)</visible>
+				<visible>Container.Content(Seasons) | Container.Content(Movies) | Container.Content(TVShows)</visible>
 				<itemlayout height="40" width="480">
 					<control type="image">
 						<posx>0</posx>
@@ -143,7 +143,7 @@
 			<control type="group">
 				<posx>40</posx>
 				<posy>170</posy>
-				<visible>Container.Content(Seasons)</visible>
+				<visible>Container.Content(Seasons) | Container.Content(TVShows)</visible>
 				<control type="group">
 					<posx>10</posx>
 					<control type="image">
@@ -222,6 +222,20 @@
 					<textcolor>white</textcolor>
 					<label>[COLOR blue]$LOCALIZE[40027]: [/COLOR]$INFO[Container.ShowPlot]</label>
 					<autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>Container.Content(Seasons)</visible>
+				</control>
+				<control type="textbox">
+					<description>Description Value for Movie</description>
+					<posx>805</posx>
+					<posy>270</posy>
+					<width>420</width>
+					<height>138</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<label>[COLOR blue]$LOCALIZE[40027]: [/COLOR]$INFO[ListItem.Plot]</label>
+					<autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>Container.Content(TVShows)</visible>
 				</control>
 		<!--		<control type="image">
 					<posx>950</posx>
@@ -246,7 +260,23 @@
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
+					<visible>!Skin.HasSetting(hidecases724)</visible>
 				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>74</posy>
+					<width>233</width>
+					<height>413</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" diffuse="movie_mask.png">$INFO[ListItem.Icon]</texture>
+					<camera x="640" y="200" />
+					<animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
+					<bordersize>8</bordersize>
+					<visible>Skin.HasSetting(hidecases724)</visible>
+				</control>
+				<control type="group">
+				<visible>!Skin.HasSetting(hidecases724)</visible>
 				<control type="image"> 	
 					<posx>17</posx>
 					<posy>76</posy>
@@ -280,6 +310,7 @@
 					<height>387</height>	
 					<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
 					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
