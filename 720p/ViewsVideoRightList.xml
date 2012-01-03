@@ -4,6 +4,14 @@
 			<visible>Control.IsVisible(725)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>$INFO[ListItem.Path]fanart.jpg</texture>
+				<visible>Skin.HasSetting(seasonfanart) + Control.IsVisible(725) + Container.Content(Seasons)</visible>
+			</control>
+			<control type="image">
 				<posx>400r</posx>
 				<posy>0</posy>
 				<width>400</width>

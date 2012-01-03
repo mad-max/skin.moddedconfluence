@@ -585,6 +585,18 @@
 						<onclick>Skin.ToggleSetting(langflag)</onclick>
 						<selected>Skin.HasSetting(langflag)</selected>
 					</control> 
+					<control type="radiobutton" id="208">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>40067</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(seasonfanart)</onclick>
+						<selected>Skin.HasSetting(seasonfanart)</selected>
+					</control> 
 					<control type="label" id="207">
 						<width>750</width>
 						<height>45</height>
