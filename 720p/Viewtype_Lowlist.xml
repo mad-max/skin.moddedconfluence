@@ -18,6 +18,16 @@
 				<height>330</height>
 				<texture border="20">ContentPanel.png</texture>
 				<include>VisibleFadeEffect</include>
+				<visible>!Skin.HasSetting(lightpanel)</visible>
+			</control>
+			<control type="image">
+				<posx>-20</posx>
+				<posy>420</posy>
+				<width>1380</width>
+				<height>330</height>
+				<texture border="20">ContentPanel60.png</texture>
+				<include>VisibleFadeEffect</include>
+				<visible>Skin.HasSetting(lightpanel)</visible>
 			</control>
 			<control type="list" id="724">
 				<posx>340</posx>

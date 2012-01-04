@@ -121,6 +121,15 @@
 					<selected>Skin.HasSetting(fullinfo)</selected>
 					<visible>Control.IsVisible(543)</visible>
 				</control>
+				<control type="radiobutton" id="102">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>Light Panel</label>
+					<onclick>Skin.ToggleSetting(lightpanel)</onclick>
+					<selected>Skin.HasSetting(lightpanel)</selected>
+					<visible>Control.IsVisible(724)</visible>
+				</control>
 				<control type="radiobutton" id="101">
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
@@ -128,9 +137,9 @@
 					<label>40066</label>
 					<onclick>Skin.ToggleSetting(hidecases724)</onclick>
 					<selected>Skin.HasSetting(hidecases724)</selected>
-					<visible>Control.IsVisible(724)</visible>
+					<visible>Control.IsVisible(724) + Container.Content(Movies)</visible>
 				</control>
-				<control type="radiobutton" id="99">
+				<control type="radiobutton" id="103">
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
@@ -139,7 +148,7 @@
 					<selected>Skin.HasSetting(CDArt746)</selected>
 					<visible>Control.IsVisible(746)</visible>
 				</control>
-				<control type="radiobutton" id="99">
+				<control type="radiobutton" id="104">
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
