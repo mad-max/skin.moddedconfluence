@@ -1099,13 +1099,13 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Video_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeVideostoFiles)</visible>
 					</item>
-					<item id="6">
+					<item id="26">
 						<description>HD Movies</description>
 						<label>40040</label>
 						<icon>special://skin/backgrounds/hdmovies.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_HD_Folder)]</thumb>
 						<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/HDMovies.xsp,return)</onclick>
-						<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton)</visible>
+						<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton) + Library.HasContent(Movies)</visible>
 					</item>
 					<item id="10">
 						<label>20342</label>
