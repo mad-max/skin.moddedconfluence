@@ -161,10 +161,19 @@
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
-					<label>Tilt</label>
+					<label>40068</label>
 					<onclick>Skin.ToggleSetting(tiltcases724)</onclick>
 					<selected>Skin.HasSetting(tiltcases724)</selected>
 					<visible>Control.IsVisible(724) + Container.Content(Movies) + !Skin.HasSetting(hidecases724)</visible>
+				</control>
+				<control type="radiobutton" id="106">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>40069</label>
+					<onclick>Skin.ToggleSetting(imdb725)</onclick>
+					<selected>Skin.HasSetting(imdb725)</selected>
+					<visible>Control.IsVisible(725) + Container.Content(Movies)</visible>
 				</control>
 				<control type="label" id="201">
 					<width>250</width>
