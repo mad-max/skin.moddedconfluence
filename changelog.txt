@@ -1,3 +1,20 @@
+[B]1.0.4/B]
+
+- added Viewtype-options to LowList (HideCases, TiltIcon etc.)
+- added support for SeasonFanart on LowList and Landscape
+- added support for language flags in DialogVideoInfo
+- added new view "Fanart" for Movies
+- added support for database-stats on Home
+- added option to toggle between icon and fanart in ArtistMediaListView
+- added option to toggle Info in ViewsVideoCaseWrap.xml
+- added new menu for all MOD-settings
+- fixed issue with HD-item on HomeMenu
+- fixed issue with Upper/Lower-Case in some <textures> (thanks Quaith)
+- fixed invalide include "BannerRound"
+- fixed backdrop bug for displaying HD-Movies
+- fixed folders for genre specific pictures
+
+
 [B]1.0.3/B]
 
 - added support for logo and CDArt in movies sction
