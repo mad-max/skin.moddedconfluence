@@ -267,15 +267,150 @@
 			<control type="group">
 				<posx>20</posx>
 				<posy>240</posy>
-				<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
+				<visible>[Container.Content(Movies) | Container.Content(MusicVideos)] + Skin.HasSetting(tiltcases724)</visible>
 				<control type="image">
 					<posx>10</posx>
-					<posy>104</posy>
+					<posy>34</posy>
+					<width>273</width>
+					<height>433</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordersize>8</bordersize>
+					<visible>!Skin.HasSetting(hidecases724)</visible>
+					<include>Tilt</include>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>460</posy>
+					<width>273</width>
+					<height>433</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordersize>8</bordersize>
+					<visible>!Skin.HasSetting(hidecases724)</visible>
+					<include>Tilt</include>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>74</posy>
+					<width>233</width>
+					<height>413</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" diffuse="movie_mask.png">$INFO[ListItem.Icon]</texture>
+					<camera x="640" y="200" />
+					<animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
+					<bordersize>8</bordersize>
+					<visible>Skin.HasSetting(hidecases724)</visible>
+				</control>
+				<control type="group">
+				<visible>!Skin.HasSetting(hidecases724)</visible>
+				<include>Tilt</include>
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>6</posy>
+					<width>270</width>
+					<height>457</height>  	
+					<texture background="true">flagging/cases/560.png</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control> 
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>460</posy>
+					<width>270</width>
+					<height>457</height>  	
+					<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">flagging/cases/560.png</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>				
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>6</posy>
+					<width>270</width>
+					<height>457</height>	
+					<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>
+				<control type="image">
+					<posx>17</posx>
+					<posy>6</posy>
+					<width>270</width>
+					<height>457</height>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>200</fadetime>
+					<texture background="true">cases/$INFO[ListItem.videoresolution]case.png</texture>
+				</control>
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>6</posy>
+					<width>270</width>
+					<height>457</height>	
+					<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>460</posy>
+					<width>270</width>
+					<height>457</height>	
+					<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>
+				</control>
+				<control type="grouplist">
+					<description>Media Codec Flagging Images</description>
+					<posx>740</posx>
+					<posy>435</posy>
+					<width>590</width>
+					<align>center</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<include>VideoTypeHackFlaggingConditions</include>
+					<include>VideoCodecFlaggingConditions</include>
+					<include>AudioCodecFlaggingConditions</include>
+					<include>AudioChannelsFlaggingConditions</include>
+					<include>AspectCodecFlaggingConditions</include>
+				</control>
+				<control type="textbox">
+					<description>Description Value for Movie</description>
+					<posx>815</posx>
+					<posy>205</posy>
+					<width>420</width>
+					<height>210</height>
+					<font>font12</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<label>[COLOR blue]$LOCALIZE[40027]: [/COLOR]$INFO[ListItem.Plot]</label>
+					<autoscroll time="3000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				</control>
+			</control>
+			<control type="group">
+				<posx>20</posx>
+				<posy>240</posy>
+				<visible>[Container.Content(Movies) | Container.Content(MusicVideos)] + !Skin.HasSetting(tiltcases724)</visible>
+				<control type="image">
+					<posx>10</posx>
+					<posy>84</posy>
 					<width>273</width>
 					<height>353</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<bordertexture border="8">ThumbShadow.png</bordertexture>
+					<bordersize>8</bordersize>
+					<visible>!Skin.HasSetting(hidecases724)</visible>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>445</posy>
+					<width>273</width>
+					<height>353</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 					<visible>!Skin.HasSetting(hidecases724)</visible>
@@ -297,7 +432,7 @@
 				<visible>!Skin.HasSetting(hidecases724)</visible>
 				<control type="image"> 	
 					<posx>17</posx>
-					<posy>76</posy>
+					<posy>56</posy>
 					<width>270</width>
 					<height>387</height>  	
 					<texture background="true">flagging/cases/560.png</texture> 	
@@ -305,7 +440,15 @@
 				</control> 
 				<control type="image"> 	
 					<posx>17</posx>
-					<posy>76</posy>
+					<posy>445</posy>
+					<width>270</width>
+					<height>387</height>  	
+					<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">flagging/cases/560.png</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>				
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>56</posy>
 					<width>270</width>
 					<height>387</height>	
 					<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
@@ -313,20 +456,27 @@
 				</control>
 				<control type="image">
 					<posx>17</posx>
-					<posy>76</posy>
+					<posy>56</posy>
 					<width>270</width>
 					<height>387</height>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>200</fadetime>
 					<texture background="true">cases/$INFO[ListItem.videoresolution]case.png</texture>
-					
 				</control>
 				<control type="image"> 	
 					<posx>17</posx>
-					<posy>76</posy>
+					<posy>56</posy>
 					<width>270</width>
 					<height>387</height>	
 					<texture background="true">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
+					<aspectratio aligny="bottom">stretch</aspectratio> 	
+				</control>
+				<control type="image"> 	
+					<posx>17</posx>
+					<posy>445</posy>
+					<width>270</width>
+					<height>387</height>	
+					<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.VideoResolution,flagging/cases/,.png]</texture> 	
 					<aspectratio aligny="bottom">stretch</aspectratio> 	
 				</control>
 				</control>

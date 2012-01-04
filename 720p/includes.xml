@@ -34,6 +34,11 @@
 	
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
+	
+	<include name="Tilt">
+	<camera x="640" y="200" />
+	<animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
+	</include>
 
 	<include name="BehindDialogFadeOut">
 		<control type="image">
