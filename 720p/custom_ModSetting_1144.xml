@@ -722,6 +722,32 @@
 							<selected>Skin.HasSetting(artistslide)</selected>
 						</control>
 <!-- FILL IN HERE -->
+					<control type="radiobutton" id="1147">
+                        <width>750</width>
+                        <height>40</height>
+						<font>font13</font>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <label>Viz-Wall</label>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>menuitemNF.png</texturenofocus>
+                        <onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
+                        <selected>Skin.HasSetting(CDWallNoVisualisation)</selected>
+                    </control>
+                     <control type="button" id="1148">
+                        <description>CD Wall Picture Path</description>
+                        <width>750</width>
+                        <height>40</height>
+						<font>font13</font>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>menuitemNF.png</texturenofocus>
+                        <label>Path</label>
+                        <label2>$INFO[Skin.String(CDWall_Folder_Path)]</label2>
+                        <onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
+						<visible>Skin.HasSetting(CDWallNoVisualisation)</visible>
+                    </control>
 					</control>
 				</control>
 				<control type="group">
