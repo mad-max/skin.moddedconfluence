@@ -1,0 +1,304 @@
+<includes>
+<include name="WallStreamView2">
+		<control type="group">
+		<visible>Control.IsVisible(514)</visible>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture background="true" >ContentPanelWallStream2.png</texture> 
+			</control>	
+			<control type="image">
+				<posx>50</posx>
+				<posy>40</posy>
+				<width>523</width>
+				<height>253</height>
+				<aspectratio>Stretch</aspectratio>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+			</control>
+			<control type="label">
+				<posx>320</posx>
+				<posy>690</posy>
+				<width>620</width>
+				<height>25</height>
+				<font>font24caps_title</font>
+				<textcolor>grey2</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<info>ListItem.Label</info>
+			</control>
+			<control type="image">
+				<description>Fan Art</description>
+				<posx>48</posx>
+				<posy>527</posy>
+				<width>253</width>
+				<height>149</height>
+				<align>left</align>
+				<texture background="true">$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
+				<bordertexture border="5">ThumbBorder.png</bordertexture>
+				<bordersize>5</bordersize>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>IconCrossfadeTime</fadetime>
+			</control>
+			<control type="image">
+				<posx>48</posx>
+				<posy>527</posy>
+				<width>253</width>
+				<height>149</height>
+				<aspectratio>Stretch</aspectratio>
+				<fadetime>IconCrossfadeTime</fadetime>
+				<texture background="true">fanblack.png</texture>
+			</control>
+			<control type="image">
+				<description>Fan Art</description>
+				<posx>324</posx>
+				<posy>527</posy>
+				<width>253</width>
+				<height>149</height>
+				<align>left</align>
+				<texture background="true">$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
+				<bordertexture border="5">ThumbBorder.png</bordertexture>
+				<bordersize>5</bordersize>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>IconCrossfadeTime</fadetime>
+			</control>
+			<control type="image">
+					<posx>324</posx>
+					<posy>527</posy>
+					<width>253</width>
+					<height>149</height>
+					<aspectratio>Stretch</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true">fanblack.png</texture>
+			</control>
+			<control type="label">
+				<description>Year txt</description>
+				<posx>390</posx>
+				<posy>293</posy>
+				<width>140</width>
+				<height>25</height>
+				<label>$LOCALIZE[345]:</label>
+				<align>Right</align>
+				<aligny>center</aligny>
+				<font>font12caps_title</font>
+				<textcolor>blue</textcolor>
+			</control>
+			<control type="fadelabel">
+				<posx>509</posx>
+				<posy>290</posy>
+				<width>400</width>
+				<height>30</height>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<align>Right</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Year]</label>
+				<scrollout>false</scrollout>
+				<pauseatend>2000</pauseatend>
+				</control>
+				<control type="label">
+					<description>Runtime txt</description>
+					<posx>390</posx>
+					<posy>313</posy>
+					<width>140</width>
+					<height>25</height>
+					<label>$LOCALIZE[2050]:</label>
+					<align>Right</align>
+					<aligny>center</aligny>
+					<font>font12caps_title</font>
+					<textcolor>blue</textcolor>
+				</control>
+				<control type="label">
+					<posx>509</posx>
+					<posy>310</posy>
+					<width>75</width>
+					<height>30</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>Right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Duration] Min.</label>
+				</control>
+				<control type="label">
+					<description>Director txt</description>
+					<posx>79</posx>
+					<posy>293</posy>
+					<width>140</width>
+					<height>25</height>
+					<label>$LOCALIZE[20339]:</label> 
+					<align>Right</align>
+					<aligny>center</aligny>
+					<font>font12caps_title</font>
+					<textcolor>blue</textcolor>
+				</control>
+				<control type="fadelabel">
+					<posx>185</posx>
+					<posy>290</posy>
+					<width>205</width>
+					<height>30</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>Left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Director]</label>
+				</control>
+				<control type="label">
+					<description>Writer txt</description>
+					<posx>79</posx>
+					<posy>313</posy>
+					<width>140</width>
+					<height>25</height>
+					<label>$LOCALIZE[20417]:</label>
+					<align>Right</align>
+					<aligny>center</aligny>
+					<font>font12caps_title</font>
+					<textcolor>blue</textcolor>
+				</control>
+				<control type="label">
+					<posx>185</posx>
+					<posy>310</posy>
+					<width>205</width>
+					<height>30</height>
+					<font>font12</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>Left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Writer]</label>
+					<scroll>true</scroll>
+				</control>
+			<control type="grouplist">
+				<description>Studio Codec Flagging Images</description>
+				<posx>130</posx>
+				<posy>444</posy>
+				<width>90</width>
+				<align>Center</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>StudioFlaggingConditions</include>
+			</control>
+			<control type="textbox">
+					<description>Description Value The Movie</description>
+					<posx>53</posx>
+					<posy>343</posy>
+					<width>523</width>
+					<height>120</height>
+					<font>font12caps_title</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<label>[COLOR blue]$LOCALIZE[40027]: [/COLOR] $INFO[ListItem.Plot]</label>
+					<autoscroll time="2000" delay="3000" repeat="5000"></autoscroll>
+				</control>			
+					<control type="scrollbar" id="60">
+						<posx>1239</posx>
+						<posy>36</posy>
+						<width>25</width>
+						<height>650</height>
+						<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+						<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+						<textureslidernib>ScrollBarNib.png</textureslidernib>
+						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+						<onleft>513</onleft>
+						<onright>513</onright>
+						<showonepage>false</showonepage>
+						<orientation>vertical</orientation>
+					</control>
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>-530</posx>
+				<posy>475</posy>
+				<width>945</width>
+				<align>right</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>VideoTypeHackFlaggingConditions</include>
+				<include>VideoCodecFlaggingConditions</include>
+				<include>AudioCodecFlaggingConditions</include>
+				<include>AspectCodecFlaggingConditions</include>
+				<visible>Control.IsVisible(514)</visible>
+			</control>
+			<control type="group">
+				<posx>450</posx>
+				<posy>470</posy>
+				<width>15</width>
+				<height>15</height>
+				<aspectratio>stretch</aspectratio>
+				<include>MPPASmall</include>
+				<visible>Control.IsVisible(514)</visible>
+			</control>
+			<control type="image">
+					<width>100</width>
+					<height>64</height>
+					<posx>420</posx>
+					<posy>460</posy>
+					<aspectratio>keep</aspectratio>
+					<align>center</align>
+					<aligny>center</aligny>
+					<texture>$INFO[listitem.Studio,flagging/studios/,.png]</texture>
+					<visible>Control.IsVisible(514)</visible>
+			</control>			
+				<control type="panel" id="514">
+				<posx>620</posx>
+				<posy>36</posy>
+				<width>750</width>
+				<height>650</height>
+				<onleft>4</onleft>
+				<onright>60</onright>
+				<onup>514</onup>
+				<ondown>514</ondown>
+				<viewtype label="Halfwall">List</viewtype>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime>200</scrolltime>
+				<preloaditems>200</preloaditems>
+				<visible>Container.Content(Movies)</visible>
+				<itemlayout height="216" width="156">
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>156</width>
+						<height>216	</height>
+						<bordersize>5</bordersize>
+						<colordiffuse>AAFFFFFF</colordiffuse>
+						<bordertexture border="5">button-nofocus.png</bordertexture>
+						<aspectratio>stretch</aspectratio>
+						<fadetime>200</fadetime>
+						<texture background="true" >$INFO[Listitem.Icon]</texture> 
+						<visible>Control.IsVisible(514)</visible>
+					</control>	
+				</itemlayout>
+				<focusedlayout height="323" width="225">
+					<control type="group">	
+						<posx>0</posx>
+						<posy>0</posy>
+    					<animation effect="slide" end="30,0" time="200" reversible="true" condition="Container.Column(0)">conditional</animation>
+    					<animation effect="slide" end="0,34" time="200" reversible="true" condition="Container.Row(0)">conditional</animation>
+    					<animation effect="slide" end="0,-37" time="200" reversible="true" condition="Container.Row(2)">conditional</animation>
+    					<animation effect="slide" end="-28,0" time="200" reversible="true" condition="Container.Column(3)">conditional</animation>
+						<animation reversible="false" effect="zoom"  end="-27,-33,300,425" time="200">focus</animation>
+						<animation reversible="false" effect="zoom" start="-27,-33,300,425" time="0">unfocus</animation>			
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>156</width>
+							<height>216</height>
+							<aspectratio>stretch</aspectratio>
+							<fadetime>200</fadetime>
+							<bordersize>8</bordersize>
+							<texture background="true">$INFO[Listitem.Icon]</texture>
+							<bordertexture border="8">ThumbBorder.png</bordertexture>
+							<visible>Control.IsVisible(514)</visible>
+						</control>
+					</control>
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+</includes>	

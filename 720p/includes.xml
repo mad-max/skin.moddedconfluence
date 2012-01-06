@@ -31,6 +31,10 @@
 	<include file="Viewtype_Lowlist.xml" />
 	<include file="Viewtype_Episode.xml" />
 	<include file="ViewVideo_Fanart.xml" />
+	<include file="ViewWall.xml" />
+	<include file="Viewtype_CoverFlow.xml" />
+	
+	
 	
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>

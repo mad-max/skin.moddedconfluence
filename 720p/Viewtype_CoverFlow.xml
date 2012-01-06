@@ -1,0 +1,495 @@
+<includes>
+	<include name="3d_CoverView">
+		<control type="image">
+			<posx>0</posx>
+			<posy>-50</posy>
+			<width>1380</width>
+			<height>780</height>
+			<visible>Control.IsVisible(596)</visible>
+			<texture>ContentPanel60.png</texture>
+			<include>Window_OpenClose_Animation</include>
+		</control>
+		<control type="group" id="7001">
+			<include>Window_OpenClose_Animation</include>
+			<posy>360</posy>
+			<posx>40</posx>
+			<visible>Control.IsVisible(596) + Container.OnNext</visible>
+			<animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
+			<control type="group">
+				<posx>80</posx>
+				<visible>Container.OnNext</visible>
+				<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-4).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>180</posx>
+				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-3).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>280</posx>
+				<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<info>Container(596).ListItem(-2).Icon</info>
+					<texture diffuse="movie_mask.png" />
+				</control>
+			</control>
+			<control type="group">
+				<posx>1000</posx>
+				<visible>!Container.OnNext</visible>
+				<animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
+				<animation effect="rotatey" center="1320" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(3).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>900</posx>
+				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(2).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>800</posx>
+				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(1).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.OnNext</visible>
+				<animation effect="slide" end="-110,0" time="250" reversible="false">Hidden</animation>
+				<control type="group">
+					<posx>700</posx>
+					<visible>Container.OnNext</visible>
+					<animation effect="rotatey" center="1020" start="0" end="-60" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+					<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+						<texture diffuse="movie_mask.png" />
+						<info>Container(596).ListItem(0).Icon</info>
+					</control>
+				</control>
+				<control type="group">
+					<posx>490</posx>
+					<visible>Container.OnNext</visible>
+					<animation effect="rotatey" center="470" start="0" end="-60" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+						<texture diffuse="movie_mask.png" />
+						<info>Container(596).ListItem(-1).Icon</info>
+					</control>
+				</control>
+			</control>
+		</control>
+
+		<control type="group" id="7002">
+			<include>Window_OpenClose_Animation</include>
+			<posy>360</posy>
+			<posx>40</posx>
+			<visible>Control.IsVisible(596) + Container.OnPrevious</visible>
+			<animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
+			<control type="group">
+				<posx>900</posx>
+				<visible>Container.OnPrevious</visible>
+				<animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(4).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>800</posx>
+				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(3).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>700</posx>
+				<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(2).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>-20</posx>
+				<visible>!Container.OnPrevious</visible>
+				<animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
+				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-3).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>80</posx>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-2).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>180</posx>
+				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-1).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<visible>Container.OnPrevious</visible>
+				<animation effect="slide" end="110,0" time="250" reversible="false">Hidden</animation>
+				<control type="group">
+					<posx>280</posx>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="rotatey" center="260" start="0" end="60" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+					<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+						<texture diffuse="movie_mask.png" />
+						<info>Container(596).ListItem(0).Icon</info>
+					</control>
+				</control>
+				<control type="group">
+					<posx>490</posx>
+					<visible>Container.OnPrevious</visible>
+					<animation effect="rotatey" center="810" start="0" end="60" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
+					<control type="image">
+						<posx>0</posx>
+						<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+						<texture diffuse="movie_mask.png" />
+						<info>Container(596).ListItem(1).Icon</info>
+					</control>
+				</control>
+			</control>
+		</control>
+
+		<control type="group" id="7000">
+			<include>Window_OpenClose_Animation</include>
+			<posy>360</posy>
+			<posx>40</posx>
+			<visible>Control.IsVisible(596) + !Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
+			<control type="group">
+				<posx>80</posx>
+				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-3).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>180</posx>
+				<animation effect="rotatey" center="160" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-2).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>280</posx>
+				<animation effect="rotatey" center="260" start="-60" end="-60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(-1).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>900</posx>
+				<animation effect="rotatey" center="1220" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(3).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>800</posx>
+				<animation effect="rotatey" center="1120" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(2).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>700</posx>
+				<animation effect="rotatey" center="1020" start="60" end="60" time="0" condition="true">Conditional</animation>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(1).Icon</info>
+				</control>
+			</control>
+			<control type="group">
+				<posx>490</posx>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(0).Icon</info>
+					<visible>Control.HasFocus(596)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<posx>490</posx>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>Container(596).ListItem(0).Icon</info>
+					<visible>!Control.HasFocus(596)</visible>
+				</control>
+			</control>
+			<control type="image" id="1">
+				<description>Cd Disc</description>
+					<animation effect="slide" start="-90" end="0" time="900" tween="cubic" easing="out" delay="1000" condition="">WindowOpen</animation>
+					<animation effect="rotate" end="55" center="auto" loop="false" reversible="false" condition="true">Conditional</animation>
+					<width>200</width>
+					<height>200</height>
+					<posx>590</posx>
+					<posy>90</posy>
+					<texture>$INFO[ListItem.Path]cdart.png</texture>
+					<aspectratio align="bottom">keep</aspectratio>
+					<visible>!Control.IsVisbible(596)</visible>
+			</control>
+		</control>
+		<control type="wraplist" id="596">
+			<include>Window_OpenClose_Animation</include>
+			<description>Fake list to control coverflow movement</description>
+			<!-- <visible>Container.Content(Movies)</visible> -->
+			<posx>490</posx>
+			<posy>360</posy>
+			<width>306</width>
+			<height>440</height>
+			<onleft>57</onleft>
+			<onright>57</onright>
+			<onup>9000</onup>
+			<ondown>61</ondown>
+			<viewtype label="31032">list</viewtype>
+			<pagecontrol>61</pagecontrol>
+			<orientation>horizontal</orientation>
+			<scrolltime>250</scrolltime>
+			<focusedposition>3</focusedposition>
+			<itemlayout height="1" width="1">
+			</itemlayout>
+			<focusedlayout height="440" width="300">
+				<control type="image">
+					<posx>40</posx>
+					<posy>0</posy>
+					<width>210</width>
+					<height>308</height>
+					<texture diffuse="movie_mask.png" />
+					<info>ListItem.Icon</info>
+					<aspectratio>stretch</aspectratio>
+					<visible>!Control.IsVisible(7001) + !Control.IsVisible(7002)</visible>
+				</control>
+
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<include>Window_OpenClose_Animation</include>
+			<visible>Control.IsVisible(596)</visible>
+	<!--		<control type="image">
+				<posx>0</posx>
+				<posy>670</posy>
+				<width>1280</width>
+				<height>55</height>
+				<texture background="true" >floor.png</texture> 
+			</control> -->
+			<control type="label">
+				<posx>410</posx>
+				<posy>675</posy>
+				<width>450</width>
+				<height>35</height>
+				<font>font24_title</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>-370</posx>
+				<posy>675</posy>
+				<width>1280</width>
+				<align>center</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>VideoTypeHackFlaggingConditions</include>				
+			</control>
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>-280</posx>
+				<posy>677</posy>
+				<width>1280</width>
+				<align>center</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>RezFlagging</include>
+			</control>			
+			<control type="grouplist">
+				<description>MPAA Rating Flagging Images</description>
+				<posx>-30</posx>
+				<posy>670</posy>
+				<width>800</width>
+				<align>-</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>MPPASmall</include>
+			</control> 
+			<control type="group">
+				<description>Studio Flags</description>
+				<posx>120</posx>
+				<posy>657</posy>
+				<visible>Control.IsVisible(596)</visible>
+				<control type="image" id="85">
+					<width>70</width>
+					<height>70</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[listitem.studio,flagging/studios/,.png]</texture>											
+				</control>
+			</control> 
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>290</posx>
+				<posy>675</posy>
+				<width>1280</width>
+				<align>center</align>
+				<itemgap>1</itemgap>
+				<orientation>horizontal</orientation>
+				<include>CodecFlagging</include>
+			</control> 
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>375</posx>
+				<posy>675</posy>
+				<width>1280</width>
+				<align>center</align>
+				<itemgap>1</itemgap>
+				<orientation>horizontal</orientation>
+				<include>AudioCodecFlaggingConditions</include>
+			</control> 
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>470</posx>
+				<posy>675</posy>
+				<width>1280</width>
+				<align>center</align>
+				<itemgap>1</itemgap>
+				<orientation>horizontal</orientation>
+				<include>AudioChannelsFlaggingConditions</include>
+			</control> 
+			<control type="grouplist">
+				<description>Media Codec Flagging Images</description>
+				<posx>550</posx>
+				<posy>675</posy>
+				<width>1280</width>
+				<align>center</align>
+				<itemgap>1</itemgap>
+				<orientation>horizontal</orientation>
+				<include>AspectCodecFlaggingConditions</include>
+			</control> 
+		</control>
+	</include>
+</includes>
