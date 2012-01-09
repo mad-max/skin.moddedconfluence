@@ -333,7 +333,35 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(watchlist)</onclick>
 						<selected>Skin.HasSetting(watchlist)</selected>
-					</control>	
+					</control>
+					<control type="radiobutton" id="151">
+						<description>Default focus</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>StartupFocus</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>default focus</label>
+						<onclick>Skin.ToggleSetting(customstartupfocus)</onclick>
+						<selected>Skin.HasSetting(customstartupfocus)</selected>
+					</control>
+					<control type="button" id="154">
+						<description>Default focus</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font12</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>			
+						<label>Offset</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(CustomFocusOffset)][/COLOR]</label2>
+						<onclick>Skin.SetNumeric(CustomFocusOffset)</onclick>
+						<visible>Skin.HasSetting(customstartupfocus)</visible>
+					</control>					
 					<control type="label" id="110">
 						<width>750</width>
 						<height>45</height>
