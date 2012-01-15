@@ -44,6 +44,23 @@
 	<animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
 	</include>
 
+		<include name="CommonPageCount">
+		<control type="label">
+		<description>Page Count Label</description>
+		<posx>40r</posx>
+		<posy>53r</posy>
+		<width>500</width>
+		<height>20</height>
+		<font>font12</font>
+		<textcolor>grey</textcolor>
+		<scroll>false</scroll>
+		<align>right</align>
+		<aligny>center</aligny>
+		<label>$INFO[Window.Property(filter),$LOCALIZE[587] ([COLOR=blue],[/COLOR]) - ]$INFO[Container.NumItems,([COLOR=blue],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+		<include>Window_OpenClose_Animation</include>
+		</control>
+		</include>
+	
 	<include name="BehindDialogFadeOut">
 		<control type="image">
 			<posx>0</posx>
