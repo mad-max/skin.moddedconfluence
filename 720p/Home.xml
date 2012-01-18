@@ -1198,6 +1198,7 @@
 			<scrolltime>300</scrolltime>
 			<focusposition>3</focusposition>
 			<movement>2</movement>
+			<visible>!Skin.HasSetting(lowermenu)</visible>
 			<orientation>Horizontal</orientation>
 			<itemlayout height="200" width="182">
 				<control type="image">
