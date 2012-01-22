@@ -339,7 +339,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>StartupFocus</label>
+						<label>40070</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -756,7 +756,7 @@
 						<font>font13</font>
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
-                        <label>Viz-Wall</label>
+                        <label>40071</label>
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>menuitemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
@@ -771,7 +771,7 @@
                         <focusedcolor>white</focusedcolor>
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>menuitemNF.png</texturenofocus>
-                        <label>Path</label>
+                        <label>40072</label>
                         <label2>$INFO[Skin.String(CDWall_Folder_Path)]</label2>
                         <onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
 						<visible>Skin.HasSetting(CDWallNoVisualisation)</visible>

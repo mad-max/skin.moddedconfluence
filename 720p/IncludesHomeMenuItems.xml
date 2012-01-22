@@ -73,7 +73,7 @@
 		</control>
 		<control type="button" id="90165">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>Sets</label>
+			<label>40073</label>
 			<onclick>ActivateWindow(10025,videodb://1/7/,return)</onclick>
 		</control>
 		<control type="button" id="90166">

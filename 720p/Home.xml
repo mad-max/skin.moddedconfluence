@@ -943,7 +943,7 @@
 				<posx>980</posx>
 				<posy>-48</posy>
 				<width>300</width>
-				<label>Serien insgesamt: $INFO[Window(Home).Property(TVShows.Count)]</label>
+				<label>$LOCALIZE[40074]: $INFO[Window(Home).Property(TVShows.Count)]</label>
 				<align>center</align>
 				<visible>Container(9000).HasFocus(11)</visible>
 			</control>			
