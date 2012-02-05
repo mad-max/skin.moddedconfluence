@@ -1050,14 +1050,6 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !Skin.HasSetting(fancode)</visible>
 					</item>
-					<item id="444">
-						<description>Custom FAV Five</description>
-						<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
-						<icon>special://skin/media/backgrounds/custom.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Fav_Folder)]</thumb>
-						<onclick>$INFO[Skin.String(Menu_Custom8_Path)]</onclick>
-						<visible>Skin.HasSetting(Menu_Custom8)</visible>
-					</item>
 					<item id="4">
 						<label>1</label>
 						<onclick>ActivateWindow(Pictures)</onclick>
@@ -1132,6 +1124,22 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
 					</item>
+					<item id="444">
+						<description>Custom FAV Five</description>
+						<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
+						<icon>special://skin/media/backgrounds/custom.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Fav_Folder)]</thumb>
+						<onclick>$INFO[Skin.String(Menu_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Custom8)</visible>
+					</item>	
+					<item id="445">
+						<description>Custom FAV Five</description>
+						<label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
+						<icon>special://skin/media/backgrounds/custom.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Fav2_Folder)]</thumb>
+						<onclick>$INFO[Skin.String(Menu_Custom9_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Custom9)</visible>
+					</item>	
 					<item id="11">
 						<label>20343</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>

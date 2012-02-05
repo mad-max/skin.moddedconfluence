@@ -887,13 +887,21 @@
 								<thumb>$INFO[Skin.String(Home_Custom_Back_Addons_Folder)]</thumb>
 							</item>
 							<item id="23">
-							<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
-							<label2>Home_Custom_Back_Fav_Folder</label2>
-							<onclick>-</onclick>
-							<icon>special://skin/backgrounds/videos.jpg</icon>
-							<thumb>$INFO[Skin.String(Menu_Custom8_Folder)]</thumb>
-							<visible>Skin.HasSetting(Menu_Custom8)</visible>
-						</item>
+								<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
+								<label2>Home_Custom_Back_Fav_Folder</label2>
+								<onclick>-</onclick>
+								<icon>s$INFO[Skin.String(Menu_Custom8_Folder)]</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Fav_Folder)]</thumb>
+								<visible>Skin.HasSetting(Menu_Custom8)</visible>
+							</item>
+							<item id="24">
+								<label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
+								<label2>Home_Custom_Back_Fav2_Folder</label2>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/videos.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Fav2_Folder)]</thumb>
+								<visible>Skin.HasSetting(Menu_Custom9)</visible>
+							</item>							
 						</content>
 					</control>
 					<control type="image">
