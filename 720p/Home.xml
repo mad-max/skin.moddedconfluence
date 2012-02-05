@@ -1308,7 +1308,7 @@
 					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton3)])</onclick>
 					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton3))]</icon>
 					<thumb>-</thumb>
-					<visible>CContainer(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton3))</visible>
+					<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton3))</visible>
 				</item>
 				<item>
 					<label>$INFO[system.addontitle(Skin.String(HomeVideosButton4))]</label>
