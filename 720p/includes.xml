@@ -33,6 +33,7 @@
 	<include file="ViewVideo_Fanart.xml" />
 	<include file="ViewWall.xml" />
 	<include file="Viewtype_CoverFlow.xml" />
+	<include file="Viewtype_Showcase.xml" />
 	
 	
 	
