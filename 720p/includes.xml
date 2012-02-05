@@ -34,6 +34,12 @@
 	<include file="ViewWall.xml" />
 	<include file="Viewtype_CoverFlow.xml" />
 	<include file="Viewtype_Showcase.xml" />
+    <include file="Viewtype_LauncherInfo.xml" />
+	<include file="Viewtype_LauncherPosterOne.xml" />
+    <include file="Viewtype_LauncherPosterWide.xml" />
+	<include file="Viewtype_LauncherPosterWide2.xml" />
+	<include file="Viewtype_LauncherPosterOne_Icons.xml" />
+	<include file="Viewtype_LauncherPosterTwo_Icons.xml" />	
 	
 	
 	
