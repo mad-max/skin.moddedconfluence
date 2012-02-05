@@ -1,3 +1,14 @@
+[B]1.0.6[/B]
+
+- added "Showcase" port from NEON
+- added 2nd favorite for Home menu
+- added viewtype support for advanced launcher emulators
+- fixed scrolling bug in Episode view "Landscape"
+- fixed problem with 3rd addon under videos
+- fixed bug with video info not showing for [Player.Paused + Window.IsVisible(OSD)]
+- redid ViewVideoLandscape.xml
+- redid ViewsVideoBannerwall.xml
+
 [B]1.0.5[/B]
 
 - added new Viewtype Coverflow
