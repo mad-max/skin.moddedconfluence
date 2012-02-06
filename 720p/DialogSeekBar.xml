@@ -1,6 +1,6 @@
 <window id="115">
 	<defaultcontrol>1</defaultcontrol>
-	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
+	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(MusicOSD) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
 	<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
@@ -235,16 +235,6 @@
 				</control>
 			</control>
 		</control>
-				<control type="largeimage">
-				    <description>TV Show Image</description>
-				    <posx>35</posx>
-				    <posy>380</posy> 
-				    <width>275</width>
-				    <height>145</height>
-				    <texture>$INFO[Player.FolderPath]../logo.png</texture>
-				    <aspectratio>keep</aspectratio>
-				    <visible>VideoPlayer.Content(episodes)</visible>
-			    </control>
 				<control type="image" id="1">
 						<description>Video Resolution Image</description>
 						<posx>545</posx>

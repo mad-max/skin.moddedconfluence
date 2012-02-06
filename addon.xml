@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.moddedconfluence" version="1.0.4" name="Confluence-MOD" provider-name="mad-max" >
+<addon id="skin.moddedconfluence" version="1.0.6" name="Confluence-MOD" provider-name="mad-max" >
   <requires>
     <import addon="xbmc.gui" version="3.00"/>
   </requires>

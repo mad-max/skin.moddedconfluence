@@ -339,7 +339,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>StartupFocus</label>
+						<label>40070</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -499,6 +499,49 @@
 							<onclick>ActivateWindow(1114)</onclick>
 							<visible>Skin.HasSetting(Menu_Custom8)</visible>
 						</control>					
+						<control type="radiobutton" id="508">
+							<description>custom home 8</description>
+							<font>cirrus_20</font>
+							<width>750</width>
+							<height>35</height>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<label>Custom Favorite 2</label>
+							<onclick>Skin.ToggleSetting(Menu_Custom9)</onclick>
+							<selected>Skin.HasSetting(Menu_Custom9)</selected>
+							<enable>!Skin.HasSetting(Menu_Movies_Sub9)</enable>
+						</control>
+						<control type="button" id="8217">
+							<description>Menu Movies Sub Custom8 Label</description>
+							<label>Label</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom9_Label)][/COLOR]</label2>
+							<width>750</width>
+							<height>35</height>
+							<font>cirrus_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Custom9_Label)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom9)</visible>
+						</control>
+						<control type="button" id="8218">
+							<description>Menu Movies Sub Custom8 Path</description>
+							<label>Pfad</label>
+							<label2>[COLOR=selected]$INFO[Skin.String(Menu_Custom9_Path)][/COLOR]</label2>
+							<width>750</width>
+							<height>35</height>
+							<font>cirrus_20</font>
+							<textcolor>grey2</textcolor>
+							<focusedcolor>white</focusedcolor>
+							<texturefocus>MenuItemFO.png</texturefocus>
+							<texturenofocus>MenuItemNF.png</texturenofocus>
+							<onclick>Skin.SetString(Menu_Sub_Custom_Favourites_Path,Menu_Custom9_Path)</onclick>
+							<onclick>ActivateWindow(1114)</onclick>
+							<visible>Skin.HasSetting(Menu_Custom9)</visible>
+						</control>						
 				<!-- FILL IN HERE -->				
 				</control>
 				<control type="scrollbar" id="60">
@@ -756,7 +799,7 @@
 						<font>font13</font>
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
-                        <label>Viz-Wall</label>
+                        <label>40071</label>
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>menuitemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
@@ -771,7 +814,7 @@
                         <focusedcolor>white</focusedcolor>
                         <texturefocus>MenuItemFO.png</texturefocus>
                         <texturenofocus>menuitemNF.png</texturenofocus>
-                        <label>Path</label>
+                        <label>40072</label>
                         <label2>$INFO[Skin.String(CDWall_Folder_Path)]</label2>
                         <onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
 						<visible>Skin.HasSetting(CDWallNoVisualisation)</visible>

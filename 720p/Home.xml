@@ -1,6 +1,7 @@
 <window id="0">
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="Window.Previous(startup)+Skin.HasSetting(customstartupfocus)">Control.Move(9000,$INFO[Skin.String(CustomFocusOffset)])</onload>
+	<onload condition="Skin.HasSetting(watchlist)">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 		<control type="multiimage">
@@ -49,7 +50,7 @@
 		</control>
 		<control type="group" id="99">
 					<include condition="Skin.HasSetting(WeatherWidget)">WeatherWidget</include>
-				</control>
+		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>125</posy>
@@ -914,6 +915,14 @@
 				<height>30</height>
 				<texture flipx="true" flipy="true">Header.png</texture>
 			</control>
+			<control type="image">
+				<posx>997</posx>
+				<posy>-50</posy>
+				<width>330</width>
+				<height>30</height>
+				<texture flipx="true" flipy="true">Header.png</texture>
+				<visible>Container(9000).HasFocus(11)</visible>
+			</control>			
 			<control type="label">
 				<posx>980</posx>
 				<posy>-23</posy>
@@ -930,6 +939,14 @@
 				<align>center</align>
 				<visible>Container(9000).HasFocus(11)</visible>
 			</control>
+			<control type="label">
+				<posx>980</posx>
+				<posy>-48</posy>
+				<width>300</width>
+				<label>$LOCALIZE[40074]: $INFO[Window(Home).Property(TVShows.Count)]</label>
+				<align>center</align>
+				<visible>Container(9000).HasFocus(11)</visible>
+			</control>			
 			<control type="label">
 				<posx>980</posx>
 				<posy>-23</posy>
@@ -1033,14 +1050,6 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Weather_Folder)]</thumb>
 						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !Skin.HasSetting(fancode)</visible>
 					</item>
-					<item id="444">
-						<description>Custom FAV Five</description>
-						<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
-						<icon>special://skin/media/backgrounds/custom.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_Fav_Folder)]</thumb>
-						<onclick>$INFO[Skin.String(Menu_Custom8_Path)]</onclick>
-						<visible>Skin.HasSetting(Menu_Custom8)</visible>
-					</item>
 					<item id="4">
 						<label>1</label>
 						<onclick>ActivateWindow(Pictures)</onclick>
@@ -1115,6 +1124,22 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Movies_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
 					</item>
+					<item id="444">
+						<description>Custom FAV Five</description>
+						<label>$INFO[Skin.String(Menu_Custom8_Label)]</label>
+						<icon>special://skin/media/backgrounds/custom.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Fav_Folder)]</thumb>
+						<onclick>$INFO[Skin.String(Menu_Custom8_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Custom8)</visible>
+					</item>	
+					<item id="445">
+						<description>Custom FAV Five</description>
+						<label>$INFO[Skin.String(Menu_Custom9_Label)]</label>
+						<icon>special://skin/media/backgrounds/custom.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Fav2_Folder)]</thumb>
+						<onclick>$INFO[Skin.String(Menu_Custom9_Path)]</onclick>
+						<visible>Skin.HasSetting(Menu_Custom9)</visible>
+					</item>	
 					<item id="11">
 						<label>20343</label>
 						<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
@@ -1182,6 +1207,7 @@
 			<scrolltime>300</scrolltime>
 			<focusposition>3</focusposition>
 			<movement>2</movement>
+			<visible>!Skin.HasSetting(lowermenu)</visible>
 			<orientation>Horizontal</orientation>
 			<itemlayout height="200" width="182">
 				<control type="image">
@@ -1276,35 +1302,35 @@
 					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton1)])</onclick>
 					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton1))]</icon>
 					<thumb>-</thumb>
-					<visible>Container(9000).HasFocus(2) + !IsEmpty(Skin.String(HomeVideosButton1))</visible>
+					<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton1))</visible>
 				</item>
 				<item>
 					<label>$INFO[system.addontitle(Skin.String(HomeVideosButton2))]</label>
 					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton2)])</onclick>
 					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton2))]</icon>
 					<thumb>-</thumb>
-					<visible>Container(9000).HasFocus(2) + !IsEmpty(Skin.String(HomeVideosButton2))</visible>
+					<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton2))</visible>
 				</item>
 				<item>
 					<label>$INFO[system.addontitle(Skin.String(HomeVideosButton3))]</label>
 					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton3)])</onclick>
 					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton3))]</icon>
 					<thumb>-</thumb>
-					<visible>Container(9000).HasFocus(2) + !IsEmpty(Skin.String(HomeVideosButton3))</visible>
+					<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton3))</visible>
 				</item>
 				<item>
 					<label>$INFO[system.addontitle(Skin.String(HomeVideosButton4))]</label>
 					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton4)])</onclick>
 					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton4))]</icon>
 					<thumb>-</thumb>
-					<visible>Container(9000).HasFocus(2) + !IsEmpty(Skin.String(HomeVideosButton4))</visible>
+					<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton4))</visible>
 				</item>
 				<item>
 					<label>$INFO[system.addontitle(Skin.String(HomeVideosButton5))]</label>
 					<onclick>RunAddon($INFO[Skin.String(HomeVideosButton5)])</onclick>
 					<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton5))]</icon>
 					<thumb>-</thumb>
-					<visible>Container(9000).HasFocus(2) + !IsEmpty(Skin.String(HomeVideosButton5))</visible>
+					<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)] + !IsEmpty(Skin.String(HomeVideosButton5))</visible>
 				</item>
 
 				<item>
@@ -1534,7 +1560,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>520r</posx>
+			<posx>355r</posx>
 			<posy>0</posy>
 			<animation effect="slide" start="0,0" end="-60,0" delay="0" time="300" condition="Window.IsVisible(MuteBug)">conditional</animation>
 			<animation effect="slide" start="0,0" end="550,0" delay="0" time="300">WindowClose</animation>
@@ -1572,7 +1598,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<posx>390r</posx>
+			<posx>240r</posx>
 			<posy>0</posy>
 			<animation effect="slide" start="0,0" end="-60,0" delay="0" time="300" condition="Window.IsVisible(MuteBug)">conditional</animation>
 			<animation effect="slide" start="0,0" end="420,0" delay="0" time="300">WindowClose</animation>

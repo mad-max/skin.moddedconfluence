@@ -1,4 +1,31 @@
-[B]1.0.4/B]
+[B]1.0.6[/B]
+
+- added "Showcase" port from NEON
+- added 2nd favorite for Home menu
+- added viewtype support for advanced launcher emulators
+- fixed scrolling bug in Episode view "Landscape"
+- fixed problem with 3rd addon under videos
+- fixed bug with video info not showing for [Player.Paused + Window.IsVisible(OSD)]
+- redid ViewVideoLandscape.xml
+- redid ViewsVideoBannerwall.xml
+
+[B]1.0.5[/B]
+
+- added new Viewtype Coverflow
+- added new viewtype HalfWall
+- added ability to set custom startup focus in home
+- added db-stats for tv-shows in general
+- added ability to have Lowlist as viewtype for Episodes
+- added button for movie sets in movie submenu (button "years" was sacrificed)
+- fixed bug music fanart not being displayed while Player.HasAudio
+- fixed bug that did not show the video addons under movies and tv-shows
+- fixed bug with watchlist refresh (should be working again)
+- fixed gap in home (top right corner / moved weather and time)
+- fixed overlaping pause label while subtitle selectio (thx Quaith)
+- fixed bug that prevented logo.png not being displayed by pressing "i"
+- cleaned up some of the missing strings
+
+[B]1.0.4[/B]
 
 - added Viewtype-options to LowList (HideCases, TiltIcon etc.)
 - added support for SeasonFanart on LowList and Landscape
@@ -15,7 +42,7 @@
 - fixed folders for genre specific pictures
 
 
-[B]1.0.3/B]
+[B]1.0.3[/B]
 
 - added support for logo and CDArt in movies sction
 - added option to set a favourite as home item
@@ -33,7 +60,7 @@
 - fixed bug that prevented the changing of backdrops for custom-playlist 1&2
 
 
-[B]1.0.2/B]
+[B]1.0.2[/B]
 
 - added support for WeatherFanart in Home based on condtion .Day0
 - added Swedish strings for the Mod (thx Thizizmyname)

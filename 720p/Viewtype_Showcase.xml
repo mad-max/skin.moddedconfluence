@@ -125,9 +125,15 @@
 					</control>
 					<control type="image">
 						<posx>-10</posx>
+<<<<<<< HEAD
 						<posy>78</posy>
 						<width>225</width>
 						<height>325</height>
+=======
+						<posy>76</posy>
+						<width>225</width>
+						<height>327</height>
+>>>>>>> 094d745ef7a7885373101a0e3d4ef7f1e7d17559
 						<texture>neon/posterframeF.png</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="90,258" start="81" end="100" time="300" tween="back" easing="out" />

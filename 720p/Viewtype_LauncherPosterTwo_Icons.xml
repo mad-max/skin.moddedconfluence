@@ -1,0 +1,239 @@
+<!--ID-789-->
+<includes>
+  <include name="PosterTwo_Icons">
+    <control type="group">
+      <visible>Control.IsVisible(789)</visible>
+      <include>VisibleFadeEffect</include>
+	    <!--<DOWN_BG-->
+        <control type="image">
+          <posx>0</posx>
+          <posy>680</posy>
+          <width>1280</width>
+          <height>110</height>
+          <aspectratio>stretch</aspectratio>
+          <fadetime>200</fadetime>
+          <texture background="true">MediaInfoBackLower.png</texture>
+          </control>
+		
+	    <!--BAR-->
+        <control type="scrollbar" id="60">
+          <posx>24</posx>
+          <posy>110</posy>
+          <width>25</width>
+          <height>570</height>
+          <texturesliderbackground border="10,14,10,14">ScrollBarV.png</texturesliderbackground>
+          <texturesliderbar border="10,14,10,14">ScrollBarV_bar.png</texturesliderbar>
+          <texturesliderbarfocus border="10,14,10,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+          <textureslidernib>ScrollBarNib.png</textureslidernib>
+          <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+          <onleft>2</onleft>
+          <onright>789</onright>
+          <showonepage>false</showonepage>
+          <orientation>vertical</orientation>
+          <visible>Control.IsVisible(789)</visible>
+        </control>
+ 
+
+		
+<!--1-->
+<control type="group">
+<visible>Control.IsVisible(789)</visible>
+<posx>50</posx>
+<posy>40</posy>
+<width>1230</width>
+<height>70</height>	  
+        <!--<BG-->
+        <control type="image">
+          <posx>-50</posx>
+          <posy>-40</posy>
+          <width>1280</width>
+          <height>110</height>
+          <aspectratio>stretch</aspectratio>
+          <fadetime>200</fadetime>
+          <texture background="true">MediaInfoBackUpper.png</texture>
+        </control>
+		  <!--STUDIO-->
+          <control type="label">
+            <description>Studio Value</description>
+            <posx>0</posx>
+            <posy>-20</posy>
+            <width>410</width>
+            <height>90</height>
+            <label>$INFO[ListItem.Studio]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font10_title</font>
+            <textcolor>blue</textcolor>
+            <scroll>true</scroll>
+          </control>
+		  <!--GENRE-->
+          <control type="label">
+            <description>Genre Value</description>
+            <posx>820</posx>
+            <posy>-20</posy>
+            <width>410</width>
+            <height>90</height>
+            <label>$INFO[listitem.Genre]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font10_title</font>
+            <textcolor>blue</textcolor>
+            <scroll>true</scroll>
+          </control>
+		<!--TITLE-->
+	  	<control type="label">
+			<description>Show Title txt</description>
+			<posx>390</posx>
+			<posy>-20</posy>
+			<width>450</width>
+			<height>90</height>					
+			<label>$INFO[ListItem.Label]</label>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font24_title</font>
+			<textcolor>white</textcolor>
+			<scroll>true</scroll>
+			<wrapmultiline>true</wrapmultiline>
+	  	</control>
+</control>  
+
+
+
+<!--2-->
+<control type="group">
+<visible>Control.IsVisible(789)</visible>
+<posx>50</posx>
+<posy>110</posy>
+<width>820</width>
+<height>570</height>	
+
+        <!--<BG-->
+        <control type="image">
+          <posx>5</posx>
+          <posy>5</posy>
+          <width>800</width>
+          <height>560</height>
+          <aspectratio>stretch</aspectratio>
+          <fadetime>200</fadetime>
+          <texture background="true">black-back.png</texture>
+        </control>	
+		  		
+	<!--ICONS-->
+	<control type="panel" id="789">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>820</width>
+	<height>560</height>	
+	<onleft>60</onleft>
+	<onleft>2</onleft>
+	<onright>2</onright>
+	<onup>789</onup>
+	<ondown>789</ondown>
+	<scrolltime>200</scrolltime>
+	<viewtype label="536">icon</viewtype>
+	<pagecontrol>60</pagecontrol>
+	<include>contentpanelslide</include>	
+	<itemlayout height="140" width="200">
+		<control type="image">
+			<posx>10</posx>
+			<posy>10</posy>
+			<width>190</width>
+			<height>130</height>
+			<info>ListItem.Icon</info>
+		    <aspectratio>stretch</aspectratio>
+			<bordertexture>launcher_frame.png</bordertexture>
+            <bordersize>3</bordersize>
+		</control>
+	</itemlayout>
+	<focusedlayout height="150" width="210">
+		<control type="image">
+			<posx>5</posx>
+			<posy>5</posy>
+			<width>200</width>
+			<height>140</height>
+			<info>ListItem.Icon</info>
+		    <aspectratio>stretch</aspectratio>
+			<animation effect="fade" start="80" end="100" time="50">focus</animation>
+			<bordertexture>launcher_frame.png</bordertexture>
+            <bordersize>3</bordersize>
+		</control>
+	</focusedlayout>
+	</control>
+</control>    
+
+
+<!--3-->
+<control type="group">
+<visible>Control.IsVisible(789)</visible>
+<posx>870</posx>
+<posy>110</posy>
+<width>410</width>
+<height>570</height>
+        <!--<BG-->
+        <control type="image">
+          <posx>5</posx>
+          <posy>5</posy>
+          <width>400</width>
+          <height>560</height>
+          <aspectratio>stretch</aspectratio>
+          <fadetime>200</fadetime>
+          <texture background="true">black-back.png</texture>
+        </control>		
+	    <!--FANART/SCREENSHOT-->
+        <control type="image">
+          <posx>10</posx>
+          <posy>10</posy>
+          <width>390</width>
+          <height>225</height>
+          <aspectratio>stretch</aspectratio>
+          <fadetime>200</fadetime>
+          <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+        </control>
+
+		<!--YEAR-->
+        <control type="label">
+            <description>Year Value</description>
+            <posx>0</posx>
+            <posy>245</posy>
+            <width>410</width>
+            <height>70</height>
+            <label>$INFO[ListItem.Premiered]</label>
+            <align>center</align>
+            <aligny>center</aligny>
+            <font>font13_title</font>
+            <textcolor>white</textcolor>
+            <scroll>true</scroll>
+        </control>	
+		  <control type="image">
+            <posx>0</posx>
+            <posy>255</posy>
+            <width>410</width>
+            <height>3</height>
+            <texture>separator.png</texture>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>305</posy>
+            <width>410</width>
+            <height>3</height>
+            <texture>separator.png</texture>
+          </control>	
+		  	  
+		  <!--PLOT-->
+          <control type="textbox">
+            <description>Description</description>
+            <posx>10</posx>
+            <posy>315</posy>
+            <width>390</width>
+            <height>250</height>
+            <font>font12</font>
+            <align>-</align>
+            <textcolor>white</textcolor>
+            <label>$INFO[ListItem.Plot]</label>
+            <autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+          </control>
+</control>
+		  
+    </control>
+  </include>
+</includes>

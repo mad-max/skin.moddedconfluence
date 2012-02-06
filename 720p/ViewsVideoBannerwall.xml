@@ -3,14 +3,22 @@
 <!-- ============================== BANNER WALL VIEW ID 519 ============================== -->
 <!-- =================================== TV Shows only =================================== -->
 	<include name="BannerWallView">
+	<control type="image">
+		<posx>0</posx>
+		<posy>-30</posy>
+		<width>1380</width>
+		<height>820</height>
+		<aspectratio>stretch</aspectratio>
+		<texture>contentpanel60.png</texture>
+	</control>
 		<control type="group">
 		<visible>Control.IsVisible(519)</visible>
 			<!-- wall panel -->
 			<control type="wraplist" id="519">
-				<posx>680</posx>
-				<posy>240</posy>
-				<width>1150</width>
-				<height>460</height>
+				<posx>660</posx>
+				<posy>-140</posy>
+				<width>680</width>
+				<height>920</height>
 				<onleft>2</onleft>
 				<onright>519</onright>
 				<onup>519</onup>
@@ -20,11 +28,13 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>180</scrolltime>
 				<preloaditems>2</preloaditems>
+				<focusposition>4</focusposition>
+				<itemgap>1</itemgap>
 				<visible>Container.Content(TVShows)</visible>
-				<itemlayout height="106" width="575">
+				<itemlayout height="140" width="575">
 					<control type="group"> <!-- banner mod -->
-						<posx>0</posx>
-						<posy>0</posy>
+						<posx>33</posx>
+						<posy>33</posy>
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
@@ -41,9 +51,7 @@
 							<height>106</height>
 							<aspectratio>stretch</aspectratio>
 							<fadetime>200</fadetime>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="8">ThumbBorder.png</bordertexture>
-							<bordersize>5</bordersize>
+							<texture background="true" diffuse="banner_mask.png">$INFO[ListItem.Icon]</texture>
 						</control>
 						<control type="image">
 						<posx>0</posx>
@@ -56,10 +64,10 @@
 					</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="140" width="758">
+				<focusedlayout height="140" width="596">
 					<control type="group">	
 						<posx>0</posx>
-						<posy>0</posy>
+						<posy>63</posy>
 						<control type="image"> <!-- banner mod -->
 							<posx>0</posx>
 							<posy>0</posy>
@@ -67,29 +75,27 @@
 							<height>106</height>
 							<aspectratio>stretch</aspectratio>
 							<fadetime>200</fadetime>
-							<animation effect="zoom" end="110" center="360,288" time="200">Focus</animation>
-							<texture background="true">$INFO[ListItem.Icon]</texture>
-							<bordertexture border="8">ThumbBorder.png</bordertexture>
-							<bordersize>5</bordersize>
+							<texture background="true" diffuse="banner_mask.png">$INFO[ListItem.Icon]</texture>
+							<animation effect="zoom" end="115" center="360,288" time="200">Focus</animation>
 						</control>
 					</control>
 				</focusedlayout>
 			</control>
-			<!-- Tv show info down thebottom  -->	
+ 	
 			<control type="image">
 				<posx>-5</posx>
 				<posy>570</posy>
 				<width>1303</width>
 				<height>160</height>
-				<texture>ContentPanel.png</texture>
-			</control>
+				<texture>HomeSubNF.png</texture>
+			</control> 
 			<control type="group">
 				<posx>30</posx>
 				<posy>580</posy>
 				<visible>Control.IsVisible(519) | Container.Content(TVShows)</visible>
 				<control type="label">
 					<description>First Aired</description>
-					<posx>0</posx>
+					<posx>700</posx>
 					<posy>0</posy>
 					<width>440</width>
 					<height>25</height>
@@ -102,9 +108,9 @@
 				</control>
 				<control type="label">
 					<description>Genre</description>
-					<posx>0</posx>
+					<posx>700</posx>
 					<posy>30</posy>
-					<width>440</width>
+					<width>480</width>
 					<height>25</height>
 					<label fallback="416">[COLOR=blue]$LOCALIZE[515]: [/COLOR]$INFO[listitem.genre]</label>
 					<align>left</align>
@@ -115,7 +121,7 @@
 				</control>
 				<control type="label">
 					<description>Seasons</description>
-					<posx>0</posx>
+					<posx>700</posx>
 					<posy>65</posy>
 					<width>440</width>
 					<height>25</height>
@@ -128,7 +134,7 @@
 				</control>
 				<control type="label">
 					<description>Episodes</description>
-					<posx>0</posx>
+					<posx>700</posx>
 					<posy>100</posy>
 					<width>580</width>
 					<height>25</height>
@@ -142,24 +148,14 @@
 				<control type="image">
 					<width>161</width>
 					<height>110</height>
-					<posx>570r</posx>
+					<posx>840r</posx>
 					<posy>10</posy>
 					<fadetime>100</fadetime>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[listitem.Studio,flagging/studios/,.png]</texture>
 				</control>
-				<control type="image">
-				<description>MPAA Rating Flagging Images</description>
-				<posx>570r</posx>
-				<posy>0</posy>
-				<width>800</width>
-				<align>right</align>
-				<include>VideoMPAAFlaggingConditions</include>
-			</control>
-
-				<!-- TV SHOW LOGO -->
-				<control type="largeimage" id="7914"> 
-					<posx>370r</posx> 
+			<control type="largeimage" id="7914"> 
+					<posx>1270r</posx> 
 					<posy>-10</posy> 
 					<width>335</width> 
 					<height>130</height> 
@@ -168,7 +164,7 @@
 					<aspectratio scalediffuse="false">keep</aspectratio> 
 					<visible>!IsEmpty(ListItem.Thumb)</visible> 
 				</control>			
-			</control>
+			</control> 
 		</control>
 	</include>
 </includes>
