@@ -1,3 +1,7 @@
+[B]1.0.7[/B]
+
+- fixed missing <visible> statement that darkened all video views, too much
+
 [B]1.0.6[/B]
 
 - added "Showcase" port from NEON
