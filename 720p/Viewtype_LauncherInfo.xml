@@ -4,6 +4,14 @@
 			<visible>Control.IsVisible(785)</visible>
 			<include>VisibleFadeEffect</include>
 			
+			<control type="image">
+				<posx>0</posx>
+				<posy>-20</posy>
+				<width>1380</width>
+				<height>750</height>
+				<texture>ContentPanel60.png</texture>
+			</control>
+			
 			<control type="list" id="785">
 				<posx>660</posx>
 				<posy>60</posy>
@@ -255,18 +263,24 @@
 						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
-					
+					<control type="image">
+						<posx>0</posx>
+						<posy>330</posy>
+						<width>550</width>
+						<height>4</height>
+						<texture>separator.png</texture>
+					</control>					
 					<control type="textbox">
 						<description>Description</description>
 						<posx>0</posx>
 						<posy>130</posy>
 						<width>600</width>
-						<height>200</height>
+						<height>195</height>
 						<font>font12</font>
 						<align>-</align>
 						<textcolor>white</textcolor>
 						<label>$INFO[ListItem.Plot]</label>
-						<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="2000" delay="3000" repeat="5000">True</autoscroll>
 					</control>
 				</control>
 			</control>
