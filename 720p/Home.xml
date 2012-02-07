@@ -35,19 +35,7 @@
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
 			<visible>!Skin.HasSetting(nofloor)</visible>
 		</control>
-		<control type="image">
-			<description>LOGO</description>
-			<posx>512</posx>
-			<posy>145r</posy>
-			<width>256</width>
-			<height>128</height>
-			<aspectratio aligny="bottom">keep</aspectratio>
-			<texture>xbmc-logo.png</texture>
-			<visible>!IntegerGreaterThan(Container(9002).NumItems,0)</visible>
-			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
-			<visible>!Skin.HasSetting(nologo)</visible>
-		</control>
+
 		<control type="group" id="99">
 					<include condition="Skin.HasSetting(WeatherWidget)">WeatherWidget</include>
 		</control>
@@ -1624,6 +1612,20 @@
 				<shadowcolor>black</shadowcolor>
 				<label>[COLOR=grey]$INFO[System.Date][/COLOR] | $INFO[System.Time]</label>
 			</control>
+		</control>
+		<control type="image">
+			<description>LOGO</description>
+			<posx>512</posx>
+			<posy>145r</posy>
+			<width>256</width>
+			<height>128</height>
+			<aspectratio aligny="bottom">keep</aspectratio>
+			<texture>xbmc-logo.png</texture>
+			<visible>!IntegerGreaterThan(Container(9002).NumItems,0)</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<visible>!Skin.HasSetting(nologo)</visible>
+			<animation effect="slide" start="0,0" end="0,77" time="0" condition="Skin.HasSetting(LowerMenu)">Conditional</animation>
 		</control>
 	</controls>	
 </window>
