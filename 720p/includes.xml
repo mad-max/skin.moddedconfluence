@@ -59,6 +59,7 @@
 		<include name="CommonPageCount">
 		<control type="label">
 		<description>Page Count Label</description>
+		<visible>[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(551) | Control.IsVisible(509) | Control.IsVisible(506) | Control.IsVisible(511) | Control.IsVisible(512) | Control.IsVisible(513) | Control.IsVisible(501) | Control.IsVisible(508) | Control.IsVisible(503) | Control.IsVisible(504) | Control.IsVisible(505) | Control.IsVisible(511) | Control.IsVisible(550)]</visible>
 		<posx>40r</posx>
 		<posy>53r</posy>
 		<width>500</width>
@@ -442,6 +443,85 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 	</include>
+	<include name="CommonNowPlaying">
+		<control type="group">
+			<visible>[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(551) | Control.IsVisible(509) | Control.IsVisible(506) | Control.IsVisible(511) | Control.IsVisible(512) | Control.IsVisible(513) | Control.IsVisible(501) | Control.IsVisible(508) | Control.IsVisible(503) | Control.IsVisible(504) | Control.IsVisible(505) | Control.IsVisible(511) | Control.IsVisible(550)] + Player.HasMedia</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<control type="image">
+				<description>Icon</description>
+				<posx>30</posx>
+				<posy>56r</posy>
+				<width>50</width>
+				<height>50</height>
+				<texture>NowPlayingIcon.png</texture>
+			</control>
+			<control type="label">
+				<posx>85</posx>
+				<posy>53r</posy>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<posx>85</posx>
+				<posy>30r</posy>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Player.HasAudio</visible>
+			</control>
+			<control type="label">
+				<posx>85</posx>
+				<posy>30r</posy>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[VideoPlayer.Studio]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
+			</control>
+			<control type="label">
+				<posx>85</posx>
+				<posy>30r</posy>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[VideoPlayer.TVShowTitle]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
+			</control>
+			<control type="label">
+				<posx>85</posx>
+				<posy>30r</posy>
+				<width>700</width>
+				<height>20</height>
+				<label>$INFO[VideoPlayer.Artist]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>Player.HasVideo + VideoPlayer.Content(MusicVideos)</visible>
+			</control>
+		</control>
+	</include>	
 	<include name="CommonNowPlaying_Controls">
 		<control type="label" id="202">
 			<width>250</width>

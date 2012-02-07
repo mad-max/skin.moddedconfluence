@@ -6,6 +6,8 @@
 		<include>CommonMusicBackground</include>
 		<include>CommonMediaPlayingBackground</include>
 		<include>ContentPanelBackgrounds</include>
+		<include>CommonNowPlaying</include>
+		<include>CommonPageCount</include>
 		<control type="image">
 			<description>visualisation background</description>
 				<posx>0</posx>
