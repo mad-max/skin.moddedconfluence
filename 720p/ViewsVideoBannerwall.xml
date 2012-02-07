@@ -10,6 +10,7 @@
 		<height>820</height>
 		<aspectratio>stretch</aspectratio>
 		<texture>contentpanel60.png</texture>
+		<visible>Control.IsVisible(519)</visible>
 	</control>
 		<control type="group">
 		<visible>Control.IsVisible(519)</visible>

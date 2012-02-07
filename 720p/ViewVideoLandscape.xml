@@ -19,6 +19,7 @@
 				<width>1520</width>
 				<height>950</height>
 				<texture>ContentPanel.png</texture>
+				<visible>Control.IsVisible(723)</visible>
 			</control>
 			<control type="image">
 				<posx>-20</posx>
