@@ -186,7 +186,7 @@
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
-					<posx>217</posx>
+					<posx>227</posx>
 					<posy>165</posy>
 					<width>380</width>
 					<height>35</height>
@@ -210,14 +210,14 @@
 					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll) + Control.IsVisible(723)</autoscroll>
 				</control>	
 				<control type="label">
-					<posx>315</posx>
+					<posx>27</posx>
 					<posy>235</posy>
 					<width>380</width>
 					<height>35</height>
 					<font>font13</font>
 					<textcolor>white</textcolor>
 					<scroll>true</scroll>
-					<align>right</align>
+					<align>left</align>
 					<aligny>right</aligny>
 					<label>[COLOR blue]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Date]</label>
 				</control>
