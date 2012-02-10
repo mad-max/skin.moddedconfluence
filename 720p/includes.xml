@@ -33,11 +33,7 @@
 	<include file="ViewVideo_Fanart.xml" />
 	<include file="ViewWall.xml" />
 	<include file="Viewtype_CoverFlow.xml" />
-<<<<<<< HEAD
 	<include file="Viewtype_Showcase.xml" />	
-		
-=======
-	<include file="Viewtype_Showcase.xml" />
     <include file="Viewtype_LauncherInfo.xml" />
 	<include file="Viewtype_LauncherPosterOne.xml" />
     <include file="Viewtype_LauncherPosterWide.xml" />
