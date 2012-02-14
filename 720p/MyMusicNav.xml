@@ -101,6 +101,14 @@
 					<selected>Skin.HasSetting(showfanart512)</selected>
 					<visible>Control.IsVisible(512)</visible>
 				</control>
+				<control type="radiobutton" id="66">
+					<description>ShowFanart</description>
+					<label>31005</label>
+					<include>ButtonCommonValues</include>
+					<onclick>Skin.ToggleSetting(509HideInfo)</onclick>
+					<selected>Skin.HasSetting(509HideInfo)</selected>
+					<visible>Control.IsVisible(509)</visible>
+				</control>				
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>

@@ -334,7 +334,7 @@
 		<control type="group">
 			<posx>180</posx>
 			<posy>40</posy>
-			<visible>Control.IsVisible(509)</visible>
+			<visible>Control.IsVisible(509) + !Skin.HasSetting(509HideInfo)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<posx>0</posx>
