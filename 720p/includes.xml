@@ -51,7 +51,21 @@
 	<camera x="640" y="200" />
 	<animation effect="rotatey" center="50" start="-30" end="-30" time="0" condition="true">Conditional</animation>
 	</include>
-
+	
+		<include name="Include_CustomView">
+		<include condition="Skin.HasSetting(ViewCustom1001_IsEnable)">ViewCustom1001_Mod</include>
+		</include>
+		
+		<include name="Include_CustomView_Cust">
+		<include condition="Skin.HasSetting(ViewCustom1001_IsEnable)">ViewCustom1001_Custom</include>
+		</include>
+		
+		<include name="ViewCustom1001_ReInstall">
+ 			<onclick>RunScript(special://skin/scripts/script.influence_view.reinstall/default.py,1001)</onclick>
+		</include>
+		
+		<include file="View_Custom1001.xml" />
+			
 		<include name="CommonPageCount">
 		<control type="label">
 		<description>Page Count Label</description>
