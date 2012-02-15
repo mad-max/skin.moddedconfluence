@@ -1,0 +1,14 @@
+[B]Version 1.0.0 - 12/01/2012[/B]
+Display custom views stored in XML file
+
+[B]Version 1.0.1 - 15/01/2012[/B]
+Download thumbnails for local storage
+Barre de progression pour le téléchargement des vignettes
+Progress bar during thumbnails download
+
+[B]Version 1.0.2 - 16/01/2012[/B]
+Add submenu to filter views by original skin
+
+[B]Version 1.0.3 - 16/01/2012[/B]
+Add icon and fanart
+Add indicator for installed views

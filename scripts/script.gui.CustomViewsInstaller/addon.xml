@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.gui.CustomViewsInstaller" name="Glass Custom Views Installer"
+       version="1.0.3" provider-name="Mikebzh44 (passion-xbmc.org)">
+  <requires>
+    <import addon="xbmc.python" version="1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Download and install custom views for Glass skin</summary>
+    <summary lang="fr">Télécharge et installe les vues personnalisées pour le thème Glass</summary>
+    <description lang="en">This addon let you browse, download and install custom views for Glass skin</description>
+    <description lang="fr">Ce programme vous permet de visualiser, télécharger et installer les différentes vues personnalisées disponibles pour le thème Glass</description>
+    <disclaimer lang="en">Work only on Eden for Glass skin</disclaimer>
+    <disclaimer lang="fr">Ne fonctionne que sous Eden pour le thème Glass</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>

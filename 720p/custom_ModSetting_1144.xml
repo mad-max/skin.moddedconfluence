@@ -924,7 +924,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
- 						<onclick>RunScript(script.gui.CustomViewsInstaller)</onclick>
+ 						<onclick>RunScript(special://skin/scripts/script.gui.CustomViewsInstaller/default.py)</onclick>
 					</control> 
 					
 					<control type="button" id="502">
