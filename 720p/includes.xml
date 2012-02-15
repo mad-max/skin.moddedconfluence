@@ -42,8 +42,7 @@
 	<include file="Viewtype_LauncherPosterTwo_Icons.xml" />	
 	
 	
->>>>>>> 094d745ef7a7885373101a0e3d4ef7f1e7d17559
-	
+
 	<constant name="FanartCrossfadeTime">500</constant>
 	<constant name="IconCrossfadeTime">400</constant>
 	
@@ -54,10 +53,18 @@
 	
 		<include name="Include_CustomView">
 		<include condition="Skin.HasSetting(ViewCustom1001_IsEnable)">ViewCustom1001_Mod</include>
+		<include condition="Skin.HasSetting(ViewCustom1002_IsEnable)">ViewCustom1002_Mod</include>
+		<include condition="Skin.HasSetting(ViewCustom1003_IsEnable)">ViewCustom1003_Mod</include>
+		<include condition="Skin.HasSetting(ViewCustom1004_IsEnable)">ViewCustom1004_Mod</include>
+		<include condition="Skin.HasSetting(ViewCustom1005_IsEnable)">ViewCustom1005_Mod</include>
 		</include>
 		
 		<include name="Include_CustomView_Cust">
 		<include condition="Skin.HasSetting(ViewCustom1001_IsEnable)">ViewCustom1001_Custom</include>
+		<include condition="Skin.HasSetting(ViewCustom1002_IsEnable)">ViewCustom1002_Custom</include>
+		<include condition="Skin.HasSetting(ViewCustom1003_IsEnable)">ViewCustom1003_Custom</include>
+		<include condition="Skin.HasSetting(ViewCustom1004_IsEnable)">ViewCustom1004_Custom</include>
+		<include condition="Skin.HasSetting(ViewCustom1005_IsEnable)">ViewCustom1005_Custom</include>
 		</include>
 		
 		<include name="ViewCustom1001_ReInstall">
@@ -65,6 +72,10 @@
 		</include>
 		
 		<include file="View_Custom1001.xml" />
+		<include file="View_Custom1002.xml" />
+		<include file="View_Custom1003.xml" />
+		<include file="View_Custom1004.xml" />
+		<include file="View_Custom1005.xml" />
 			
 		<include name="CommonPageCount">
 		<control type="label">

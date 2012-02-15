@@ -914,11 +914,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<align>left</align>
 						<aligny>center</aligny>
-	                    <include condition="Skin.HasSetting(ViewCustom1001_IsInstall)">ViewCustom1001_ReInstall</include>                   
+	                    <include condition="Skin.HasSetting(ViewCustom1001_IsInstall)">ViewCustom1001_ReInstall</include>
+						<include condition="Skin.HasSetting(ViewCustom1002_IsInstall)">ViewCustom1002_ReInstall</include> 
+						<include condition="Skin.HasSetting(ViewCustom1003_IsInstall)">ViewCustom1003_ReInstall</include> 
+						<include condition="Skin.HasSetting(ViewCustom1004_IsInstall)">ViewCustom1004_ReInstall</include> 
+						<include condition="Skin.HasSetting(ViewCustom1005_IsInstall)">ViewCustom1005_ReInstall</include> 						
 	                    <visible>Skin.HasSetting(ViewCustom1001_IsInstall)</visible>
 					</control>
 					
 					<include condition="Skin.HasSetting(ViewCustom1001_IsInstall)">ViewCustom1001_Init</include>
+					<include condition="Skin.HasSetting(ViewCustom1002_IsInstall)">ViewCustom1002_Init</include>
+					<include condition="Skin.HasSetting(ViewCustom1003_IsInstall)">ViewCustom1003_Init</include>
+					<include condition="Skin.HasSetting(ViewCustom1004_IsInstall)">ViewCustom1004_Init</include>
+					<include condition="Skin.HasSetting(ViewCustom1005_IsInstall)">ViewCustom1005_Init</include>
 					
 					
 					<!-- FILL IN HERE -->
