@@ -339,6 +339,18 @@
 						<onclick>Skin.ToggleSetting(watchlist)</onclick>
 						<selected>Skin.HasSetting(watchlist)</selected>
 					</control>
+					<control type="radiobutton" id="1011">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>transphome</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(transphome)</onclick>
+						<selected>Skin.HasSetting(transphome)</selected>
+					</control>					
 					<control type="radiobutton" id="151">
 						<description>Default focus</description>
 						<width>750</width>
@@ -903,7 +915,7 @@
  						<onclick>RunScript(special://skin/scripts/script.influence_view.installer/default.py,$INFO[Skin.String(NewView)])</onclick>
 					</control>
 					
-		<!--			<control type="button" id="503">
+					<control type="button" id="503">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -913,7 +925,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
  						<onclick>RunScript(script.gui.CustomViewsInstaller)</onclick>
-					</control> -->
+					</control> 
 					
 					<control type="button" id="502">
 						<width>750</width>
