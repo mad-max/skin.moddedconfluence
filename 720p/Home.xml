@@ -902,14 +902,14 @@
 				<posy>-25</posy>
 				<width>330</width>
 				<height>30</height>
-				<texture flipx="true" flipy="true">Header.png</texture>
+				<texture flipx="true" flipy="true">header.png</texture>
 			</control>
 			<control type="image">
 				<posx>997</posx>
 				<posy>-50</posy>
 				<width>330</width>
 				<height>30</height>
-				<texture flipx="true" flipy="true">Header.png</texture>
+				<texture flipx="true" flipy="true">header.png</texture>
 				<visible>Container(9000).HasFocus(11)</visible>
 			</control>			
 			<control type="label">
