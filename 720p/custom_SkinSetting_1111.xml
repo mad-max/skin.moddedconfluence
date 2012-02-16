@@ -532,6 +532,20 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Library.HasContent(Movies)</enable>
 					</control>
+					<control type="radiobutton" id="242">
+						<description>Hide HDMovies Button</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31111] - Documentary [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
+						<onclick>Skin.ToggleSetting(HomeMenuNoDocuButton)</onclick>
+						<selected>Skin.HasSetting(HomeMenuNoDocuButton)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>Library.HasContent(Movies)</enable>
+					</control>					
 					<control type="radiobutton" id="223">
 						<description>Hide TV Shows Button</description>
 						<width>750</width>
@@ -820,6 +834,13 @@
 								<onclick>-</onclick>
 								<icon>special://skin/backgrounds/hdmovies.jpg</icon>
 								<thumb>$INFO[Skin.String(Home_Custom_Back_HD_Folder)]</thumb>
+						</item>
+						<item id="57">
+								<label>Dokus</label>
+								<label2>Home_Custom_Back_Docu_Folder</label2>
+								<onclick>-</onclick>
+								<icon>special://skin/backgrounds/documentary.jpg</icon>
+								<thumb>$INFO[Skin.String(Home_Custom_Back_Docu_Folder)]</thumb>
 						</item>
 							<item id="2">
 								<label>2</label>

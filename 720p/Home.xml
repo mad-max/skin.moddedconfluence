@@ -2,7 +2,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload condition="Window.Previous(startup)+Skin.HasSetting(customstartupfocus)">Control.Move(9000,$INFO[Skin.String(CustomFocusOffset)])</onload>
 	<onload condition="Skin.HasSetting(watchlist)">RunScript(script.watchlist,movies=true&amp;episodes=true&amp;albums=true&amp;limit=10)</onload>
-	<onload>XBMC.RunScript(script.randomandlastitems,limit=3,method=Last,playlist=special://skin/playlists/Doku.xsp,menu=Menu1)</onload>
+	<onload condition="!Skin.HasSetting(HomeMenuNoDocuButton)">XBMC.RunScript(script.randomandlastitems,limit=3,method=Last,playlist=special://skin/playlists/Doku.xsp,menu=Menu1)</onload>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
 		<control type="multiimage">
@@ -1115,12 +1115,12 @@
 						<visible>Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible>
 					</item>
 					<item id="27">
-						<description>HD Movies</description>
+						<description>Dokumentary</description>
 						<label>Dokus</label>
-						<icon>special://skin/backgrounds/hdmovies.jpg</icon>
-						<thumb>$INFO[Skin.String(Home_Custom_Back_HD_Folder)]</thumb>
+						<icon>special://skin/backgrounds/documentary.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_Docu_Folder)]</thumb>
 						<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Doku.xsp,return)</onclick>
-						<visible>!Skin.HasSetting(HomeMenuNoHDMoviesButton) + Library.HasContent(Movies)</visible>
+						<visible>!Skin.HasSetting(HomeMenuNoDocuButton) + Library.HasContent(Movies)</visible>
 					</item>
 					<item id="444">
 						<description>Custom FAV Five</description>
