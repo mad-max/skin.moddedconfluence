@@ -915,7 +915,7 @@
  						<onclick>RunScript(special://skin/scripts/script.influence_view.installer/default.py,$INFO[Skin.String(NewView)])</onclick>
 					</control>
 					
-					<control type="button" id="503">
+	<!--				<control type="button" id="503">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -925,7 +925,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
  						<onclick>RunScript(special://skin/scripts/script.gui.CustomViewsInstaller/default.py)</onclick>
-					</control> 
+					</control>  -->
 					
 					<control type="button" id="502">
 						<width>750</width>
