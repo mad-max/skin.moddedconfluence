@@ -687,9 +687,9 @@
 			<!-- CD Animation -->
 			<control type="image">
 				<description>Cd Disc</description>
-					<animation effect="slide" start="-118" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
+					<animation effect="slide" start="-100" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
 					<animation type="WindowClose">
-					<effect type="slide" start="0" end="-114" time="800" tween="cubic" easing="in" delay="0"/>
+					<effect type="slide" start="0" end="-100" time="800" tween="cubic" easing="in" delay="0"/>
 					<effect type="fade" start="100" end="0" time="1300"/>
 					<condition type="!Player.Playing"/>
 					</animation>
