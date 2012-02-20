@@ -9,8 +9,16 @@
 				<width>1280</width>
 				<height>720</height>
 				<texture>$INFO[ListItem.Path]fanart.jpg</texture>
-				<visible>Skin.HasSetting(seasonfanart) + Control.IsVisible(724) + Container.Content(Seasons)</visible>
+				<visible>Skin.HasSetting(seasonfanart) + Control.IsVisible(724) + Container.Content(Seasons) | Container.Content(Episodes)</visible>
 			</control>
+			<control type="label">
+				<posx>100</posx>
+				<posy>50</posy>
+				<width>580</width>
+				<height>40</height>
+				<label>$INFO[ListItem.Path]fanart.jpg</label>
+				<visible>Skin.HasSetting(seasonfanart) + Control.IsVisible(724) + Container.Content(Seasons) | Container.Content(Episodes)</visible>
+			</control>			
 			<control type="image">
 				<posx>-20</posx>
 				<posy>420</posy>
