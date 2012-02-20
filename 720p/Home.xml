@@ -1117,7 +1117,7 @@
 					</item>
 					<item id="27">
 						<description>Dokumentary</description>
-						<label>Dokus</label>
+						<label>40077</label>
 						<icon>special://skin/backgrounds/documentary.jpg</icon>
 						<thumb>$INFO[Skin.String(Home_Custom_Back_Docu_Folder)]</thumb>
 						<onclick>XBMC.ActivateWindow(10025,special://skin/playlists/Doku.xsp,return)</onclick>

@@ -306,7 +306,7 @@
 					<posy>220</posy>
 					<height>20</height>
 					<width>540</width>
-					<label>Neue Dokumentationen</label>
+					<label>40076</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
@@ -442,7 +442,7 @@
 		<posy>220</posy>
 		<height>20</height>
 		<width>540</width>
-		<label>40032</label>
+		<label>$LOCALIZE[40075] $INFO[Skin.String(Menu_Custom1_Label)]</label>
 		<align>center</align>
 		<aligny>center</aligny>
 		<font>font12_title</font>
