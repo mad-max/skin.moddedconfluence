@@ -1,3 +1,23 @@
+[B]1.0.8[/B]
+
+- added toggle option to hide info in view 509 (albums info)
+- added links to "system" and "MOD-settings" to the shutdown menu
+- added toggle option to make menu bar in home transparent
+- added toggle option to choose between clearart and logo
+- added support for "Recently Added" on SmartPlaylists (thanks mike (passion xbmc))
+- added Documentaries as own category based on mike's "lastandrandomitems"-script
+- re-added toggle option for TVTunes (instead of always enabled)
+- re-added the "CommonPageCount" and "CommonNowPlaying"
+- fixed position of date and time in home
+- fixed case sensitive issues (thanks proiettile)
+- fixed overlapping xbmc logo with lower menu
+- fixed alignment in ViewVideoLandscape.xml
+- fixed "Neon-Showcase" (got lost after GIT merge error)
+- fixed display issue with fade in/out of CDArt (thanks proietille)
+- redid the whole season fanart stuff to work properly and view-independent
+
+
+
 [B]1.0.7[/B]
 
 - fixed missing <visible> statement that darkened all video views, too much
