@@ -6,14 +6,6 @@
 				<posx>0</posx>
 				<posy>0</posy>
 			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>$INFO[ListItem.Path]fanart.jpg</texture>
-				<visible>Skin.HasSetting(seasonfanart) + Control.IsVisible(723) + Container.Content(Episodes)</visible>
-			</control>
-			<control type="image">
 				<posx>-100</posx>
 				<posy>-80</posy>
 				<width>1520</width>
