@@ -684,7 +684,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(seasonfanart)</onclick>
 						<selected>Skin.HasSetting(seasonfanart)</selected>
-					</control> 
+					</control>
+					<control type="radiobutton" id="209">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Test</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(clearart)</onclick>
+						<selected>Skin.HasSetting(clearart)</selected>
+					</control>					
 					<control type="label" id="207">
 						<width>750</width>
 						<height>45</height>

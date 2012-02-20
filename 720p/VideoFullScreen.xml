@@ -19,6 +19,16 @@
 				<height>107</height>
 				<texture background="false">$INFO[Player.FolderPath]logo.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!Skin.HasSetting(clearart)</visible>
+			</control>			
+			<control type="image" id="1">
+				<posx>980</posx>
+				<posy>530</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture background="false">$INFO[Player.FolderPath]clearart.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>Skin.HasSetting(clearart)</visible>
 			</control>
 			<control type="label" id="1">
 				<description>Chapter Count Header label</description>
@@ -69,14 +79,24 @@
 				<height>230</height>
 				<texture>HomeNowPlayingBack.png</texture>
 			</control>
-			<control type="image">
+			<control type="image" id="1">
 				<posx>980</posx>
 				<posy>530</posy>
 				<width>276</width>
 				<height>107</height>
 				<texture background="false">$INFO[Player.FolderPath]logo.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!Skin.HasSetting(clearart)</visible>
 			</control>
+			<control type="image" id="1">
+				<posx>980</posx>
+				<posy>530</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture background="false">$INFO[Player.FolderPath]clearart.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>Skin.HasSetting(clearart)</visible>
+			</control>			
 			<control type="image" id="1">
 				<description>Cd Disc</description>
 					<animation effect="slide" start="-90" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>

@@ -63,7 +63,17 @@
 				<height>107</height>
 				<texture background="false">$INFO[Player.FolderPath]logo.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!Skin.HasSetting(clearart)</visible>
 			</control>
+			<control type="image">
+				<posx>980</posx>
+				<posy>530</posy>
+				<width>276</width>
+				<height>107</height>
+				<texture background="false">$INFO[Player.FolderPath]clearart.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!Skin.HasSetting(clearart)</visible>
+			</control>			
 			<control type="image" id="1">
 				<description>Cd Disc</description>
 					<animation effect="slide" start="-90" end="0" time="900" tween="cubic" easing="out" delay="1000">WindowOpen</animation>
