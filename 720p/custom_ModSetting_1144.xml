@@ -157,11 +157,11 @@
 						<label2>40057</label2>
 						<onclick>-</onclick>
 					</item>
-					<item id="5">
+			<!--		<item id="5">
 						<label>Custom Views</label>
 						<label2>Custom Views</label2>
 						<onclick>-</onclick>
-					</item>	
+					</item>	 -->
 				</content>
 			</control>
 			<control type="image">
