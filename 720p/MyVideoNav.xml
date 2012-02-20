@@ -5,10 +5,18 @@
 	<controls>
 		<control type="button" id="9999"> <!-- TVTunes mod -->
             <description>trigger</description>
-            <onfocus>XBMC.RunScript(script.tvtunes,backend=True&amploop=False)</onfocus>
+            <onfocus>RunScript(script.tvtunes,backend=true)</onfocus>
             <onfocus>SetFocus(50)</onfocus>
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(tvtunes)</visible>
+        </control>
+		<control type="button" id="9999"> <!-- TVTunes mod -->
+            <description>trigger</description>
+            <onfocus>SetFocus(50)</onfocus>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(tvtunes)</visible>
         </control>
 		<include>CommonVideoBackground</include>
 		<control type="multiimage">

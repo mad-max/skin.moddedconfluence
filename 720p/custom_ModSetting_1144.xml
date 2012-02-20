@@ -873,6 +873,18 @@
 						<onclick>Skin.ToggleSetting(kiosk)</onclick>
 						<selected>Skin.HasSetting(kiosk)</selected>
 					</control>
+					<control type="radiobutton" id="402">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>40011</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(tvtunes)</onclick>
+						<selected>Skin.HasSetting(tvtunes)</selected>
+					</control>					
 					<!-- FILL IN HERE -->
 					</control>
 				</control>
