@@ -232,6 +232,7 @@
 		<posx>-10</posx>
 		<posy>465</posy>
 		<onfocus>XBMC.PlayMedia($INFO[ListItem.Trailer],1,noresume)</onfocus>
+		<onfocus>ActivateWindow(fullscreenvideo)</onfocus>
 		<visible>Skin.HasSetting(showtrailer)</visible>
 		</control>
 	</include>
