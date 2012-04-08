@@ -55,9 +55,17 @@
 			<width>80</width>
 			<height>35</height>
 			<aspectratio align="left">keep</aspectratio>
-			<texture>flagging/video/TV.png</texture>
+			<texture>flagging/video/tv.png</texture>
 			<visible>[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,sdtv) | substring(ListItem.FilenameAndPath,dsr)] + !Skin.HasSetting(HideFilenameFlagging)</visible>
 		</control>
+		<control type="image">
+			<description>HDTV Types Image</description>
+			<width>80</width>
+			<height>35</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>flagging/video/hdtv.png</texture>
+			<visible>substring(ListItem.FilenameAndPath,hdtv) + !Skin.HasSetting(HideFilenameFlagging)</visible>
+		</control>		
 		<control type="image">
 			<description>VHS Image</description>
 			<width>80</width>
