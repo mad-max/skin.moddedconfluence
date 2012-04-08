@@ -368,7 +368,8 @@
 					<align>center</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<include>VideoTypeHackFlaggingConditions</include>
+					<include condition="!Skin.HasSetting(724mpaa)">VideoTypeHackFlaggingConditions</include>
+					<include condition="Skin.HasSetting(724mpaa)">VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
@@ -482,18 +483,41 @@
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>
-					<posx>740</posx>
+					<posx>570</posx>
 					<posy>435</posy>
 					<width>590</width>
 					<align>center</align>
 					<itemgap>0</itemgap>
 					<orientation>horizontal</orientation>
-					<include>VideoTypeHackFlaggingConditions</include>
+					<include condition="!Skin.HasSetting(724mpaa)">VideoTypeHackFlaggingConditions</include>
+					<include condition="Skin.HasSetting(724mpaa)">VideoMPAAFlaggingConditions</include>
+					<visible>!Skin.HasSetting(bbfc) + !Skin.HasSetting(germanmpaa)</visible>
+				</control>
+				<control type="grouplist">
+					<description>Media Codec Flagging Images</description>
+					<posx>560</posx>
+					<posy>425</posy>
+					<width>590</width>
+					<align>center</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<include condition="!Skin.HasSetting(724mpaa)">VideoTypeHackFlaggingConditions</include>
+					<include condition="Skin.HasSetting(724mpaa)">VideoMPAAFlaggingConditions</include>
+					<visible>Skin.HasSetting(bbfc) | Skin.HasSetting(germanmpaa)</visible>
+				</control>				
+				<control type="grouplist">
+					<description>Media Codec Flagging Images</description>
+					<posx>780</posx>
+					<posy>435</posy>
+					<width>590</width>
+					<align>center</align>
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
 					<include>AspectCodecFlaggingConditions</include>
-				</control>
+				</control>				
 				<control type="textbox">
 					<description>Description Value for Movie</description>
 					<posx>815</posx>

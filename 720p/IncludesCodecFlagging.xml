@@ -164,6 +164,73 @@
 			<texture>flagging/ratings/Germany18.png</texture>
 			<visible>substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18)</visible>
 		</control>
+<!-- BBFC Ratings -->
+		<control type="image">
+			<description>bbfc_U</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_U.png</texture>
+			<visible>substring(listitem.mpaa,UK:U) + !substring(listitem.mpaa,UK:UC)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_UC</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_UC.png</texture>
+			<visible>substring(listitem.mpaa,UK:UC)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_PG</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_PG.png</texture>
+			<visible>substring(listitem.mpaa,UK:PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_12</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_12.png</texture>
+			<visible>substring(listitem.mpaa,UK:12) + !substring(listitem.mpaa,UK:12A)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_12A</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_12A.png</texture>
+			<visible>substring(Listitem.mpaa,UK:12A)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_15</description>
+			<posx>10</posx>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_15.png</texture>
+			<visible>substring(Listitem.mpaa,UK:15)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_18</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_18.png</texture>
+			<visible>substring(Listitem.mpaa,UK:18) + !substring(listitem.mpaa,UK:R18)</visible>
+		</control>
+		<control type="image">
+			<description>bbfc_R18</description>
+			<width>48</width>
+			<height>48</height>
+			<aspectratio>keep</aspectratio>
+			<texture>flagging/ratings/bbfc_R18.png</texture>
+			<visible>substring(Listitem.mpaa,UK:R18)</visible>
+		</control>
+<!-- /BBFC Ratings --> 		
 	</include>
 	<include name="AudioCodecFlaggingConditions">
 		<control type="image">

@@ -211,8 +211,19 @@
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
 				<include>VideoMPAAFlaggingConditions</include>
-				<visible>!Skin.HasSetting(germanmpaa) + Container.Content(Movies)</visible>
+				<visible>!Skin.HasSetting(germanmpaa) + !Skin.HasSetting(bbfc) + Container.Content(Movies)</visible>
 			</control>
+			<control type="grouplist">
+				<description>MPAA Rating Flagging Images</description>
+				<posx>-730</posx>
+				<posy>225</posy>
+				<width>800</width>
+				<align>right</align>
+				<itemgap>0</itemgap>
+				<orientation>horizontal</orientation>
+				<include>VideoMPAAFlaggingConditions</include>
+				<visible>!Skin.HasSetting(germanmpaa) + Skin.HasSetting(bbfc) + Container.Content(Movies)</visible>
+			</control>			
 		</control>
 		<control type="label">
 				<posx>15</posx>

@@ -169,6 +169,16 @@
 					<selected>Skin.HasSetting(hidecases724)</selected>
 					<visible>Control.IsVisible(724) + Container.Content(Movies)</visible>
 				</control>
+				<control type="radiobutton" id="199">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>40082</label>
+					<onclick>Skin.ToggleSetting(724mpaa)</onclick>
+					<onclick>ReloadSkin()</onclick>
+					<selected>Skin.HasSetting(724mpaa)</selected>
+					<visible>Control.IsVisible(724) + Container.Content(Movies)</visible>
+				</control>				
 				<control type="radiobutton" id="103">
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>

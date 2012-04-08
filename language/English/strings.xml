@@ -272,4 +272,6 @@
   <string id="40078">Show clearart.png instead of logo.png</string>
   <string id="40079">Enable XBMC Intro Movie</string>
   <string id="40080">IMDB - Rating</string>
+  <string id="40081">Use BBFC rating flags</string>
+  <string id="40082">Show MPAA instead of source</string>
 </strings>
