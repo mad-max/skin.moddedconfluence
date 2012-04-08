@@ -471,16 +471,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="299">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>Custom Home Buttons</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
 					<control type="label" id="220">
 						<width>750</width>
 						<height>45</height>
