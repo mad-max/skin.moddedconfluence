@@ -557,6 +557,14 @@
 					<include>AspectCodecFlaggingConditions</include>
 					<include>VideoTypeHackFlaggingConditions</include>
 				</control>
+				<control type="image">
+					<posx>670</posx>
+					<posy>397</posy>
+					<width>40</width>
+					<height>40</height>
+					<texture>flagging/trailer.png</texture>
+					<visible>!IsEmpty(ListItem.Trailer) + Control.IsVisible(725)</visible>
+				</control>
 			</control>
 		</control>
 	</include>

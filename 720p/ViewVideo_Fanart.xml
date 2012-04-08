@@ -114,6 +114,14 @@
 					<texture>$INFO[listitem.Studio,flagging/studios/,.png]</texture>
 					<visible>!Container.Content(MusicVideos)</visible>
 				</control>
+				<control type="image">
+					<posx>837</posx>
+					<posy>670</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>flagging/trailer.png</texture>
+					<visible>!IsEmpty(ListItem.Trailer) + Control.IsVisible(746)</visible>
+				</control>
 			</control>
 			<control type="grouplist">
 				<description>MPAA Rating Flagging Images</description>

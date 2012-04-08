@@ -169,6 +169,14 @@
 				<include>AspectCodecFlaggingConditions</include>
 				<include>VideoTypeHackFlaggingConditions</include>
 			</control>
+			<control type="image">
+					<posx>855</posx>
+					<posy>610</posy>
+					<width>35</width>
+					<height>35</height>
+					<texture>flagging/trailer.png</texture>
+					<visible>!IsEmpty(ListItem.Trailer) + Control.IsVisible(501)</visible>
+				</control>
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(501) + Container.Content(Seasons)</visible>
