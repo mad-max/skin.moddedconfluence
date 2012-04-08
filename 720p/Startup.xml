@@ -7,7 +7,14 @@
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
+			<visible>!Skin.HasSetting(Use_Startup_Playlist) + !Skin.HasSetting(intromovie)</visible>
+		</control>
+		<control type="button" id="10">
+			<description>trigger</description>
+			<onfocus>RunScript(script.xbmc.intro.movie)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(Use_Startup_Playlist) + Skin.HasSetting(intromovie)</visible>
 		</control>
 		<control type="button" id="10">
 			<description>trigger with startup Playlist</description>
@@ -15,7 +22,7 @@
 			<onfocus>ReplaceWindow(Home)</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+			<visible>Skin.HasSetting(Use_Startup_Playlist) + !Skin.HasSetting(intromovie)</visible>
 		</control>
 		<include>CommonVideoBackground</include>
 	</controls>
