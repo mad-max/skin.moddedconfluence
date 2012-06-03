@@ -251,4 +251,8 @@
   <string id="40080">IMDB - Bewertung</string>  
   <string id="40081">Zeige BBFC-Rating</string>
   <string id="40082">Zeige MPAA anstatt Medien-Quelle</string>
+  <string id="40083">Verstecke Suche button im Menü</string>
+  <string id="40084">Hide Favorit button in Home</string>
+  <string id="40085">Hide Stroom button in Home</string>
+
 </strings>

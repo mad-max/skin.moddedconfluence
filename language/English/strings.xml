@@ -274,4 +274,7 @@
   <string id="40080">IMDB - Rating</string>
   <string id="40081">Use BBFC rating flags</string>
   <string id="40082">Show MPAA instead of source</string>
+  <string id="40083">Hide Search button in Home</string>
+  <string id="40084">Hide Favourites button in Home</string>
+  <string id="40085">Hide Power button in Home</string>
 </strings>
