@@ -1,3 +1,22 @@
+[B]1.0.9[/B]
+
+- added options to hide search, favourites and power button in home (thanks rintje)
+- added dutch string (thanks rintje)
+- added peripherals dialog (thanks ghoost82)
+- added new substring for German FSK (based on new scraper settings)
+- added BBFC rating for lowlist
+- added hibernate button in shutdown menu (needs System.CanHibernate() )
+- added support for frost's intro movie addon
+- added trailer flag for 3 movie views
+- added HDTV flag as source flag
+- fixed english strings (thanks rintje)
+- fixed old leftover label in MOD settings
+- fixed mp3 flag
+- fixed some strings (moved from hardcoded to strings.xml)
+- FIXED TRAILER BUG! Now starts in fullscreen without menu in front...FINALLY!
+
+
+
 [B]1.0.8[/B]
 
 - added toggle option to hide info in view 509 (albums info)
