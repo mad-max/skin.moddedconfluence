@@ -1518,6 +1518,7 @@
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<texturefocus>home-power-FO.png</texturefocus>
 				<texturenofocus>home-power.png</texturenofocus>
+				<visible>!Skin.HasSetting(nopower)</visible>
 				<onleft>21</onleft>
 				<onright>45</onright>
 				<onup>9002</onup>
@@ -1535,6 +1536,7 @@
 				<onclick>ActivateWindow(Favourites)</onclick>
 				<texturefocus>home-favourites-FO.png</texturefocus>
 				<texturenofocus>home-favourites.png</texturenofocus>
+				<visible>!Skin.HasSetting(nofavourites)</visible>
 				<onleft>45</onleft>
 				<onright>20</onright>
 				<onup>9003</onup>
@@ -1552,6 +1554,7 @@
 				<onclick>RunScript(script.globalsearch)</onclick>
 				<texturefocus>search-FO.png</texturefocus>
 				<texturenofocus>search.png</texturenofocus>
+				<visible>!Skin.HasSetting(nosearch)</visible>
 				<onleft>21</onleft>
 				<onright>21</onright>
 				<onup>9002</onup>

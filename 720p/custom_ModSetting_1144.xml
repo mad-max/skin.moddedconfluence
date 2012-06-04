@@ -254,6 +254,45 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="radiobutton" id="112">
+						<description>hide search script button in home</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40083</label>
+						<onclick>Skin.ToggleSetting(nosearch)</onclick>
+						<selected>Skin.HasSetting(nosearch)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="113">
+						<description>hide favourites button in home</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40084</label>
+						<onclick>Skin.ToggleSetting(nofavourites)</onclick>
+						<selected>Skin.HasSetting(nofavourites)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="114">
+						<description>hide power button in home</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>40085</label>
+						<onclick>Skin.ToggleSetting(nopower)</onclick>
+						<selected>Skin.HasSetting(nopower)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
 					<control type="radiobutton" id="104">
 						<description>disable auto slideout of submenus</description>
 						<width>750</width>
