@@ -1465,7 +1465,46 @@
 				<textcolor>blue</textcolor>
 				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
-				<visible>!Player.HasAudio</visible>
+				<visible>!Player.HasAudio + !Skin.HasSetting(nopower)</visible> <!-- power button visible -->
+			</control>
+			<control type="rss">
+				<description>RSS feed</description>
+				<posx>57</posx>
+				<posy>0</posy>
+				<height>30</height>
+				<width>1188</width>
+				<font>font12</font>
+				<urlset>1</urlset>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
+				<headlinecolor>white</headlinecolor>
+				<visible>!Player.HasAudio + Skin.HasSetting(nopower) + !Skin.HasSetting(nofavourites)</visible> <!-- power hidden, favourites visible -->
+			</control>
+			<control type="rss">
+				<description>RSS feed</description>
+				<posx>14</posx>
+				<posy>0</posy>
+				<height>30</height>
+				<width>1231</width>
+				<font>font12</font>
+				<urlset>1</urlset>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
+				<headlinecolor>white</headlinecolor>
+				<visible>!Player.HasAudio + Skin.HasSetting(nopower) + Skin.HasSetting(nofavourites) + !Skin.HasSetting(nosearch)</visible> <!-- power hidden, favourites hidden, search visible -->
+			</control>
+			<control type="rss">
+				<description>RSS feed</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>30</height>
+				<width>1245</width>
+				<font>font12</font>
+				<urlset>1</urlset>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
+				<headlinecolor>white</headlinecolor>
+				<visible>!Player.HasAudio + Skin.HasSetting(nopower) + Skin.HasSetting(nofavourites) + Skin.HasSetting(nosearch)</visible> <!-- all 3 buttons hidden -->
 			</control>
 			<control type="image">
 				<posx></posx>
@@ -1505,6 +1544,23 @@
 				<width>220</width>
 				<height>60</height>
 				<texture>HomeButtonsBack.png</texture>
+				<visible>!Skin.HasSetting(nopower)</visible> <!-- power button visible -->
+			</control>
+			<control type="image">
+				<posx>-43</posx>
+				<posy>0</posy>
+				<width>220</width>
+				<height>60</height>
+				<texture>HomeButtonsBack.png</texture>
+				<visible>Skin.HasSetting(nopower) + !Skin.HasSetting(nofavourites)</visible> <!-- power hidden, favourites visible -->
+			</control>
+			<control type="image">
+				<posx>-86</posx>
+				<posy>0</posy>
+				<width>220</width>
+				<height>60</height>
+				<texture>HomeButtonsBack.png</texture>
+				<visible>Skin.HasSetting(nopower) + Skin.HasSetting(nofavourites) + !Skin.HasSetting(nosearch)</visible> <!-- power hidden, favourites hidden, search visible -->
 			</control>
 			<control type="button" id="20">
 				<description>Power push button</description>
