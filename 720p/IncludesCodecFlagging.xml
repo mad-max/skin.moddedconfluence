@@ -130,7 +130,7 @@
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany0.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0) | substring(ListItem.mpaa, Rated 0)</visible>
+			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa,Germany:o.Al.) |substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0) | substring(ListItem.mpaa, Rated 0)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 6</description>
