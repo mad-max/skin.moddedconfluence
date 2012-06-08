@@ -178,9 +178,9 @@
 					<texture>separator.png</texture>
 				</control>
 				<control type="label">
-					<posx>227</posx>
+					<posx>25</posx>
 					<posy>165</posy>
-					<width>380</width>
+					<width>600</width>
 					<height>35</height>
 					<font>font13</font>
 					<textcolor>white</textcolor>
@@ -202,9 +202,9 @@
 					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll) + Control.IsVisible(723)</autoscroll>
 				</control>	
 				<control type="label">
-					<posx>27</posx>
+					<posx>25</posx>
 					<posy>235</posy>
-					<width>380</width>
+					<width>600</width>
 					<height>35</height>
 					<font>font13</font>
 					<textcolor>white</textcolor>
