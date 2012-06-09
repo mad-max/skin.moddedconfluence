@@ -197,6 +197,12 @@
 			<label>5</label>
 			<onclick>ActivateWindow(Settings)</onclick>
 		</control>
+		<control type="button" id="90120">
+			<include>ButtonHomeSubCommonValues</include>                       
+			<label>[COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEC[/COLOR]</label>
+			<onclick>RunAddon(os.openelec.settings)</onclick>
+			<visible>System.HasAddon(os.openelec.settings)</visible> 
+		</control>   
 		<control type="button" id="90123">
 			<include>ButtonHomeSubCommonValues</include>
 			<label>7</label>
