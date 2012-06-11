@@ -882,7 +882,7 @@
                         <focusedcolor>white</focusedcolor>
                         <label>40071</label>
                         <texturefocus>MenuItemFO.png</texturefocus>
-                        <texturenofocus>menuitemNF.png</texturenofocus>
+                        <texturenofocus>menuItemNF.png</texturenofocus>
                         <onclick>Skin.ToggleSetting(CDWallNoVisualisation)</onclick>
                         <selected>Skin.HasSetting(CDWallNoVisualisation)</selected>
                     </control>
@@ -894,7 +894,7 @@
                         <textcolor>grey2</textcolor>
                         <focusedcolor>white</focusedcolor>
                         <texturefocus>MenuItemFO.png</texturefocus>
-                        <texturenofocus>menuitemNF.png</texturenofocus>
+                        <texturenofocus>menuItemNF.png</texturenofocus>
                         <label>40072</label>
                         <label2>$INFO[Skin.String(CDWall_Folder_Path)]</label2>
                         <onclick>Skin.SetPath(CDWall_Folder_Path)</onclick>
