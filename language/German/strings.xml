@@ -169,7 +169,7 @@
   
     <!-- MOD-STRINGS by mad-max !-->
   <string id="40000">Niedriges Menü</string>
-  <string id="40001">Verstecke XBMC-Logo im Menü</string>
+  <string id="40001">Verstecke XBMC-Logo im Home Screen</string>
   <string id="40002">Lower Panel verstecken</string>
   <string id="40003">Erweitert</string>
   <string id="40004">MOD-Settings</string>
@@ -191,7 +191,7 @@
   <string id="40020">Staffeln</string>
   <string id="40021">PAUSE</string>
   <string id="40022">Die nächsten 10 Tracks</string>
-  <string id="40023">Zeige WeatherWidget im Home Screen</string>
+  <string id="40023">Zeige Wetter Widget im Home Screen</string>
   <string id="40024">Blende Controls in MusikVisualisierung aus (Fade-Effekt)</string>
   <string id="40025">Altersfreigabe</string>
   <string id="40026">Genre</string>
@@ -202,7 +202,7 @@
   <string id="40031">Neue Alben</string>
   <string id="40032">Neue Konzerte</string>
   <string id="40033">Nutze Extrafanart</string>
-  <string id="40034">Trailer-Button in Showcase-View</string>
+  <string id="40034">Trailer Button in Showcase-View</string>
   <string id="40035">Pfeil-Runter für Trailer-Wiedergabe</string>  
   <string id="40036">Aktuell geschaut</string>
   <string id="40037">Zeige "Aktuell geschaut" anstatt "Neue Episoden" (TV-Serien)</string>
@@ -214,21 +214,21 @@
   <string id="40043">Episoden insgesamt</string>
   <string id="40044">Alben insgesamt</string>
   <string id="40045">Konzerte insgesamt</string>
-  <string id="40046">Zeige Datenbankstatistik im Hauptmenü</string>
+  <string id="40046">Zeige Datenbankstatistik im Home Screen</string>
   <string id="40047">Zeige alle Infos</string>
   <string id="40048">Zeige Fanart anstatt Icon MediaInfoView</string>
   <string id="40049">Zeige Language-Flags</string>
   <string id="40050">[CR]Drücke ENTER um die Einstellungen des Confluence-MOD aufzurufen[CR] [CR] Die Einstellungen sind in die entsprechenden Kategorien eingeteilt</string>
   <string id="40051">Home</string>
-  <string id="40052">Hauptmenü anpassen</string>
+  <string id="40052">Home Screen anpassen</string>
   <string id="40053">Views</string>
   <string id="40054">Viewtype-Optionen</string>
   <string id="40055">Musik &amp; Vis</string>
   <string id="40056">Verschiedenes</string>
   <string id="40057">Basic Einstellungen</string>
-  <string id="40058">Hauptmenü anpassen</string>
-  <string id="40059">Hauptmenü-Widgets &amp; Features</string>
-  <string id="40060">Eigene Hauptmenüpunkte</string>
+  <string id="40058">Home Screen anpassen</string>
+  <string id="40059">Home Screen-Widgets &amp; Features</string>
+  <string id="40060">Eigene Home Screen Punkte</string>
   <string id="40061">Video Viewtype-Optionen</string>
   <string id="40062">Audio Viewtype-Optionen</string>
   <string id="40063">Allgemeine Einstellungen</string>
@@ -238,7 +238,7 @@
   <string id="40067">Nutze Season-Fanart</string>
   <string id="40068">Cover anschrägen</string>
   <string id="40069">IMDB anstatt MPAA</string>
-  <string id="40070">Benutzerdefinierter Fokus beim Start in Home</string>
+  <string id="40070">Benutzerdefinierter Fokus beim Start im Home Screen</string>
   <string id="40071">CoverWall für Visualisierung</string>
   <string id="40072">Cover-Verzeichnis</string>
   <string id="40073">Sets</string>
@@ -251,8 +251,8 @@
   <string id="40080">IMDB - Bewertung</string>  
   <string id="40081">Zeige BBFC-Rating</string>
   <string id="40082">Zeige MPAA anstatt Medien-Quelle</string>
-  <string id="40083">Verstecke Suche button im Menü</string>
-  <string id="40084">Hide Favorit button in Home</string>
-  <string id="40085">Hide Stroom button in Home</string>
+  <string id="40083">Verstecke Suche Button im Home Screen</string>
+  <string id="40084">Verstecke Favoriten Button im Home Screen</string>
+  <string id="40085">Verstecke Power Button im Home Screen</string>
 
 </strings>
