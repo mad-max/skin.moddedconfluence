@@ -521,7 +521,7 @@
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<label>Custom Favorite</label>
+							<label>Custom Favorite 1</label>
 							<onclick>Skin.ToggleSetting(Menu_Custom8)</onclick>
 							<selected>Skin.HasSetting(Menu_Custom8)</selected>
 							<enable>!Skin.HasSetting(Menu_Movies_Sub8)</enable>
