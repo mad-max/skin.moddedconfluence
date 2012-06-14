@@ -274,92 +274,100 @@
 	</include>
 	<include name="VideoLangFlaggingConditions">
 		<control type="image">
+			<description>AudioIcon</description>
+			<width>35</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.AudioLanguage,flagging/lang/,.png]</texture>
+			<visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+		</control>
+		<control type="image">
 			<description>German</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/de.png</texture>
-			<visible>substring(listitem.filename,.de.)</visible>
+			<texture>flagging/lang/deu.png</texture>
+			<visible>substring(listitem.filename,.de.) | substring(listitem.filename,.deu.)</visible>
 		</control>
 		<control type="image">
 			<description>English</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/en.png</texture>
-			<visible>substring(listitem.filename,.en.)</visible>
+			<texture>flagging/lang/eng.png</texture>
+			<visible>substring(listitem.filename,.en.) | substring(listitem.filename,.eng.)</visible>
 		</control>
 		<control type="image">
 			<description>Spanish</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/es.png</texture>
-			<visible>substring(listitem.filename,.es.)</visible>
+			<texture>flagging/lang/spa.png</texture>
+			<visible>substring(listitem.filename,.es.) | substring(listitem.filename,.spa.)</visible>
 		</control>
 		<control type="image">
 			<description>Suomi</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/fi.png</texture>
-			<visible>substring(listitem.filename,.fi.)</visible>
+			<texture>flagging/lang/fin.png</texture>
+			<visible>substring(listitem.filename,.fi.) | substring(listitem.filename,.fin.)</visible>
 		</control>
 		<control type="image">
 			<description>French</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/fr.png</texture>
-			<visible>substring(listitem.filename,.fr.)</visible>
+			<texture>flagging/lang/fra.png</texture>
+			<visible>substring(listitem.filename,.fr.) | substring(listitem.filename,.fra.)</visible>
 		</control>
 		<control type="image">
 			<description>Italian</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/it.png</texture>
-			<visible>substring(listitem.filename,.it.)</visible>
+			<texture>flagging/lang/ita.png</texture>
+			<visible>substring(listitem.filename,.it.) | substring(listitem.filename,.ita.)</visible>
 		</control>
 		<control type="image">
 			<description>Japanese</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/ja.png</texture>
-			<visible>substring(listitem.filename,.ja.)</visible>
+			<texture>flagging/lang/jpn.png</texture>
+			<visible>substring(listitem.filename,.ja.) | substring(listitem.filename,.jpn.)</visible>
 		</control>
 		<control type="image">
 			<description>Dutsch</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/nl.png</texture>
-			<visible>substring(listitem.filename,.nl.)</visible>
+			<texture>flagging/lang/nld.png</texture>
+			<visible>substring(listitem.filename,.nl.) | substring(listitem.filename,.nld.)</visible>
 		</control>
 		<control type="image">
 			<description>Portugese</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/pt.png</texture>
-			<visible>substring(listitem.filename,.pt.)</visible>
+			<texture>flagging/lang/por.png</texture>
+			<visible>substring(listitem.filename,.pt.) | substring(listitem.filename,.por.)</visible>
 		</control>
 		<control type="image">
 			<description>Russian</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/ru.png</texture>
-			<visible>substring(listitem.filename,.ru.)</visible>
+			<texture>flagging/lang/rus.png</texture>
+			<visible>substring(listitem.filename,.ru.) | substring(listitem.filename,.rus.)</visible>
 		</control>
 		<control type="image">
 			<description>Swedish</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/sv.png</texture>
-			<visible>substring(listitem.filename,.sv.)</visible>
+			<texture>flagging/lang/swe.png</texture>
+			<visible>substring(listitem.filename,.sv.) | substring(listitem.filename,.swe.)</visible>
 		</control>
 	</include>
 	<include name="CodecFlagging">
