@@ -1,29 +1,7 @@
 <includes>
 	<include name="VideoCodecFlaggingConditions">
-		<control type="image">
-			<description>Video rez Image</description>
-			<width>77</width>
-			<height>29</height>
-			<aspectratio align="right">keep</aspectratio>
-			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
-		</control>
-		<control type="image">
-			<description>Common Codec Image</description>
-			<width>80</width>
-			<height>35</height>
-			<aspectratio align="left">keep</aspectratio>
-			<texture>$INFO[ListItem.VideoCodec,flagging/video/,.png]</texture>
-			<!-- Don't show if its one of the 500 divx codecs -->
-			<visible>![substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
-		</control>
-		<control type="image">
-			<description>Divx Codec Image</description>
-			<width>80</width>
-			<height>35</height>
-			<aspectratio align="left">keep</aspectratio>
-			<texture>flagging/video/divx.png</texture>
-			<visible>[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
-		</control>
+		<include>RezFlagging</include>
+		<include>CodecFlagging</include>
 	</include>
 	<include name="VideoTypeHackFlaggingConditions">
 		<control type="image">
@@ -389,7 +367,7 @@
 			<visible>[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
 		</control>
 	</include>	
-		<include name="RezFlagging">
+	<include name="RezFlagging">
 		<control type="image">
 			<description>Video rez Image</description>
 			<width>77</width>
