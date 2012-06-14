@@ -436,7 +436,7 @@
 				<align>-</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>MPAASmall</include>
+				<include>VideoMPAAFlaggingConditions</include>
 			</control> 
 			<control type="group">
 				<description>Studio Flags</description>

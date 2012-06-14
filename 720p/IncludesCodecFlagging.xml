@@ -126,43 +126,48 @@
 		</control>
 		<control type="image">
 			<description>Germany FSK 0</description>
-			<width>249</width>
-			<height>57</height>
+			<width>48</width>
+			<height>48</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany0.png</texture>
 			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa,Germany:o.Al.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0) | substring(ListItem.mpaa, Rated 0)</visible>
+			<visible>Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 6</description>
-			<width>249</width>
-			<height>57</height>
+			<width>48</width>
+			<height>48</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany6.png</texture>
 			<visible>substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6) | substring(ListItem.mpaa, ab 6) | substring(ListItem.mpaa, Rated 6)</visible>
+			<visible>Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 12</description>
-			<width>249</width>
-			<height>57</height>
+			<width>48</width>
+			<height>48</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany12.png</texture>
 			<visible>substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12) | substring(ListItem.mpaa, ab 12) | substring(ListItem.mpaa, Rated 12)</visible>
+			<visible>Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 16</description>
-			<width>249</width>
-			<height>57</height>
+			<width>48</width>
+			<height>48</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany16.png</texture>
 			<visible>substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16) | substring(ListItem.mpaa, ab 16) | substring(ListItem.mpaa, Rated 16)</visible>
+			<visible>Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 18</description>
-			<width>249</width>
-			<height>57</height>
+			<width>48</width>
+			<height>48</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany18.png</texture>
 			<visible>substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18) | substring(ListItem.mpaa, Rated 18)</visible>
+			<visible>Skin.HasSetting(germanmpaa)</visible>
 		</control>
 <!-- BBFC Ratings -->
 		<control type="image">
@@ -172,6 +177,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_U.png</texture>
 			<visible>substring(listitem.mpaa,UK:U) + !substring(listitem.mpaa,UK:UC)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_UC</description>
@@ -180,6 +186,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_UC.png</texture>
 			<visible>substring(listitem.mpaa,UK:UC)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_PG</description>
@@ -188,6 +195,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_PG.png</texture>
 			<visible>substring(listitem.mpaa,UK:PG) + !substring(listitem.mpaa,Rated PG-13)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_12</description>
@@ -196,6 +204,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_12.png</texture>
 			<visible>substring(listitem.mpaa,UK:12) + !substring(listitem.mpaa,UK:12A)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_12A</description>
@@ -204,6 +213,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_12A.png</texture>
 			<visible>substring(Listitem.mpaa,UK:12A)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_15</description>
@@ -213,6 +223,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_15.png</texture>
 			<visible>substring(Listitem.mpaa,UK:15)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_18</description>
@@ -221,6 +232,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_18.png</texture>
 			<visible>substring(Listitem.mpaa,UK:18) + !substring(listitem.mpaa,UK:R18)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 		<control type="image">
 			<description>bbfc_R18</description>
@@ -229,6 +241,7 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/bbfc_R18.png</texture>
 			<visible>substring(Listitem.mpaa,UK:R18)</visible>
+			<visible>Skin.HasSetting(bbfc)</visible>
 		</control>
 <!-- /BBFC Ratings --> 		
 	</include>
@@ -347,48 +360,6 @@
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/lang/sv.png</texture>
 			<visible>substring(listitem.filename,.sv.)</visible>
-		</control>
-	</include>
-	<include name="MPAASmall">
-	<control type="image">
-			<description>Germany FSK 0</description>
-			<width>187</width>
-			<height>43</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/Germany0.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa,Germany:o.Al.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0)| substring(ListItem.mpaa, Rated 0)</visible>
-		</control>
-		<control type="image">
-			<description>Germany FSK 6</description>
-			<width>187</width>
-			<height>43</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/Germany6.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6) | substring(ListItem.mpaa, ab 6) | substring(ListItem.mpaa, Rated 6)</visible>
-		</control>
-		<control type="image">
-			<description>Germany FSK 12</description>
-			<width>187</width>
-			<height>43</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/Germany12.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12) | substring(ListItem.mpaa, ab 12) | substring(ListItem.mpaa, Rated 12)</visible>
-		</control>
-		<control type="image">
-			<description>Germany FSK 16</description>
-			<width>187</width>
-			<height>43</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/Germany16.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16) | substring(ListItem.mpaa, ab 16) | substring(ListItem.mpaa, Rated 16)</visible>
-		</control>
-		<control type="image">
-			<description>Germany FSK 18</description>
-			<width>187</width>
-			<height>43</height>
-			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/Germany18.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18) | substring(ListItem.mpaa, Rated 18)</visible>
 		</control>
 	</include>
 	<include name="CodecFlagging">

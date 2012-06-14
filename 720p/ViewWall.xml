@@ -230,7 +230,7 @@
 				<width>15</width>
 				<height>15</height>
 				<aspectratio>stretch</aspectratio>
-				<include>MPAASmall</include>
+				<include>VideoMPAAFlaggingConditions</include>
 				<visible>Control.IsVisible(514)</visible>
 			</control>
 			<control type="image">
