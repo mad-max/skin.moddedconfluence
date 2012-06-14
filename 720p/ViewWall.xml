@@ -182,7 +182,6 @@
 				<align>Center</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>StudioFlaggingConditions</include>
 			</control>
 			<control type="textbox">
 					<description>Description Value The Movie</description>
