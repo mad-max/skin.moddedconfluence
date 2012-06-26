@@ -98,7 +98,7 @@
 				<height>230</height>
 				<info>VideoPlayer.Cover</info>
 				<aspectratio aligny="bottom">keep</aspectratio>
-				<bordertexture border="8">Thumbborder.png</bordertexture>
+				<bordertexture border="8">ThumbBorder.png</bordertexture>
 				<bordersize>8</bordersize>
 				<visible>!VideoPlayer.Content(Movies)</visible>
 			</control>

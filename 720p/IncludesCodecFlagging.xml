@@ -1,29 +1,7 @@
 <includes>
 	<include name="VideoCodecFlaggingConditions">
-		<control type="image">
-			<description>Video rez Image</description>
-			<width>77</width>
-			<height>29</height>
-			<aspectratio align="right">keep</aspectratio>
-			<texture>$INFO[ListItem.VideoResolution,flagging/video/,.png]</texture>
-		</control>
-		<control type="image">
-			<description>Common Codec Image</description>
-			<width>80</width>
-			<height>35</height>
-			<aspectratio align="left">keep</aspectratio>
-			<texture>$INFO[ListItem.VideoCodec,flagging/video/,.png]</texture>
-			<!-- Don't show if its one of the 500 divx codecs -->
-			<visible>![substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
-		</control>
-		<control type="image">
-			<description>Divx Codec Image</description>
-			<width>80</width>
-			<height>35</height>
-			<aspectratio align="left">keep</aspectratio>
-			<texture>flagging/video/divx.png</texture>
-			<visible>[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
-		</control>
+		<include>RezFlagging</include>
+		<include>CodecFlagging</include>
 	</include>
 	<include name="VideoTypeHackFlaggingConditions">
 		<control type="image">
@@ -130,7 +108,7 @@
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany0.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa,Germany:o.Al.) |substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0) | substring(ListItem.mpaa, Rated 0)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa,Germany:o.Al.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0) | substring(ListItem.mpaa, Rated 0)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 6</description>
@@ -138,7 +116,7 @@
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany6.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6) | substring(ListItem.mpaa, ab 6) | substring(ListItem.mpaa, Rated 6)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6) | substring(ListItem.mpaa, ab 6) | substring(ListItem.mpaa, Rated 6)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 12</description>
@@ -146,7 +124,7 @@
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany12.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12) | substring(ListItem.mpaa, ab 12) | substring(ListItem.mpaa, Rated 12)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12) | substring(ListItem.mpaa, ab 12) | substring(ListItem.mpaa, Rated 12)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 16</description>
@@ -154,7 +132,7 @@
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany16.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16) | substring(ListItem.mpaa, ab 16) | substring(ListItem.mpaa, Rated 16)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16) | substring(ListItem.mpaa, ab 16) | substring(ListItem.mpaa, Rated 16)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 18</description>
@@ -162,7 +140,7 @@
 			<height>57</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany18.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18) | substring(ListItem.mpaa, Rated 18)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18) | substring(ListItem.mpaa, Rated 18)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 <!-- BBFC Ratings -->
 		<control type="image">
@@ -261,102 +239,110 @@
 	</include>
 	<include name="VideoLangFlaggingConditions">
 		<control type="image">
+			<description>AudioIcon</description>
+			<width>35</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<texture>$INFO[ListItem.AudioLanguage,flagging/lang/,.png]</texture>
+			<visible>!IsEmpty(ListItem.AudioLanguage)</visible>
+		</control>
+		<control type="image">
 			<description>German</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/de.png</texture>
-			<visible>substring(listitem.filename,.de.)</visible>
+			<texture>flagging/lang/deu.png</texture>
+			<visible>substring(listitem.filename,.de.) | substring(listitem.filename,.deu.)</visible>
 		</control>
 		<control type="image">
 			<description>English</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/en.png</texture>
-			<visible>substring(listitem.filename,.en.)</visible>
+			<texture>flagging/lang/eng.png</texture>
+			<visible>substring(listitem.filename,.en.) | substring(listitem.filename,.eng.)</visible>
 		</control>
 		<control type="image">
 			<description>Spanish</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/es.png</texture>
-			<visible>substring(listitem.filename,.es.)</visible>
+			<texture>flagging/lang/spa.png</texture>
+			<visible>substring(listitem.filename,.es.) | substring(listitem.filename,.spa.)</visible>
 		</control>
 		<control type="image">
 			<description>Suomi</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/fi.png</texture>
-			<visible>substring(listitem.filename,.fi.)</visible>
+			<texture>flagging/lang/fin.png</texture>
+			<visible>substring(listitem.filename,.fi.) | substring(listitem.filename,.fin.)</visible>
 		</control>
 		<control type="image">
 			<description>French</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/fr.png</texture>
-			<visible>substring(listitem.filename,.fr.)</visible>
+			<texture>flagging/lang/fra.png</texture>
+			<visible>substring(listitem.filename,.fr.) | substring(listitem.filename,.fra.)</visible>
 		</control>
 		<control type="image">
 			<description>Italian</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/it.png</texture>
-			<visible>substring(listitem.filename,.it.)</visible>
+			<texture>flagging/lang/ita.png</texture>
+			<visible>substring(listitem.filename,.it.) | substring(listitem.filename,.ita.)</visible>
 		</control>
 		<control type="image">
 			<description>Japanese</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/ja.png</texture>
-			<visible>substring(listitem.filename,.ja.)</visible>
+			<texture>flagging/lang/jpn.png</texture>
+			<visible>substring(listitem.filename,.ja.) | substring(listitem.filename,.jpn.)</visible>
 		</control>
 		<control type="image">
 			<description>Dutsch</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/nl.png</texture>
-			<visible>substring(listitem.filename,.nl.)</visible>
+			<texture>flagging/lang/nld.png</texture>
+			<visible>substring(listitem.filename,.nl.) | substring(listitem.filename,.nld.)</visible>
 		</control>
 		<control type="image">
 			<description>Portugese</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/pt.png</texture>
-			<visible>substring(listitem.filename,.pt.)</visible>
+			<texture>flagging/lang/por.png</texture>
+			<visible>substring(listitem.filename,.pt.) | substring(listitem.filename,.por.)</visible>
 		</control>
 		<control type="image">
 			<description>Russian</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/ru.png</texture>
-			<visible>substring(listitem.filename,.ru.)</visible>
+			<texture>flagging/lang/rus.png</texture>
+			<visible>substring(listitem.filename,.ru.) | substring(listitem.filename,.rus.)</visible>
 		</control>
 		<control type="image">
 			<description>Swedish</description>
 			<width>35</width>
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/lang/sv.png</texture>
-			<visible>substring(listitem.filename,.sv.)</visible>
+			<texture>flagging/lang/swe.png</texture>
+			<visible>substring(listitem.filename,.sv.) | substring(listitem.filename,.swe.)</visible>
 		</control>
 	</include>
-	<include name="MPPASmall">
+	<include name="MPAASmall">
 	<control type="image">
 			<description>Germany FSK 0</description>
 			<width>187</width>
 			<height>43</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany0.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:o.A.) | substring(ListItem.mpaa,Germany:o.Al.) | substring(ListItem.mpaa, o.A.) | substring(ListItem.mpaa, ab 0) | substring(ListItem.mpaa, Rated 0)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 6</description>
@@ -364,7 +350,7 @@
 			<height>43</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany6.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6) | substring(ListItem.mpaa, ab 6)</visible>
+			<visible>substring(ListItem.mpaa,Germany:6) | substring(ListItem.mpaa,FSK 6) | substring(ListItem.mpaa, ab 6) | substring(ListItem.mpaa, Rated 6)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 12</description>
@@ -372,7 +358,7 @@
 			<height>43</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany12.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12) | substring(ListItem.mpaa, ab 12)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:12) | substring(ListItem.mpaa,FSK 12) | substring(ListItem.mpaa, ab 12) | substring(ListItem.mpaa, Rated 12)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 16</description>
@@ -380,7 +366,7 @@
 			<height>43</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany16.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16) | substring(ListItem.mpaa, ab 16)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:16) | substring(ListItem.mpaa,FSK 16) | substring(ListItem.mpaa, ab 16) | substring(ListItem.mpaa, Rated 16)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 		<control type="image">
 			<description>Germany FSK 18</description>
@@ -388,7 +374,7 @@
 			<height>43</height>
 			<aspectratio>keep</aspectratio>
 			<texture>flagging/ratings/Germany18.png</texture>
-			<visible>substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18)</visible>
+			<visible>[substring(ListItem.mpaa,Germany:18) | substring(ListItem.mpaa,FSK 18) | substring(ListItem.mpaa, ab 18) | substring(ListItem.mpaa, Rated 18)] + Skin.HasSetting(germanmpaa)</visible>
 		</control>
 	</include>
 	<include name="CodecFlagging">
@@ -410,7 +396,7 @@
 			<visible>[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]</visible>
 		</control>
 	</include>	
-		<include name="RezFlagging">
+	<include name="RezFlagging">
 		<control type="image">
 			<description>Video rez Image</description>
 			<width>77</width>

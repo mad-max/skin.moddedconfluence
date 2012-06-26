@@ -91,7 +91,7 @@
 				<visible>Container.Content(Movies) + Control.IsVisible(746)</visible>
 				<animation effect="slide" start ="0,0" end="-50,0" time="300" delay="300" condition="!Skin.HasSetting(CDArt746)">Conditional</animation>
 				<control type="grouplist">
-					<description>MPAA Flagging Conditions Images</description>
+					<description>Flagging Conditions Images</description>
 					<posx>470</posx>
 					<posy>670</posy>
 					<width>800</width>

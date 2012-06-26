@@ -182,7 +182,6 @@
 				<align>Center</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>StudioFlaggingConditions</include>
 			</control>
 			<control type="textbox">
 					<description>Description Value The Movie</description>
@@ -206,8 +205,8 @@
 						<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 						<textureslidernib>ScrollBarNib.png</textureslidernib>
 						<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-						<onleft>513</onleft>
-						<onright>513</onright>
+						<onleft>514</onleft>
+						<onright>2</onright>
 						<showonepage>false</showonepage>
 						<orientation>vertical</orientation>
 					</control>
@@ -231,7 +230,7 @@
 				<width>15</width>
 				<height>15</height>
 				<aspectratio>stretch</aspectratio>
-				<include>MPPASmall</include>
+				<include>MPAASmall</include>
 				<visible>Control.IsVisible(514)</visible>
 			</control>
 			<control type="image">

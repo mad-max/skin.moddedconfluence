@@ -745,7 +745,7 @@
 				<align>right</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
-				<include>VideoMPAAFlaggingConditions</include>
+				<include>MPAASmall</include>
 			</control>
 		</control>
 	</include>

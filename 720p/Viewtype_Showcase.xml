@@ -37,7 +37,6 @@
 			<scrolltime>400</scrolltime>
 			<preloaditems>2</preloaditems>
 			<pagecontrol>68</pagecontrol>
-			<include>Animation_Viewtype_Showcase_FocusArea</include>
 			<visible>!Skin.HasSetting(no_Showcase) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | substring(container.folderpath,plugin://plugin.video.apple.movie.trailers.lite)]</visible>
 			<itemlayout width="168" height="2875">
 				
@@ -162,11 +161,9 @@
 				<label>$INFO[ListItem.Plot]</label>
 				<align>justify</align>
 				<autoscroll time="3000" delay="5000" repeat="5000">Skin.HasSetting(autoscroll)</autoscroll>
-				<include>Animation_Viewtype_Showcase_Plot</include>
 			</control>
 			<control type="group">
 				<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left) + !Skin.HasSetting(ShowcaseFanart)</visible>
-				<include>Animation_Viewtype_Showcase_LeftArea</include>
 					<control type="label"><!--Movie title-->
 						<posx>15</posx>
 						<posy>275</posy>
@@ -216,7 +213,6 @@
 		
 			<control type="group">
 			<visible>!SubString(ListItem.Icon,DefaultFolderBack.png,Left)</visible>
-			<include>Animation_Viewtype_Showcase_RightArea</include>
 				<control type="image">
 					<posx>1010</posx>
 					<posy>40</posy>
