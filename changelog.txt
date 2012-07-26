@@ -1,3 +1,24 @@
+[B]2.0[/B]
+
+- Nearly all commits and fixes came from ghoost82 (thanks for your support!)
+
+- Add a string for transphome
+- use MPAASmall to fit the german ratings in the view
+- show FSK and BBFC ratings only if they are enabled
+- use MPAASmall to fit the german ratings in the view 
+- fixed a bug with the scrollbar
+- fixed VideoCodecFlaggingConditions is a combination of the two includes
+- renamed the langflags to three-letter code to use audio stream info
+- translate language flags and shorten a line to fit it into the menu
+- Removed reverences to non existing includes
+- Fixed another case sensitiv issue
+- fixed a parentheses error
+- if using openelec the system has an openelec sub menu entry
+- Added Germany:o.Al. for FSK0 ratings, as this is how it is used at imdb
+- Writer field had the wrong size,corected
+- Extend RSS feed control when more room is available (thanks rintje)
+
+
 [B]1.0.9[/B]
 
 - added options to hide search, favourites and power button in home (thanks rintje)
