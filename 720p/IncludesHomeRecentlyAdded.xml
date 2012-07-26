@@ -307,6 +307,309 @@
 				</control>
 			</control>
 
+<!-- Doku Anfang-->	
+			
+			<control type="group">
+				<posx>740</posx>
+				<posy>30</posy>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>Container(9000).Hasfocus(27)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<description>Title label</description>
+					<posx>0</posx>
+					<posy>220</posy>
+					<height>20</height>
+					<width>540</width>
+					<label>40076</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<animation effect="slide" start="0,0" end="-180,0" time="300" condition="Control.HasFocus(8000)">Conditional</animation>
+				</control>
+				<control type="list" id="8000">
+					<animation effect="slide" start="0,0" end="-360,0" time="300" condition="Control.HasFocus(8000)">Conditional</animation>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>900</width>
+					<height>220</height>
+					<onleft>SetFocus(8000,0)</onleft>
+					<onright>SetFocus(8000,0)</onright>
+					<onup>20</onup>
+					<ondown>600</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="220" width="180">
+						<control type="image">
+							<description>background</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>180</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="label">
+							<posx>90</posx>
+							<posy>185</posy>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="220" width="180">
+						<control type="image">
+							<description>background</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>180</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>Control.HasFocus(8000)</visible>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>170</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>!Control.HasFocus(8000)</visible>
+						</control>
+						<control type="label">
+							<posx>90</posx>
+							<posy>185</posy>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu1.1.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.1.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="2">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu1.2.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.2.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="3">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu1.3.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.3.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="4">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu1.4.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.4.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="5">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu1.5.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu1.5.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+					</content>
+				</control>
+			</control>
+
+<!-- Doku Ende-->	
+<!-- Custom1 Anfang -->
+			<control type="group">
+				<posx>740</posx>
+				<posy>30</posy>
+				<visible>Library.HasContent(Movies)</visible>
+				<visible>Container(9000).Hasfocus(15)</visible>
+				<include>VisibleFadeEffect</include>
+				<control type="label">
+					<description>Title label</description>
+					<posx>0</posx>
+					<posy>220</posy>
+					<height>20</height>
+					<width>540</width>
+					<label>$LOCALIZE[40075] $INFO[Skin.String(Menu_Custom1_Label)]</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<animation effect="slide" start="0,0" end="-180,0" time="300" condition="Control.HasFocus(8000)">Conditional</animation>
+				</control>
+				<control type="list" id="8000">
+					<animation effect="slide" start="0,0" end="-360,0" time="300" condition="Control.HasFocus(8000)">Conditional</animation>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>900</width>
+					<height>220</height>
+					<onleft>SetFocus(8000,0)</onleft>
+					<onright>SetFocus(8000,0)</onright>
+					<onup>20</onup>
+					<ondown>600</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="220" width="180">
+						<control type="image">
+							<description>background</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>180</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="label">
+							<posx>90</posx>
+							<posy>185</posy>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="220" width="180">
+						<control type="image">
+							<description>background</description>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>180</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>Control.HasFocus(8000)</visible>
+						</control>
+						<control type="image">
+							<posx>10</posx>
+							<posy>10</posy>
+							<width>160</width>
+							<height>170</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>!Control.HasFocus(8000)</visible>
+						</control>
+						<control type="label">
+							<posx>90</posx>
+							<posy>185</posy>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="1">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu2.1.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.1.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="2">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu2.2.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.2.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="3">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu2.3.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.3.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="4">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu2.4.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.4.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+						<item id="3">
+							<label>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Title)]</label>
+							<label2></label2>
+							<onclick>PlayMedia($INFO[Window.Property(PlaylistLastMovieMenu2.5.Path)])</onclick>
+							<icon>$INFO[Window.Property(PlaylistLastMovieMenu2.5.Thumb)]</icon>
+							<thumb>-</thumb>
+						</item>
+					</content>
+				</control>
+			</control>
+<!-- Custom1 Ende -->		
+			
 			<control type="group">
 				<posx>0</posx>
 				<posy>30</posy>
