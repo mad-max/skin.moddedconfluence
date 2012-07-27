@@ -185,8 +185,8 @@
 					<font>font13</font>
 					<textcolor>white</textcolor>
 					<scroll>true</scroll>
-					<align>right</align>
-					<aligny>right</aligny>
+					<align>left</align>
+					<aligny>center</aligny>
 					<label>[COLOR blue]$LOCALIZE[20417]:[/COLOR] $INFO[ListItem.Writer]</label>
 				</control>
 				<control type="textbox">
@@ -210,7 +210,7 @@
 					<textcolor>white</textcolor>
 					<scroll>true</scroll>
 					<align>left</align>
-					<aligny>right</aligny>
+					<aligny>center</aligny>
 					<label>[COLOR blue]$LOCALIZE[20416]:[/COLOR] $INFO[ListItem.Date]</label>
 				</control>
 				<control type="image">
