@@ -912,6 +912,14 @@
 				<width>330</width>
 				<height>30</height>
 				<texture flipx="true" flipy="true">header.png</texture>
+				<visible>Container(9000).HasFocus(11) | Container(9000).HasFocus(10)</visible>
+			</control>
+			<control type="image">
+				<posx>1023</posx>
+				<posy>-75</posy>
+				<width>330</width>
+				<height>30</height>
+				<texture flipx="true" flipy="true">header.png</texture>
 				<visible>Container(9000).HasFocus(11)</visible>
 			</control>			
 			<control type="label">
@@ -934,10 +942,27 @@
 				<posx>980</posx>
 				<posy>-48</posy>
 				<width>300</width>
+				<label>Ungesehen: $INFO[Window(Home).Property(Movies.Unwatched)]</label>
+				
+				<align>center</align>
+				<visible>Container(9000).HasFocus(10)</visible>
+			</control>
+			<control type="label">
+				<posx>1000</posx>
+				<posy>-73</posy>
+				<width>300</width>
 				<label>$LOCALIZE[40074]: $INFO[Window(Home).Property(TVShows.Count)]</label>
 				<align>center</align>
 				<visible>Container(9000).HasFocus(11)</visible>
 			</control>			
+			<control type="label">
+				<posx>1000</posx>
+				<posy>-48</posy>
+				<width>300</width>
+				<label>Ungesehene Episoden: $INFO[Window(Home).Property(Episodes.Unwatched)]</label>
+				<align>center</align>
+				<visible>Container(9000).HasFocus(11)</visible>
+			</control>
 			<control type="label">
 				<posx>980</posx>
 				<posy>-23</posy>
