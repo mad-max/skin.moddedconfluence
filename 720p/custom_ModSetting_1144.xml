@@ -417,7 +417,33 @@
 						<label2>[COLOR=selected]$INFO[Skin.String(CustomFocusOffset)][/COLOR]</label2>
 						<onclick>Skin.SetNumeric(CustomFocusOffset)</onclick>
 						<visible>Skin.HasSetting(customstartupfocus)</visible>
-					</control>					
+					</control>	
+					<control type="radiobutton" id="1155">
+                        <width>750</width>
+                        <height>40</height>
+						<font>font13</font>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <label>Coverwall als Backrop</label>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>menuItemNF.png</texturenofocus>
+                        <onclick>Skin.ToggleSetting(CoverwallHomeMovies)</onclick>
+                        <selected>Skin.HasSetting(CoverwallHomeMovies)</selected>
+                    </control>
+                     <control type="button" id="1156">
+                        <description>CD Wall Picture Path</description>
+                        <width>750</width>
+                        <height>40</height>
+						<font>font13</font>
+                        <textcolor>grey2</textcolor>
+                        <focusedcolor>white</focusedcolor>
+                        <texturefocus>MenuItemFO.png</texturefocus>
+                        <texturenofocus>menuItemNF.png</texturenofocus>
+                        <label>40072</label>
+                        <label2>$INFO[Skin.String(Cover_Folder_Path)]</label2>
+                        <onclick>Skin.SetPath(Cover_Folder_Path)</onclick>
+						<visible>Skin.HasSetting(CoverwallHomeMovies)</visible>
+                    </control>					
 					<control type="label" id="110">
 						<width>750</width>
 						<height>45</height>

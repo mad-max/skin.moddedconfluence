@@ -6,7 +6,7 @@
 	<onload condition="Skin.HasSetting(Menu_Custom1)">XBMC.RunScript(script.randomandlastitems,limit=3,method=Last,playlist=special://masterprofile/playlists/video/custom1.xsp,menu=Menu2)</onload>
 	<allowoverlay>no</allowoverlay>	
 	<controls>
-		<control type="multiimage">
+	<!--	<control type="multiimage">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
@@ -16,7 +16,8 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 		</control>
-		<include>CommonMediaPlayingBackground</include>
+		<include>CommonMediaPlayingBackground</include> -->
+		<include condition="Skin.HasSetting(CoverwallHomeMovies)">Coverwall</include>
 		<control type="image">
 			<posx>0</posx>
 			<posy>340r</posy>

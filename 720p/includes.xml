@@ -900,4 +900,516 @@
 		<animation effect="fade" time="300">Visible</animation>
 		<animation effect="fade" time="300">Hidden</animation>
 	</include>
+	
+	<include name="Coverwall">
+	
+		 <control type="group">
+			<posx>-35</posx>
+			<posy>-15</posy>
+			<control type="multiimage">
+				<posx>5</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6300</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>155</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7700</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>305</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>8000</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>455</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6000</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>605</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4000</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>755</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5500</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>905</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5000</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1055</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6200</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1205</posx>
+				<posy>-165</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6600</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>5</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6500</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>155</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7200</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>305</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5100</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>455</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5200</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>605</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4100</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>755</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5700</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>905</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4400</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1055</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6800</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1205</posx>
+				<posy>53</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7800</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>5</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>8100</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>155</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4900</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>305</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5300</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>455</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4500</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>605</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7000</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>755</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6400</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>905</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>8300</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1055</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7500</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1205</posx>
+				<posy>270</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6900</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>5</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4200</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>155</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5800</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>305</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5600</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>455</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7300</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>605</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4700</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>755</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4800</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>905</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5400</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1055</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7100</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1205</posx>
+				<posy>490</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5200</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>5</posx>
+				<posy>650</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7600</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>155</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4300</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>305</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>5900</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>455</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6100</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>605</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>8200</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>755</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>6700</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>905</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>4600</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1055</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7900</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+			<control type="multiimage">
+				<posx>1205</posx>
+				<posy>710</posy>
+				<width>140</width>
+				<height>210</height>
+				<aspectratio>stretch</aspectratio>
+				<imagepath background="true">$INFO[Skin.String(Cover_Folder_Path)]</imagepath>
+				<timeperimage>7400</timeperimage>
+				<fadetime>500</fadetime>
+				<randomize>true</randomize>
+			</control>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture background="true">coverwallgrid.png</texture>
+			<colordiffuse>88FFFFFF</colordiffuse>
+		</control>	
+	
+	</include>
 </includes>
